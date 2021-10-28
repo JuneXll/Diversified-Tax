@@ -19,29 +19,51 @@ const Navigation = () => {
                 <Navbar.Brand href='/' to='/'>
                     <img src={logo} alt="diversified-tax-logo" style={logoStyle}></img>
                 </Navbar.Brand>
-                {/* <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-end">
-                    <NavDropdown title="Clients" id="nav-dropdown"> */}
-                        {/* <NavDropdown.Item> */}
-                            <Nav.Link href="/personal-tax">
-                                Personal Taxes
-                            </Nav.Link>
-                        {/* </NavDropdown.Item> */}
-                        {/* <NavDropdown.Item> */}
-                            <Nav.Link href="/business-tax">
-                                Business Taxes
-                            </Nav.Link>
-                        {/* </NavDropdown.Item> */}
-                    {/* </NavDropdown> */}
+                <Nav.Link href="/personal-tax">
+                    Personal Taxes
+                </Nav.Link>
+                <Nav.Link href="/business-tax">
+                    Business Taxes
+                </Nav.Link>
+                        
                 <Nav.Item>
                     <Nav.Link href="/contact-us">
                         Contact Us
                     </Nav.Link>
                 </Nav.Item>
-                {/* </Navbar.Collapse> */}
             </Container>
         </Navbar>
     )
 }
 
 export default Navigation;
+
+//With dropdown menu
+
+{/* <Navbar variant="pills" fixed='top'>
+            <Container>
+                <Navbar.Brand href='/' to='/'>
+                    <img src={logo} alt="diversified-tax-logo" style={logoStyle}></img>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse className="justify-content-end">
+                    <NavDropdown title="Clients" id="nav-dropdown"> 
+                        <NavDropdown.Item>
+                            <Nav.Link href="/personal-tax">
+                                Personal Taxes
+                            </Nav.Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Nav.Link href="/business-tax">
+                                Business Taxes
+                            </Nav.Link>
+                        </NavDropdown.Item>
+                    </NavDropdown>
+                <Nav.Item>
+                    <Nav.Link href="/contact-us">
+                        Contact Us
+                    </Nav.Link>
+                </Nav.Item>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar> */}
