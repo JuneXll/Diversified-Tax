@@ -22,7 +22,7 @@ const copyright = {
 const Footer = () => { 
     return (
     
-        <Navbar fixed='bottom'>
+        <Navbar>
             <Container>
                 {/* Div containing icons and copyright */}
                 <Container className='flex-column'>
