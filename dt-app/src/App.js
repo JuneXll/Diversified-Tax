@@ -6,7 +6,6 @@ import Home from './components/pages/Home';
 import Personal from './components/pages/Personal-taxes';
 import Business from './components/pages/Business-taxes';
 import Contact from './components/pages/Contact-us';
-import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 
 
@@ -25,8 +24,6 @@ function App() {
             </Container>
             <Route render={()=><h1 className='display-2'>Oops! Wrong Page!</h1>}/>
           </Switch>
-        
-        <Footer/>
       </Router>
     </div>
   );

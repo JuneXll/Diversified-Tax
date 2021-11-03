@@ -15,6 +15,24 @@
     -->
     <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <title>Diversified Tax</title>
+    <style>
+      .footerLogoStyle {
+        width: 120px;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #ccc;
+      }
+
+      .icons {
+        color: #003054;
+        padding: 3px;
+        text-decoration: none;
+      }
+
+      .copyright{
+        color:#003054;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -23,7 +41,7 @@
 
 
     <!-- Contact Us Form -->
-    <!-- <div style='display:none;' id="contact-form">
+    <div class="container" id="contact-form">
       <a name="form848109695" id="formAnchor848109695"></a>
       <script src="https://fs23.formsite.com/include/form/embedManager.js?848109695"></script>
       <script>
@@ -32,7 +50,31 @@
 	      width: "100%"
       });
       </script>
-    </div> -->
+    </div>
     
   </body>
+  <footer>
+    
+      <nav class="navbar justify-content-between container">
+        <div class="flex-column">
+        <div>
+          <a href='https://www.facebook.com/DiversifiedTax/' target='_blank' rel="noreferrer" class="icons">
+              <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href='https://www.instagram.com/diversifiedtax/' target='_blank' rel="noreferrer" class="icons" >
+              <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+
+        <div>
+          <small class="copyright">Copyright ©2021 Diversified Tax </small>
+        </div>
+      </div>
+        <a class="navbar-brand">
+          <img src="./images/logo.png" alt="diversified-tax-logo" class="footerLogoStyle"></img>
+        </a>
+      </nav>
+      
+  </footer>
 </html>
+
