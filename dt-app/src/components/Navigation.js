@@ -12,7 +12,9 @@ const logoStyle = {
 }
 
 const links = {
-    color: '#003054'
+    color: '#003054',
+    fontFamily: 'Bebas Neue, cursive',
+    letterSpacing: 4
 }
 
 const Navigation = () => {
