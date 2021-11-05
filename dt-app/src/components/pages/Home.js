@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 
 const paddingTop = {
     paddingTop: 100
@@ -7,9 +7,23 @@ const paddingTop = {
 
 const Home = () => {
     return (
-        <Container style={paddingTop}>
-            <h1> Home</h1>
-        </Container>
+        <div style={paddingTop}>
+            <div>
+                <Container>
+                    <Card className="bg-dark text-white">
+                        <Card.Img src="../images/logo.png" alt="Card image" />
+                        <Card.ImgOverlay>
+                            <Card.Title>Card title</Card.Title>
+                            <Card.Text>
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </Card.Text>
+                            <Card.Text>Last updated 3 mins ago</Card.Text>
+                            </Card.ImgOverlay>
+                    </Card>
+                </Container>
+            </div>
+        </div>
     )
 }
 

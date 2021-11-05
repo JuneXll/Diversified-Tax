@@ -16,6 +16,7 @@ const blueHeader = {
 const bodyFont = {
     color: 'white',
     fontFamily: 'Open Sans, san serif',
+    letterSpacing: 2
 }
 
 const blueDiv = {
@@ -39,6 +40,7 @@ const Contact = () => {
                         <h1 style={header}>Contact Us</h1>
                         <p style={bodyFont}>We know that the tax needs for each person or business are unique. Use our form to tell us more about your needs and concerns. We will give you a free quote for your tax preparation.</p>
                     </Container>
+                    
                     <Container className="p-5 d-flex justify-content-between row">
                         <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}>
                             <h3 style={header}>Form</h3>
