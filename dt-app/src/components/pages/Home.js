@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Card } from 'react-bootstrap';
+import homeCover from '../../images/homeCover.png'
 
 const paddingTop = {
     paddingTop: 100
@@ -9,9 +10,9 @@ const Home = () => {
     return (
         <div style={paddingTop}>
             <div>
-                <Container>
+                <Container className=''>
                     <Card className="bg-dark text-white">
-                        <Card.Img src="../images/logo.png" alt="Card image" />
+                        <Card.Img src={homeCover} alt="Card image" />
                         <Card.ImgOverlay>
                             <Card.Title>Card title</Card.Title>
                             <Card.Text>
