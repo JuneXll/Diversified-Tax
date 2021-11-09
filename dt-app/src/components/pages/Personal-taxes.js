@@ -90,7 +90,7 @@ const Personal = () => {
             </Container>
 
             {/* Additional Services */}
-            <Container className='row p-5 m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+            <Container className='row p-5 mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
                     <Image fluid className='col-10' src={yellowCalc}/>
@@ -111,7 +111,7 @@ const Personal = () => {
             </Container>
 
             {/* Tax Checklist */}
-            <Container className='row p-5 m-1' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+            <Container className='row p-5 mx-1' style={{backgroundColor:'#e1ad00', borderBottomLeftRadius:'5px',borderBottomRightRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
 
                 <Container className='col-lg-6 col-xs-12 flex-column'>
                     <h2 className='text-white display-3' style={headings}>Not sure if you are ready to file taxes?</h2>
