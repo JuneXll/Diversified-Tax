@@ -9,35 +9,40 @@ const headings = {
 }
 
 
-const LinkDiv = () => {
+const LinkDiv = (props) => {
 
     return (
-        <Container>
-                <Row className='d-flex justify-content-around'>
+        <Container className='my-5'>
+            
+            <Row className='d-flex justify-content-around'>
 
-                    <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12'>
-                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Personal Taxes</h3></Card.Header>
+                <Col className='col'>
+                    <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
+                        <Card.Header><h3 style={headings}>{props.firstLink}</h3></Card.Header>
                             <Card.Img variant="top" src={yellowCalc} />
-                        </Card>
-                    </Col>
-                    <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
-                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
-                            
-                        </Card>
-                    </Col>
-                    <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
-                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
+                    </Card>
+                </Col>
+
+                <Col className='col' >
+                    <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
+                        <Card.Header><h3 style={headings}>{props.secondLink}</h3></Card.Header>
                             <Card.Img variant="top" src={yellowCalc} />
                             
-                        </Card>
-                    </Col>
-                </Row>
-            </Container>
+                    </Card>
+                </Col>
+
+                <Col className='col' >
+                    <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
+                        <Card.Header><h3 style={headings}>{props.thirdLink}</h3></Card.Header>
+                            <Card.Img variant="top" src={yellowCalc} />
+                            
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
 export default LinkDiv;
+
+// Add onclicks for links to reroute to form pages

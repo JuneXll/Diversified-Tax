@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Image } from 'react-bootstrap';
+import { Container, Button, Image, Row } from 'react-bootstrap';
 import personalCover from '../../images/oldCalc.jpg';
 import yellowCalc from '../../images/yellowCalc.jpeg';
 import LinkDiv from '../widgets/LinkDiv';
@@ -125,32 +125,25 @@ const Personal = () => {
             </Container>
 
             {/* Links for getting started */}
-            <LinkDiv/>
-            {/* <Container>
-                <Row className='d-flex justify-content-around'>
-
-                    <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12'>
-                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Personal Taxes</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
-                        </Card>
-                    </Col>
-                    <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
-                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
+            <Container className='my-5'>
+                <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
+                    <LinkDiv firstLink='New Personal Clients' secondLink='Returning Personal Clients' thirdLink='Submit Extra Forms'/>
+            </Container>
+            
+            {/* FAQs */}
+            <Container>
+                <Container className='my-5 text-center' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+                    <Container className='text-white'>
+                        <h1 style={headings}>FAQs</h1>
+                        <Row className='my-5'>
                             
-                        </Card>
-                    </Col>
-                    <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
-                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
+                        </Row>
+                        <Row>
                             
-                        </Card>
-                    </Col>
-                </Row>
-            </Container> */}
+                        </Row>
+                    </Container>
+                </Container>
+            </Container>
 
         </div>
     )
