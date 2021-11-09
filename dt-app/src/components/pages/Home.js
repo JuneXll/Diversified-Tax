@@ -10,7 +10,9 @@ const paddingTop = {
 const jumbotronCover = {
     backgroundImage: `url(${homeCover})`,
     backgroundSize: 'cover',
-    height: '75vh'
+    height: '75vh',
+    borderRadius: '5px',
+    boxShadow: '5px 5px 5px #ccc'
   }
 
 const coverText = {
@@ -135,7 +137,7 @@ const Home = () => {
                                         <li>Refund advances up to $7000. Subject to approval</li>
                                     </ul>
                                 </Card.Text>
-                                <Button href='/' className='my-3' style={yellowButton}>Learn More</Button>
+                                <Button href='/personal-tax' className='my-3' style={yellowButton}>Learn More</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -154,7 +156,7 @@ const Home = () => {
                                         <li>Corporations, C or S, all schedules</li>
                                     </ul>
                                 </Card.Text>
-                                <Button href='/' className='my-3' style={yellowButton}>Learn More</Button>
+                                <Button href='/business-tax' className='my-3' style={yellowButton}>Learn More</Button>
                             </Card.Body>
                         </Card>
                     </Col>
