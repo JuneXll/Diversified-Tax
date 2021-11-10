@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Button, Image, Row } from 'react-bootstrap';
+import { Container, Button, Image } from 'react-bootstrap';
 import personalCover from '../../images/oldCalc.jpg';
 import yellowCalc from '../../images/yellowCalc.jpeg';
 import LinkDiv from '../widgets/LinkDiv';
+import Faq from '../widgets/Faq';
 
 const paddingTop = {
     paddingTop: 100
@@ -115,7 +116,7 @@ const Personal = () => {
 
                 <Container className='col-lg-6 col-xs-12 flex-column'>
                     <h2 className='text-white display-3' style={headings}>Not sure if you are ready to file taxes?</h2>
-                    <Button href='/' className='my-3' style={blueButton}><i class="fas fa-arrow-down"></i>Tax Checklist</Button>
+                    <Button href='/' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>Tax Checklist</Button>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
@@ -130,20 +131,8 @@ const Personal = () => {
                     <LinkDiv firstLink='New Personal Clients' secondLink='Returning Personal Clients' thirdLink='Submit Extra Forms'/>
             </Container>
             
-            {/* FAQs */}
-            <Container>
-                <Container className='my-5 text-center' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
-                    <Container className='text-white'>
-                        <h1 style={headings}>FAQs</h1>
-                        <Row className='my-5'>
-                            
-                        </Row>
-                        <Row>
-                            
-                        </Row>
-                    </Container>
-                </Container>
-            </Container>
+            {/* FAQ */}
+            <Faq/>
 
         </div>
     )

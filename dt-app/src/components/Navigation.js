@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-//Delete above if I could figure out dropdown menu
-// import { Container, Navbar, Nav , NavDropdown} from 'react-bootstrap';
 import logo from '../images/logo.png';
 
 const logoStyle = {
