@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { personalFaq } from '../../questionData/personalFaq';
 
@@ -18,21 +18,21 @@ const questionText = {
     fontFamily: 'Open Sans, sans-serif'
 }
 
-// Arrow up
-// <i class="fas fa-angle-up"></i>
-
-// Arrow down
-// <i class="fas fa-angle-down"></i>
-
 
 const Faq = () => {
 
+    const [showAnswer, setShowAnswer] = useState(false);
+    const onClick = () => setShowAnswer(!showAnswer);
+        
     const renderQuestion = (question, index) => {
-        console.log(personalFaq);
+        
         return (
             <div className='my-2 p-2' style={questionDiv} key={index}>
-                <p className='m-2' style={questionText}><span> <i className="fas fa-angle-down m-1"></i></span>{question.question}</p>
-                {/* <p>{question.answer}</p> */}
+                <p className='m-2' style={questionText}>
+                    <span className='p-2' onClick={onClick}>
+                    {!showAnswer ? (<i className="fas fa-angle-down m-1"></i>) : (<i className="fas fa-angle-up"></i>)}
+                    </span>{question.question}</p>
+                {showAnswer && (<p className='p-3' style={questionText}>{question.answer}</p>) }
             </div>
         )
 

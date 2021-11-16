@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Button, Image } from 'react-bootstrap';
+//Imported Images
 import personalCover from '../../images/oldCalc.jpg';
 import yellowCalc from '../../images/yellowCalc.jpeg';
+//Imported widgets
 import LinkDiv from '../widgets/LinkDiv';
 import Faq from '../widgets/Faq';
 
@@ -71,7 +73,7 @@ const Personal = () => {
                         <h5 style={coverP}>24/7 Safe and</h5>
                         <h5 style={coverP}>Reliable Service</h5>
 
-                        <Button href='/' style={yellowButton} className='my-3 flex-end'>File Today</Button>
+                        <Button href='/' style={yellowButton} className='my-3 float-end'>File Today</Button>
                     </Container>
                 </div>
             </div>
