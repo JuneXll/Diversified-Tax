@@ -21,23 +21,31 @@ const questionText = {
 
 const Faq = () => {
 
+    // States to control toggle effect on faq
     const [showAnswer, setShowAnswer] = useState(false);
-    const onClick = () => setShowAnswer(!showAnswer);
-        
-    const renderQuestion = (question, index) => {
-        
+    const [currentId, setCurrentId] = useState(null);
+    
+    //Will render one question and show/hide answer when span is clicked
+    const renderQuestion = (question) => {
+        const onClick = () => {
+            setCurrentId(question.id);
+            setShowAnswer(!showAnswer);
+            console.log(showAnswer)
+        }
+
         return (
-            <div className='my-2 p-2' style={questionDiv} key={index}>
+            <div className='my-2 p-2' style={questionDiv} key={question.id}>
                 <p className='m-2' style={questionText}>
                     <span className='p-2' onClick={onClick}>
-                    {!showAnswer ? (<i className="fas fa-angle-down m-1"></i>) : (<i className="fas fa-angle-up"></i>)}
+                    {showAnswer ? (<i className="fas fa-angle-up"></i>) : (<i className="fas fa-angle-down m-1"></i>)}
                     </span>{question.question}</p>
-                {showAnswer && (<p className='p-3' style={questionText}>{question.answer}</p>) }
+                {currentId === question.id && showAnswer === true && (<p className='p-3' style={questionText}>{question.answer}</p>) }
             </div>
         )
 
     }
 
+    //Container where all the questions will be rendered dynamically
     return(
         <Container>
             <Container className='my-5' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
