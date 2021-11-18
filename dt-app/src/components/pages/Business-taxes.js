@@ -6,10 +6,12 @@ import personalCover from '../../images/oldCalc.jpg';
 import LinkDiv from '../widgets/LinkDiv';
 import Faq from '../widgets/Faq';
 
+// Styles for page
+//Set padding for to make space for navbar
 const paddingTop = {
     paddingTop: 100
 }
-
+//Styles for main top div
 const blueDiv = {
     backgroundColor: '#003054',
     borderRadius: '5px',
@@ -29,7 +31,7 @@ const img = {
     height: '100%',
     borderRadius: '5px'
 }
-
+//Text stylings
 const coverHeading = {
     lineHeight: '2',
     letterSpacing: '6px',
@@ -49,7 +51,7 @@ const paragraphs = {
     letterSpacing: '2px',
     fontFamily: 'Open Sans, sans-serif'
 }
-
+//Styles for pic/ text yellow dic]v
 const leftColumn = {
     padding: '0',
     boxShadow: '5px 5px 5px #ccc'

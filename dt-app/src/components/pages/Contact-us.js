@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container} from 'react-bootstrap';
 
+//Header stylings 
 const header = {
     color: 'white',
     fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: 6,
 }
-
+//Text stylings
 const blueHeader = {
     fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: 5,
@@ -18,7 +19,7 @@ const bodyFont = {
     fontFamily: 'Open Sans, san serif',
     letterSpacing: 2
 }
-
+//Div stylings for page
 const blueDiv = {
     backgroundColor:'#003054', 
     borderRadius:5,

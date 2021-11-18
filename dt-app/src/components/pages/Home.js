@@ -3,10 +3,12 @@ import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
 import homeCover from '../../images/homeCover.png';
 import yellowCalc from '../../images/yellowCalc.jpeg';
 
+// Styles for page
+//Set padding for to make space for navbar
 const paddingTop = {
     paddingTop: 100
 }
-
+//Jumbotron image styles
 const jumbotronCover = {
     backgroundImage: `url(${homeCover})`,
     backgroundSize: 'cover',
@@ -14,14 +16,14 @@ const jumbotronCover = {
     borderRadius: '5px',
     boxShadow: '5px 5px 5px #ccc'
   }
-
+//Jumbotron cover text styles
 const coverText = {
     fontFamily: 'Open Sans, sans-serif',
     color: 'white',
     letterSpacing: '4px',
     lineHeight: '1.5'
 }
-
+//Button styles
 const yellowButton = {
     backgroundColor:'#e1ad00',
     fontFamily: 'Bebas Neue, cursive',
@@ -35,7 +37,7 @@ const blueButton = {
     letterSpacing: '4px',
     border: 'none'
 }
-
+//Styles for text on page
 const paragraphs = {
     textAlign: 'justify',
     lineHeight: '1.5',
@@ -48,7 +50,7 @@ const headings = {
     letterSpacing: '4px',
     fontFamily: 'Bebas Neue, cursive'
 }
-
+//Icon styles
 const iconsBlue = {
     color: '#003054'
 }
@@ -117,10 +119,10 @@ const Home = () => {
 
             </Container>
 
-            {/* Clients */}
+            {/* Clients section*/}
             <Container>
                 <Row className='d-flex justify-content-around'>
-
+                    {/* Personal Tax Clients */}
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>Personal Taxes</h3></Card.Header>
@@ -141,6 +143,7 @@ const Home = () => {
                             </Card.Body>
                         </Card>
                     </Col>
+                    {/* Business tax Clients */}
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
@@ -180,16 +183,16 @@ const Home = () => {
                         </Row>
                         <Row>
                             <Col>
-                            <i className="fas fa-concierge-bell fa-3x" style={iconsBlue}></i>
-                            <p style={iconP}>Personalized Customer Service</p>
+                                <i className="fas fa-concierge-bell fa-3x" style={iconsBlue}></i>
+                                <p style={iconP}>Personalized Customer Service</p>
                             </Col>
                             <Col>
-                            <i className="fas fa-user-clock fa-3x" style={iconsBlue}></i>
-                            <p style={iconP}>Quick Responses</p>
+                                <i className="fas fa-user-clock fa-3x" style={iconsBlue}></i>
+                                <p style={iconP}>Quick Responses</p>
                             </Col>
                             <Col>
-                            <i className="fas fa-file-alt fa-3x" style={iconsBlue}></i>
-                            <p style={iconP}>IRS e-file Authorized Filer</p>
+                                <i className="fas fa-file-alt fa-3x" style={iconsBlue}></i>
+                                <p style={iconP}>IRS e-file Authorized Filer</p>
                             </Col>
                         </Row>
                         <Button href='/' className='my-5' style={blueButton}>File Today</Button>

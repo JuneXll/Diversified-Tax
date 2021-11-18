@@ -148,7 +148,7 @@ const Personal = () => {
                     <h2 className='text-white display-3' style={headings}>Not sure if you are ready to file taxes?</h2>
                     <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>Tax Checklist</Button>
                 </Container>
-
+                {/* Container for checklist images */}
                 <Container className='col-lg-6 col-xs-12 text-center'>
                     <Container className='p-5 m-1'>
                         <Image 
@@ -172,7 +172,7 @@ const Personal = () => {
                     <LinkDiv firstLink='New Personal Clients' secondLink='Returning Personal Clients' thirdLink='Submit Extra Forms'/>
             </Container>
             
-            {/* FAQ */}
+            {/* FAQ component*/}
             <Faq/>
 
         </div>
