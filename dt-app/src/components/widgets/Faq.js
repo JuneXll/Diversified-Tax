@@ -30,7 +30,6 @@ const Faq = () => {
         const onClick = () => {
             setCurrentId(question.id);
             setShowAnswer(!showAnswer);
-            console.log(showAnswer)
         }
 
         return (

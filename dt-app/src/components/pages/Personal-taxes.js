@@ -3,14 +3,18 @@ import { Container, Button, Image } from 'react-bootstrap';
 //Imported Images
 import personalCover from '../../images/oldCalc.jpg';
 import yellowCalc from '../../images/yellowCalc.jpeg';
+import checklist1 from '../../images/Checklist1.png'
+import checklist2 from '../../images/Checklist2.png'
 //Imported widgets
 import LinkDiv from '../widgets/LinkDiv';
 import Faq from '../widgets/Faq';
 
+// Styles for page
+//Set padding for to make space for navbar
 const paddingTop = {
     paddingTop: 100
 }
-
+//Jumbotron image styles
 const jumbotronCover = {
     backgroundImage: `url(${personalCover})`,
     backgroundSize: 'contain',
@@ -20,7 +24,7 @@ const jumbotronCover = {
     borderRadius: '5px',
     boxShadow: '5px 5px 5px #ccc'
   }
-
+//Styles for jumbotron text
 const coverP = {
     lineHeight: '1.5',
     letterSpacing: '2px',
@@ -34,7 +38,7 @@ const coverHeading = {
     fontFamily: 'Bebas Neue, cursive',
     textAlign: 'right'
 }
-
+//Button styles
 const yellowButton = {
     backgroundColor:'#e1ad00',
     fontFamily: 'Bebas Neue, cursive',
@@ -43,6 +47,14 @@ const yellowButton = {
     textAlign: 'align-right'
 }
 
+const blueButton = {
+    backgroundColor:'#003054',
+    fontFamily: 'Bebas Neue, cursive',
+    letterSpacing: '4px',
+    border: 'none'
+}
+
+//Set styles for text on page
 const paragraphs = {
     lineHeight: '1.5',
     letterSpacing: '2px',
@@ -54,17 +66,33 @@ const headings = {
     letterSpacing: '4px',
     fontFamily: 'Bebas Neue, cursive',
 }
+//Checklist image styles
+const checklist1Style = {
+    width:'280px',
+    height: '380px',
+    position: 'relative',
+    cursor: 'pointer',
+    transform: 'rotate(-5deg)'
+}
 
-const blueButton = {
-    backgroundColor:'#003054',
-    fontFamily: 'Bebas Neue, cursive',
-    letterSpacing: '4px',
-    border: 'none'
+const checklist2Style = {
+    width:'280px',
+    height: '380px',
+    position: 'absolute',
+    transform: 'rotate(15deg)',
+    cursor: 'pointer',
+    marginRight:'50px'
+}
+//Function that opens new window for checklist onClick
+const dlChecklist = (e) => {
+    window.open('https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view');
+
 }
 
 const Personal = () => {
     return (
         <div style={paddingTop}>
+            {/* Jumbotron Section */}
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
                     <Container className='flex-column p-5 text-white'>
@@ -118,11 +146,22 @@ const Personal = () => {
 
                 <Container className='col-lg-6 col-xs-12 flex-column'>
                     <h2 className='text-white display-3' style={headings}>Not sure if you are ready to file taxes?</h2>
-                    <Button href='/' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>Tax Checklist</Button>
+                    <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>Tax Checklist</Button>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10' src={yellowCalc}/>
+                    <Container className='p-5 m-1'>
+                        <Image 
+                            className='col-10' 
+                            src={checklist2} 
+                            style={checklist2Style} alt='diversified-tax-checklist2'
+                            onClick={dlChecklist}/>
+                        <Image 
+                            className='col-10' 
+                            src={checklist1} 
+                            style={checklist1Style} alt='diversified-tax-checklist1'
+                            onClick={dlChecklist}/>
+                    </Container>
                 </Container>
 
             </Container>
