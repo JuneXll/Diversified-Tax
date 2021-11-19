@@ -6,7 +6,7 @@ import yellowCalc from '../../images/yellowCalc.jpeg';
 import checklist1 from '../../images/Checklist1.png'
 import checklist2 from '../../images/Checklist2.png'
 //Imported widgets
-import LinkDiv from '../widgets/LinkDiv';
+import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
 
 // Styles for page
@@ -169,7 +169,7 @@ const Personal = () => {
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
-                    <LinkDiv firstLink='New Personal Clients' secondLink='Returning Personal Clients' thirdLink='Submit Extra Forms'/>
+                    <LinkCard firstLink='New Personal Clients' secondLink='Returning Personal Clients' thirdLink='Submit Extra Forms'/>
             </Container>
             
             {/* FAQ component*/}

@@ -3,13 +3,13 @@ import { Container, Image, Row, Col } from 'react-bootstrap';
 //Imported Images
 import personalCover from '../../images/oldCalc.jpg';
 //Imported widgets
-import LinkDiv from '../widgets/LinkDiv';
+import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
 
 // Styles for page
 //Set padding for to make space for navbar
 const paddingTop = {
-    paddingTop: 100
+    paddingTop: 75
 }
 //Styles for main top div
 const blueDiv = {
@@ -114,7 +114,7 @@ const Business = () => {
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
-                    <LinkDiv firstLink='New Business Clients' secondLink='Returning Business Clients' thirdLink='Submit Extra Forms'/>
+                    <LinkCard firstLink='New Business Clients' secondLink='Returning Business Clients' thirdLink='Submit Extra Forms'/>
             </Container>
 
             {/* Faq */}
