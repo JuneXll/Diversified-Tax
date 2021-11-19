@@ -32,7 +32,7 @@ const Faq = () => {
 
     return(
         <Container className='p-5' style={questionDiv}>
-            <h1 className='pt-2 text-center' style={headings}>FAQ</h1>
+            <h1 className='text-center' style={headings}>FAQ</h1>
             {personalFaq.map(renderQuestion)}
         </Container>
     )
