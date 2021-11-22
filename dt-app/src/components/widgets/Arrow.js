@@ -1,6 +1,6 @@
 import React from "react";
 
-const Chevron = (props) => {
+const Arrow = (props) => {
 
  return (
    <svg
@@ -18,4 +18,4 @@ const Chevron = (props) => {
  );
 }
 
-export default Chevron;
+export default Arrow;

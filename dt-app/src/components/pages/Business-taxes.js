@@ -118,7 +118,7 @@ const Business = () => {
             </Container>
 
             {/* Faq */}
-            <Faq/>
+            <Faq faq='business'/>
 
         </div>
     )

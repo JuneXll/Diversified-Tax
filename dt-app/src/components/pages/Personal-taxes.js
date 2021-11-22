@@ -173,7 +173,7 @@ const Personal = () => {
             </Container>
             
             {/* FAQ component*/}
-            <Faq/>
+            <Faq faq='personal'/>
 
         </div>
     )

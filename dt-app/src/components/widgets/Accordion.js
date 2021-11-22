@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Container } from 'react-bootstrap';
-import Chevron from './Arrow';
+import Arrow from './Arrow';
 
 import './Accordion.css';
 
@@ -20,14 +20,14 @@ const Accordion = props => {
 
     return (
         <Container className='m-3'>
-            <div className="accordion__section">
-                <button className={`accordion ${active}`} onClick={toggleAccordion}>
+            <div className="accordion__section" >
+                <button className={`accordion ${active} p-3`} onClick={toggleAccordion} style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}}>
                 <p className="accordion__title">{props.quest}</p>
-                <Chevron className={`${rotate}`} width={10} fill={"#777"} />
+                <Arrow className={`${rotate}`} width={10} fill={"white"} />
                 </button>
                 <div
                     ref={content}
-                    style={{ maxHeight: `${height}` }}
+                    style={{ maxHeight: `${height}`,borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px' }}
                     className="accordion__content"
                 >
                 <div
