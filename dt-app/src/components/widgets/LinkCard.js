@@ -39,9 +39,9 @@ const LinkDiv = (props) => {
                 </Col>
 
                 <Col className='col' >
-                    <a href={props.thirdHref} style={anchorHref}>
+                    <a href='/extra-forms' style={anchorHref}>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>{props.thirdLink}</h3></Card.Header>
+                            <Card.Header><h3 style={headings}>Submit Extra Forms</h3></Card.Header>
                                 <Card.Img variant="top" src={yellowCalc} />
                         </Card>
                     </a>

@@ -116,11 +116,9 @@ const Business = () => {
                 <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
                     <LinkCard 
                         firstLink='New Business Clients' 
-                        firstHref='new-business-client'
+                        firstHref='/new-business-clients'
                         secondLink='Returning Business Clients' 
-                        secondHref='returning-business-client'
-                        thirdLink='Submit Extra Forms'
-                        thirdHref='extra-forms'/>
+                        secondHref='/returning-business-clients'/>
             </Container>
 
             {/* Faq */}

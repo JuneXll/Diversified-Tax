@@ -173,9 +173,7 @@ const Personal = () => {
                         firstLink='New Personal Clients' 
                         firstHref='/new-personal-clients'
                         secondLink='Returning Personal Clients' 
-                        secondHref='/returning-personal-clients'
-                        thirdLink='Submit Extra Forms'
-                        thirdHref='extra-forms'/>
+                        secondHref='/returning-personal-clients'/>
             </Container>
             
             {/* FAQ component*/}

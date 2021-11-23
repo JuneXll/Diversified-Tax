@@ -1,5 +1,4 @@
 import React from 'react';
-import '@csstools/normalize.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 // Main Pages
@@ -34,7 +33,7 @@ function App() {
               <Route exact path='/returning-personal-clients' component={ReturningPersonal}/>
               <Route exact path='/new-business-clients' component={NewBusiness}/>
               <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
-              <Route exact path='extra-forms' component={ExtraForms}/>
+              <Route exact path='/extra-forms' component={ExtraForms}/>
             </Container>
             <Route render={()=><h1 className='display-2'>Oops! Wrong Page!</h1>}/>
           </Switch>
