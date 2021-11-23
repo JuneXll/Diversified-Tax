@@ -101,7 +101,7 @@ const Personal = () => {
                         <h5 style={coverP}>24/7 Safe and</h5>
                         <h5 style={coverP}>Reliable Service</h5>
 
-                        <Button href='/' style={yellowButton} className='my-3 float-end'>File Today</Button>
+                        <Button href='/new-personal-clients' style={yellowButton} className='my-3 float-end'>File Today</Button>
                     </Container>
                 </div>
             </div>

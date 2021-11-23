@@ -72,7 +72,7 @@ const Home = () => {
                         <h1 style={coverText}>Accurate Calculations</h1>
                         <h1 style={coverText}>Maximum Refund</h1>
 
-                        <Button href='/' className='my-3' style={yellowButton}>File Today</Button>
+                        <Button href='/new-personal-clients' className='my-3' style={yellowButton}>File Today</Button>
                     </Container>
 
                 </div>

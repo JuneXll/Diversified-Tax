@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import showForm from '../../showForm';
 
 const paddingTop = {
@@ -9,7 +10,9 @@ const ReturningPersonal = () => {
     return(
         <div style={paddingTop}>
             <h1>Returning Personal Clients</h1>
-            {showForm()}
+            <Container>
+                {showForm()}
+            </Container>
         </div>
     )
 }
