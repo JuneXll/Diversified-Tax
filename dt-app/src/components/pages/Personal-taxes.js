@@ -169,7 +169,13 @@ const Personal = () => {
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
-                    <LinkCard firstLink='New Personal Clients' secondLink='Returning Personal Clients' thirdLink='Submit Extra Forms'/>
+                    <LinkCard 
+                        firstLink='New Personal Clients' 
+                        firstHref='/new-personal-clients'
+                        secondLink='Returning Personal Clients' 
+                        secondHref='/returning-personal-clients'
+                        thirdLink='Submit Extra Forms'
+                        thirdHref='extra-forms'/>
             </Container>
             
             {/* FAQ component*/}

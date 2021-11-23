@@ -114,7 +114,13 @@ const Business = () => {
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
-                    <LinkCard firstLink='New Business Clients' secondLink='Returning Business Clients' thirdLink='Submit Extra Forms'/>
+                    <LinkCard 
+                        firstLink='New Business Clients' 
+                        firstHref='new-business-client'
+                        secondLink='Returning Business Clients' 
+                        secondHref='returning-business-client'
+                        thirdLink='Submit Extra Forms'
+                        thirdHref='extra-forms'/>
             </Container>
 
             {/* Faq */}

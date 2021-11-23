@@ -8,6 +8,10 @@ const headings = {
     fontFamily: 'Bebas Neue, cursive',
 }
 
+const anchorHref = {
+    textDecoration: 'none'
+}
+
 
 const LinkDiv = (props) => {
 
@@ -17,26 +21,30 @@ const LinkDiv = (props) => {
             <Row className='d-flex justify-content-around'>
 
                 <Col className='col'>
-                    <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                        <Card.Header><h3 style={headings}>{props.firstLink}</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
-                    </Card>
+                    <a href={props.firstHref} style={anchorHref}>
+                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
+                            <Card.Header><h3 style={headings}>{props.firstLink}</h3></Card.Header>
+                                <Card.Img variant="top" src={yellowCalc} />
+                        </Card>
+                    </a>
                 </Col>
 
                 <Col className='col' >
-                    <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                        <Card.Header><h3 style={headings}>{props.secondLink}</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
-                            
-                    </Card>
+                    <a href={props.secondHref} style={anchorHref}>
+                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
+                            <Card.Header><h3 style={headings}>{props.secondLink}</h3></Card.Header>
+                                <Card.Img variant="top" src={yellowCalc} />
+                        </Card>
+                    </a>
                 </Col>
 
                 <Col className='col' >
-                    <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                        <Card.Header><h3 style={headings}>{props.thirdLink}</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
-                            
-                    </Card>
+                    <a href={props.thirdHref} style={anchorHref}>
+                        <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
+                            <Card.Header><h3 style={headings}>{props.thirdLink}</h3></Card.Header>
+                                <Card.Img variant="top" src={yellowCalc} />
+                        </Card>
+                    </a>
                 </Col>
             </Row>
         </Container>
@@ -45,4 +53,4 @@ const LinkDiv = (props) => {
 
 export default LinkDiv;
 
-// Add onclicks for links to reroute to form pages
+// Add onClick for links to reroute to form pages
