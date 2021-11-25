@@ -195,7 +195,7 @@ const Home = () => {
                                 <p style={iconP}>IRS e-file Authorized Filer</p>
                             </Col>
                         </Row>
-                        <Button href='/' className='my-5' style={blueButton}>File Today</Button>
+                        <Button href='/new-personal-clients' className='my-5' style={blueButton}>File Today</Button>
                     </Container>
                 </Container>
             </Container>
