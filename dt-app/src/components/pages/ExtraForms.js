@@ -32,7 +32,7 @@ const ExtraForms = () => {
             <Container>
                 <Container style={blueDiv} className='m1'>
                     <h1 className='text-center text-white' style={heading}>Forgot something?</h1>
-                    <p className='text-center text-white' style={paragraph}>Don't worry! Add any extra information missing from your forms below.</p>
+                    <p className='text-center text-white' style={paragraph}>Don't worry! Add any missing documents below.</p>
                 </Container>
             </Container>
             <Container>

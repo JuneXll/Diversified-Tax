@@ -45,6 +45,12 @@ const paragraphs = {
     fontFamily: 'Open Sans, sans-serif'
 }
 
+const cardList = {
+    lineHeight: '1.5',
+    letterSpacing: '2px',
+    fontFamily: 'Open Sans, sans-serif'
+}
+
 const headings = {
     lineHeight: '2',
     letterSpacing: '4px',
@@ -68,7 +74,7 @@ const Home = () => {
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
                     <Container className='flex-column p-5'>
-                        <h1 style={coverText}>Qualified Help</h1>
+                        <h1 style={coverText}>Expert Attention</h1>
                         <h1 style={coverText}>Accurate Calculations</h1>
                         <h1 style={coverText}>Maximum Refund</h1>
 
@@ -86,7 +92,7 @@ const Home = () => {
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
                     <h2 style={headings}>About Us</h2>
-                    <p style={paragraphs}>Diversified Tax is a full-service professional tax preparation company dedicated to help you with all your personal and business needs. We provide consultations, bookkeeping, and most importantly, an accurate tax filing. We are backed by years of tax knowledge and we take pride in helping hundreds of people each year. When it comes to helping our clients, we hold ourselves to the highest standard. Diversified Tax works with all of our employees to build a culture of industry-leading tax preparers. </p>
+                    <p style={paragraphs}>Diversified Tax is a full-service professional tax preparation company dedicated to help with all your personal and business needs. We provide consultations, bookkeeping, LLC and Corporation (S and C) openings, accurate tax filings and more. We are backed by years of tax knowledge and we take pride in helping hundreds of people and businesses each year. When it comes to helping our clients, we hold ourselves to the highest standard. Diversified Tax works to build a culture of industry-leading tax preparers. </p>
                 </Container>
 
             </Container>
@@ -95,8 +101,8 @@ const Home = () => {
             <Container className='row p-5 m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
-                    <h2 className='text-white' style={headings}>How Does Diversified Tax Work?</h2>
-                    <p className='text-white' style={paragraphs}>Diversified Tax  makes filing your taxes easier than ever before. The easiest way to file your taxes is to have someone file them for you. We have blended the customer benefits of the on-demand economy (convenience, personalized experience, security, cost savings, and higher quality service) and applied it to the tax industry. We take all the hassle out of doing taxes to ensure you receive the personalized experience you desire. </p>
+                    <h2 className='text-white' style={headings}>What does Diversified Tax do?</h2>
+                    <p className='text-white' style={paragraphs}>Diversified Tax makes filing your taxes easier than ever before. What’s easier than having a professional file your taxes for you? Nothing, so you don’t have to worry about a thing. We have customized the customer benefits of the on-demand economy with convenience, security and cost savings and applied it to our tax business. We take all the hassle out of doing taxes to ensure you receive the personalized experience you desire.</p>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
@@ -113,8 +119,8 @@ const Home = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
-                    <h2 style={headings}>Tax Planning</h2>
-                    <p style={paragraphs}>Tax planning is critical to self-employed and small business taxpayers. It is the first step to ensuring you are paying the lowest amount of legal tax. There are many ways to structure a business to lower the overall tax rates. Entity choice, accounting method, financing structure, benefit plans are all looked at from a tax optimization perspective. The plan we create is reviewed against your actual results going forward and adjustments are suggested as they become necessary. </p>
+                    <h2 style={headings}>We're always at your fingertips</h2>
+                    <p style={paragraphs}>We are available 24/7 to pick up any requests submitted. We are always available through phone or email and respond to all inquiries that require a follow-up in a timely manner. We make every effort to reply as soon as we can, however, please note that DT is located within the eastern time zone, therefore response times may lag during late evenings and early morning hours.</p>
                 </Container>
 
             </Container>
@@ -129,14 +135,14 @@ const Home = () => {
                             <Card.Img variant="top" src={yellowCalc} />
                             <Card.Body>
                                 <Card.Title style={headings}>Preparation Services</Card.Title>
-                                <Card.Text style={paragraphs}>
+                                <Card.Text style={cardList}>
                                     <ul>
                                         <li>Current and prior years</li>
                                         <li>Federal 1040, all related schedules</li>
                                         <li>All state returns, all related schedules</li>
                                         <li>No upfront fees</li>
                                         <li>Audit protection</li>
-                                        <li>Refund advances up to $7000. Subject to approval</li>
+                                        <li>Refund advances. Subject to approval</li>
                                     </ul>
                                 </Card.Text>
                                 <Button href='/personal-tax' className='my-3' style={yellowButton}>Learn More</Button>
@@ -150,7 +156,7 @@ const Home = () => {
                             <Card.Img variant="top" src={yellowCalc} />
                             <Card.Body>
                                 <Card.Title style={headings}>Preparation Services</Card.Title>
-                                <Card.Text style={paragraphs}>
+                                <Card.Text style={cardList}>
                                     <ul>
                                         <li>EIN filing and filing with corresponding state</li>
                                         <li>Year round bookkeeping</li>

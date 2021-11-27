@@ -41,7 +41,7 @@ const Contact = () => {
                     {/* Heading */}
                     <Container className='flex-column col-10 justify-content-center pt-5'>
                         <h1 style={header}>Contact Us</h1>
-                        <p style={bodyFont}>We know that the tax needs for each person or business are unique. Use our form to tell us more about your needs and concerns. We will give you a free quote for your tax preparation.</p>
+                        {/* <p style={bodyFont}>We know that the tax needs for each person or business are unique. Use our form to tell us more about your needs and concerns. We will give you a free quote for your tax preparation.</p> */}
                     </Container>
                     {/* Contact us form */}
                     <Container className="p-5 d-flex justify-content-between row">
@@ -71,6 +71,10 @@ const Contact = () => {
 
             {/* Instagram section */}
             <Container className='text-center'>
+                <Container style={{marginTop:'15vh', marginBottom:'5vh'}}>
+                    <h1 className='text-center text-black' style={header}>Don't forget to follow us on Instagram</h1> 
+                </Container>
+
                 <Instagram />
             </Container>
         </div>

@@ -46,10 +46,16 @@ const headings = {
     fontFamily: 'Bebas Neue, cursive',
 }
 
+const serviceText = {
+    letterSpacing: '2px',
+    fontFamily: 'Bebas Neue, cursive',
+}
+
 const paragraphs = {
     lineHeight: '1.5',
     letterSpacing: '2px',
-    fontFamily: 'Open Sans, sans-serif'
+    fontFamily: 'Open Sans, sans-serif',
+    textAlign: 'justify'
 }
 //Styles for pic/ text yellow dic]v
 const leftColumn = {
@@ -98,14 +104,14 @@ const Business = () => {
                         <Image fluid className='position-relative' src={personalCover} style={leftColumnPic}/>
                     </Col>
                     <Col className='p-5' style={rightColumn}>
-                        <h2 className='text-white' style={headings}>Additional Services</h2>
+                        <h2 className='text-white' style={serviceText}>Can I request services outside of income taxes?</h2>
+                        <p className='text-white' style={paragraphs}>Currently, the only services that can be provided by DT are identified below. However, if you have an open job, you can reach out to us with any requests and we'll see what we can do to help you out. We are able to help you with the following services or even some that may not be listed here:</p>
                             <ul style={paragraphs} className='text-white'>
-                                <li>Current and prior years</li>
-                                <li>Federal 1040, all related schedules</li>
-                                <li>All state returns, all related schedules</li>
-                                <li>No upfront fees</li>
-                                <li>Audit protection</li>
-                                <li>Refund advances up to $7000. Subject to approval</li>
+                                <li>Bookkeeping</li>
+                                <li>Incorporation/Organization services</li>
+                                <li>Estimates payment assistance</li>
+                                <li>Occupancy tax assistance</li>
+                                <li>Notary Services</li>
                             </ul>
                     </Col>
                 </Row>
@@ -115,9 +121,9 @@ const Business = () => {
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
                     <LinkCard 
-                        firstLink='New Business Clients' 
+                        firstLink='New Clients' 
                         firstHref='/new-business-clients'
-                        secondLink='Returning Business Clients' 
+                        secondLink='Returning Clients' 
                         secondHref='/returning-business-clients'/>
             </Container>
 
