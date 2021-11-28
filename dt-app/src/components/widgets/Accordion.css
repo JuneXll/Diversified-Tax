@@ -23,7 +23,8 @@
   /* Style the accordion content title */
   .accordion__title {
     font-family: "Open Sans", sans-serif;
-    letter-spacing: '2px';
+    letter-spacing: 2px;
+    padding-left: 18px;
   }
   
   /* Style the accordion chevron icon */
@@ -49,5 +50,6 @@
   .accordion__text {
     font-family: "Open Sans", sans-serif;
     color: white;
-    padding: 18px;
+    padding: 5px 32px 18px;
+    text-align: justify;
   }

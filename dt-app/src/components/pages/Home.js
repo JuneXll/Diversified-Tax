@@ -97,7 +97,7 @@ const Home = () => {
 
             </Container>
 
-            {/* How does DT work section */}
+            {/* What does DT do? */}
             <Container className='row p-5 m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
@@ -111,14 +111,14 @@ const Home = () => {
 
             </Container>
 
-            {/* Tax planning section */}
-            <Container className='row p-5'>
+            {/* We're always at your fingertips */}
+            <Container className='row p-5' style={{marginBottom:'5em', marginTop: '3em'}}>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
                     <Image fluid className='col-10 mt-5' src={yellowCalc}/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 style={headings}>We're always at your fingertips</h2>
                     <p style={paragraphs}>We are available 24/7 to pick up any requests submitted. We are always available through phone or email and respond to all inquiries that require a follow-up in a timely manner. We make every effort to reply as soon as we can, however, please note that DT is located within the eastern time zone, therefore response times may lag during late evenings and early morning hours.</p>
                 </Container>

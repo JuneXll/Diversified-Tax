@@ -16,8 +16,7 @@ const headings = {
 const questionDiv = {
     backgroundColor: '#e1ad00',
     borderRadius: '5px',
-    boxShadow: '5px 5px 5px #ccc',
-    textAlign: 'justify'
+    boxShadow: '5px 5px 5px #ccc'
 }
 
 const Faq = (props) => {

@@ -22,7 +22,7 @@ export const businessFaq = [
     {
         id: 4, 
         question: 'How do I know how many K-1S need to be prepared?',
-        answer: `Easy... # of owners = # of K-1s
+        answer: `Easy... # of owners = # of K-1s.
 
         Each partner or S corp shareholder will require a K-1 from the partnership/S-corp. All the information included within the K-1 is to be reported by each respective owner in order to report the income on their personal tax return. Flow-through entities such as partnerships and S-corps do not pay taxes. Rather, the partners/shareholders within the entities are responsible for their share of the liability.`
     },
