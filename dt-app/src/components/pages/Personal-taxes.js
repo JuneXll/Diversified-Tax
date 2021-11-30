@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container, Button, Image } from 'react-bootstrap';
 //Imported Images
-import personalCover from '../../images/oldCalc.jpg';
-import yellowCalc from '../../images/yellowCalc.jpeg';
-import checklist1 from '../../images/Checklist1.png'
-import checklist2 from '../../images/Checklist2.png'
+import personalHeaderImg from '../../images/personal-header.png';
+import formImg from '../../images/forms.png';
+import howDoImg from '../../images/how-do-i-know.png';
+import personalNewImg from '../../images/personal-new-client.png';
+import personalReturningImg from '../../images/personal-returning.png';
+import checklist1 from '../../images/Checklist1.png';
+import checklist2 from '../../images/Checklist2.png';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
@@ -16,7 +19,7 @@ const paddingTop = {
 }
 //Jumbotron image styles
 const jumbotronCover = {
-    backgroundImage: `url(${personalCover})`,
+    backgroundImage: `url(${personalHeaderImg})`,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     height: '55vh',
@@ -84,6 +87,12 @@ const checklist2Style = {
     cursor: 'pointer',
     marginRight:'50px'
 }
+//Img borderRadius and shadow
+const imgStyle = {
+    borderRadius: '5px',
+    boxShadow: '5px 5px 5px #ccc'
+}
+
 //Function that opens new window for checklist onClick
 const dlChecklist = (e) => {
     window.open('https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view');
@@ -107,7 +116,7 @@ const Personal = () => {
                 </div>
             </div>
 
-            {/* About Section */}
+            {/* Income Section */}
             <Container className='row p-5'>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
@@ -115,20 +124,20 @@ const Personal = () => {
                     <p style={paragraphs}>Diversified Tax works with all the common tax forms: 1099s, W-2s, and any other income tax form you may have received this year. All these documents should be uploaded, as applicable, for us to accurately complete your tax return. Providing these documents is as simple as snapping a photo and uploading it to the link provided by your tax agent. We also accept PDFs and excel documents. </p>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-5' src={yellowCalc}/>
+                <Container className='col-lg-6 col-xs-12 text-center mb-4'>
+                    <Image fluid className='col-10 mt-4' src={formImg} style={imgStyle}/>
                 </Container>
 
             </Container>
 
-            {/* Additional Services */}
+            {/* How do I know Section */}
             <Container className='row p-5 mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
 
-                <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10' src={yellowCalc}/>
+                <Container className='col-lg-6 col-xs-12 text-center mb-4'>
+                    <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}}/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column'>
+                <Container className='col-lg-6 col-xs-12 flex-column align-center'>
                     <h2 className='text-white' style={headings}>How do you know what I need?</h2>
                     <p className='text-white p-2' style={paragraphs}>We ask that you provide us with a copy of your prior year tax return so that we may have a baseline to work with. Through discussion, you should make us aware of any new activity that needs to be modified in the current year. We may also discuss items that may have accidentally been missed in prior years as well as options to remedy the problem. Once you've used DT, relevant information will be saved within your profile.</p>
                 </Container>
@@ -166,8 +175,11 @@ const Personal = () => {
                     <LinkCard 
                         firstLink='New Clients' 
                         firstHref='/new-personal-clients'
+                        firstSrc={personalNewImg}
                         secondLink='Returning Clients' 
-                        secondHref='/returning-personal-clients'/>
+                        secondHref='/returning-personal-clients'
+                        secondSrc={personalReturningImg}
+                        />
             </Container>
             
             {/* FAQ component*/}

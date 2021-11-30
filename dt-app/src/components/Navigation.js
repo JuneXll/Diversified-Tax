@@ -18,7 +18,7 @@ const links = {
 const Navigation = () => {
     return (
     
-        <Navbar expand='lg' fixed='top' style={{padding:10, backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
+        <Navbar expand='md' fixed='top' style={{padding:10, backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
             <Container>
                 <Navbar.Brand href='/' to='/'>
                     <img src={logo} alt="diversified-tax-logo" style={logoStyle}></img>
@@ -42,22 +42,3 @@ const Navigation = () => {
 
 export default Navigation;
 
-// return (
-    
-//     <Navbar variant="pills" fixed='top' style={{padding:10, backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
-//         <Container>
-//             <Navbar.Brand href='/' to='/'>
-//                 <img src={logo} alt="diversified-tax-logo" style={logoStyle}></img>
-//             </Navbar.Brand>
-//             <Nav.Link href="/personal-tax" style={links}>
-//                 Personal Taxes
-//             </Nav.Link>
-//             <Nav.Link href="/business-tax" style={links}>
-//                 Business Taxes
-//             </Nav.Link>
-//             <Nav.Link href="/contact-us" style={links}>
-//                     Contact Us
-//             </Nav.Link>
-//         </Container>
-//     </Navbar>
-// )

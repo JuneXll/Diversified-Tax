@@ -1,7 +1,12 @@
 import React from 'react';
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
-import homeCover from '../../images/homeCover.png';
-import yellowCalc from '../../images/yellowCalc.jpeg';
+// Imported images
+import jumbotronImg from '../../images/jumbotron.png';
+import aboutUsImg from '../../images/about-us.png';
+import whatWeDoImg from '../../images/what-does-dt-do.png';
+import fingertipsImg from '../../images/fingertips.png';
+import personalCardImg from '../../images/personalCard.png';
+import businessCardImg from '../../images/businessCard.png';
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -10,7 +15,7 @@ const paddingTop = {
 }
 //Jumbotron image styles
 const jumbotronCover = {
-    backgroundImage: `url(${homeCover})`,
+    backgroundImage: `url(${jumbotronImg})`,
     backgroundSize: 'cover',
     height: '75vh',
     borderRadius: '5px',
@@ -66,6 +71,11 @@ const iconP = {
     letterSpacing: '2px',
     fontFamily: 'Open Sans, sans-serif'
 }
+//Img borderRadius and shadow
+const imgStyle = {
+    borderRadius: '5px',
+    boxShadow: '5px 5px 5px #ccc'
+}
 
 const Home = () => {
     return (
@@ -73,7 +83,7 @@ const Home = () => {
             {/* Cover div */}
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
-                    <Container className='flex-column p-5'>
+                    <Container className='flex-column' style={{padding:'6em 0 0 2em'}} >
                         <h1 style={coverText}>Expert Attention</h1>
                         <h1 style={coverText}>Accurate Calculations</h1>
                         <h1 style={coverText}>Maximum Refund</h1>
@@ -86,8 +96,8 @@ const Home = () => {
             {/* About Section */}
             <Container className='row p-5'>
 
-                <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-5' src={yellowCalc}/>
+                <Container className='col-lg-6 col-xs-12 text-center mt-2'>
+                    <Image fluid className='col-10 mt-5' src={aboutUsImg} style={imgStyle}/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
@@ -106,16 +116,16 @@ const Home = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-5' src={yellowCalc}/>
+                    <Image fluid className='col-10 mt-4' src={whatWeDoImg} style={{borderRadius:'5px'}}/>
                 </Container>
 
             </Container>
 
             {/* We're always at your fingertips */}
-            <Container className='row p-5' style={{marginBottom:'5em', marginTop: '3em'}}>
+            <Container className='row p-5' style={{marginBottom:'3em', marginTop: '3em'}}>
 
                 <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-5' src={yellowCalc}/>
+                    <Image fluid className='col-10 mt-4' src={fingertipsImg} style={imgStyle}/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-5'>
@@ -132,7 +142,7 @@ const Home = () => {
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>Personal Taxes</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
+                            <Card.Img variant="top" src={personalCardImg} style={{borderRadius:'5px'}}/>
                             <Card.Body>
                                 <Card.Title style={headings}>Preparation Services</Card.Title>
                                 <Card.Text style={cardList}>
@@ -153,7 +163,7 @@ const Home = () => {
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
-                            <Card.Img variant="top" src={yellowCalc} />
+                            <Card.Img variant="top" src={businessCardImg} style={{borderRadius:'5px'}}/>
                             <Card.Body>
                                 <Card.Title style={headings}>Preparation Services</Card.Title>
                                 <Card.Text style={cardList}>

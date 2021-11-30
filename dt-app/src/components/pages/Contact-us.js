@@ -33,6 +33,28 @@ const yellowDiv = {
 }
 
 const Contact = () => {
+    // const formDiv = document.getElementById("contactForm");
+    // const extraForms = document.getElementById("extra-forms");
+
+    // const [href, setHref] = useState('');
+    // const [showForm, setShowForm] = useState(false);
+
+    // const showContactForm = () => {
+    
+    //     if(window.location.href === 'http://localhost:3000/contact-us'){
+            
+    //         if(extraForms.style.display === 'none') {
+    //             formDiv.append(extraForms);
+    //             extraForms.style.display = 'block';
+    //         } else {
+    //             extraForms.style.display = 'none';
+    //         }
+    //         setHref('http://localhost:3000/contact-us');
+    //         setShowForm(true);
+    //         return console.log(href +  showForm);
+    //     }
+    
+    // }
 
     return (
         <div style={{paddingTop: 100}}>
@@ -41,11 +63,11 @@ const Contact = () => {
                     {/* Heading */}
                     <Container className='flex-column col-10 justify-content-center pt-5'>
                         <h1 style={header}>Contact Us</h1>
-                        {/* <p style={bodyFont}>We know that the tax needs for each person or business are unique. Use our form to tell us more about your needs and concerns. We will give you a free quote for your tax preparation.</p> */}
                     </Container>
                     {/* Contact us form */}
                     <Container className="p-5 d-flex justify-content-between row">
-                        <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}>
+                        <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}  id='contactForm'>
+                            {/* {showContactForm()} */}
                             <h3 style={header}>Form</h3>
                             <p style={bodyFont}>Form</p>
                             <p style={bodyFont}>Form</p>
