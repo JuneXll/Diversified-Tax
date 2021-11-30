@@ -96,7 +96,7 @@ const Home = () => {
             {/* About Section */}
             <Container className='row p-5'>
 
-                <Container className='col-lg-6 col-xs-12 text-center mt-2'>
+                <Container className='col-lg-6 col-xs-12 text-center align-center'>
                     <Image fluid className='col-10 mt-5' src={aboutUsImg} style={imgStyle}/>
                 </Container>
 

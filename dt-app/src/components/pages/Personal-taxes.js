@@ -119,12 +119,12 @@ const Personal = () => {
             {/* Income Section */}
             <Container className='row p-5'>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 style={headings}>Income from 1099/W-2/1098 etc.</h2>
                     <p style={paragraphs}>Diversified Tax works with all the common tax forms: 1099s, W-2s, and any other income tax form you may have received this year. All these documents should be uploaded, as applicable, for us to accurately complete your tax return. Providing these documents is as simple as snapping a photo and uploading it to the link provided by your tax agent. We also accept PDFs and excel documents. </p>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 text-center mb-4'>
+                <Container className='col-lg-6 col-xs-12 text-center'>
                     <Image fluid className='col-10 mt-4' src={formImg} style={imgStyle}/>
                 </Container>
 
@@ -133,11 +133,11 @@ const Personal = () => {
             {/* How do I know Section */}
             <Container className='row p-5 mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
 
-                <Container className='col-lg-6 col-xs-12 text-center mb-4'>
+                <Container className='col-lg-6 col-xs-12 text-center mt-5'>
                     <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}}/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column align-center'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5 align-center'>
                     <h2 className='text-white' style={headings}>How do you know what I need?</h2>
                     <p className='text-white p-2' style={paragraphs}>We ask that you provide us with a copy of your prior year tax return so that we may have a baseline to work with. Through discussion, you should make us aware of any new activity that needs to be modified in the current year. We may also discuss items that may have accidentally been missed in prior years as well as options to remedy the problem. Once you've used DT, relevant information will be saved within your profile.</p>
                 </Container>
