@@ -83,7 +83,7 @@ const Home = () => {
             {/* Cover div */}
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
-                    <Container className='flex-column' style={{padding:'6em 0 0 2em'}} >
+                    <Container className='flex-column' style={{padding:'6em 0 0 3em'}} >
                         <h1 style={coverText}>Expert Attention</h1>
                         <h1 style={coverText}>Accurate Calculations</h1>
                         <h1 style={coverText}>Maximum Refund</h1>
@@ -184,7 +184,7 @@ const Home = () => {
 
             {/* When you choose Dt.. */}
             <Container>
-                <Container className='my-5 text-center' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+                <Container className='pt-3 my-5 text-center' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
                     <Container className='text-white'>
                         <h1 style={headings}>When you choose Diversified Tax, you choose</h1>
                         <Row className='my-5'>

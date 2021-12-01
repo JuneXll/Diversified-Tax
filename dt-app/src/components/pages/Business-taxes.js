@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 //Imported Images
-import personalCover from '../../images/oldCalc.jpg';
+import businessHeaderImg from '../../images/business-header.png';
+import outsideServicesImg from '../../images/outside-services.png';
+import businessNewImg from '../../images/business-new-client.png';
+import businessReturningImg from '../../images/business-returning.png';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
@@ -69,7 +72,7 @@ const leftColumnPic = {
 }
 
 const rightColumn = {
-    padding: '0',
+    padding: '4em 3em',
     borderTopRightRadius: '5px',
     borderBottomRightRadius: '5px',
     backgroundColor: '#e1ad00',
@@ -83,11 +86,11 @@ const Business = () => {
         <div style={paddingTop}>
             {/* Header section */}
             <div style={blueDiv}>
-                <h1 className='text-white text-center pt-5 m-5' style={coverHeading}>Your Business is safe with us.</h1>
+                <h1 className='text-white text-center pt-5 m-5' style={coverHeading}>Your Business is safe with us</h1>
             </div>
             <div className='position-relative'>
                 <div className='position-absolute top-0 start-50 translate-middle'style={picDiv}>
-                    <Image fluid src={personalCover} style={img}/>
+                    <Image fluid src={businessHeaderImg} style={img}/>
                 </div>
             </div>
 
@@ -97,13 +100,13 @@ const Business = () => {
                 <p className='m-5' style={paragraphs}>Tax planning is critical to self-employed and small business taxpayers. It is the first step to ensuring you are paying the lowest amount of legal tax. There are many ways to structure a business to lower the overall tax rates. Entity choice, accounting method, financing structure, benefit plans are all looked at from a tax optimization perspective. The plan we create is reviewed against your actual results going forward and adjustments are suggested as they become necessary. </p>
             </Container>
 
-            {/* Section */}
+            {/* Outside Services Section */}
             <Container>
                 <Row>
-                    <Col style={leftColumn}>
-                        <Image fluid className='position-relative' src={personalCover} style={leftColumnPic}/>
+                    <Col className='col-lg-6 col-md-12 col-sm-12' style={leftColumn}>
+                        <Image fluid className='position-relative' src={outsideServicesImg} style={leftColumnPic}/>
                     </Col>
-                    <Col className='p-5' style={rightColumn}>
+                    <Col className='col-lg-6 col-md-12 col-sm-12' style={rightColumn}>
                         <h2 className='text-white' style={serviceText}>Can I request services outside of income taxes?</h2>
                         <p className='text-white' style={paragraphs}>Currently, the only services that can be provided by DT are identified below. However, if you have an open job, you can reach out to us with any requests and we'll see what we can do to help you out. We are able to help you with the following services or even some that may not be listed here:</p>
                             <ul style={paragraphs} className='text-white'>
@@ -123,8 +126,10 @@ const Business = () => {
                     <LinkCard 
                         firstLink='New Clients' 
                         firstHref='/new-business-clients'
+                        firstSrc={businessNewImg}
                         secondLink='Returning Clients' 
-                        secondHref='/returning-business-clients'/>
+                        secondHref='/returning-business-clients'
+                        secondSrc={businessReturningImg}/>
             </Container>
 
             {/* Faq */}
