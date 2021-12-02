@@ -1,12 +1,12 @@
 import React from 'react';
-// import InstagramEmbed from 'react-instagram-embed';
+import InstagramEmbed from 'react-instagram-embed';
 
 const Instagram = () => {
     return(
         <div>
-            {/* <InstagramEmbed
-            url='https://instagr.am/p/Zw9o4/'
-            clientAccessToken='123|456'
+            <InstagramEmbed
+            url='https://www.instagram.com/p/CWYhvlZLNL_/'
+            clientAccessToken='416926586587247|e84510f6029802084a4d5885ba92f0d5'
             maxWidth={320}
             hideCaption={false}
             containerTagName='div'
@@ -16,8 +16,8 @@ const Instagram = () => {
             onSuccess={() => {}}
             onAfterRender={() => {}}
             onFailure={() => {}}
-            /> */}
-            <h1>IG Feed here</h1>
+            />
+            {/* <h1>IG Feed here</h1> */}
         </div>
     )
 }

@@ -83,10 +83,11 @@ const Home = () => {
             {/* Cover div */}
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
-                    <Container className='flex-column' style={{padding:'6em 0 0 3em'}} >
-                        <h1 style={coverText}>Expert Attention</h1>
-                        <h1 style={coverText}>Accurate Calculations</h1>
-                        <h1 style={coverText}>Maximum Refund</h1>
+                    <Container className='flex-column' style={{padding:'4em 0 0 3em'}} >
+                        <h1 className='display-1' style={coverText}>Diversified Tax</h1>
+                        <h3 style={coverText}>Expert Attention</h3>
+                        <h3 style={coverText}>Accurate Calculations</h3>
+                        <h3 style={coverText}>Maximum Refund</h3>
 
                         <Button href='/new-personal-clients' className='my-3' style={yellowButton}>File Today</Button>
                     </Container>
