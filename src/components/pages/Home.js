@@ -95,13 +95,13 @@ const Home = () => {
                 </div>
             </div>
             {/* About Section */}
-            <Container className='row p-5'>
+            <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 text-center align-center'>
-                    <Image fluid className='col-10 mt-5' src={aboutUsImg} style={imgStyle}/>
+                <Container className='col-lg-6 col-xs-12 text-center pb-2'>
+                    <Image fluid className='col-10' src={aboutUsImg} style={imgStyle}/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
+                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
                     <h2 style={headings}>About Us</h2>
                     <p style={paragraphs}>Diversified Tax is a full-service professional tax preparation company dedicated to help with all your personal and business needs. We provide consultations, bookkeeping, LLC and Corporation (S and C) openings, accurate tax filings and more. We are backed by years of tax knowledge and we take pride in helping hundreds of people and businesses each year. When it comes to helping our clients, we hold ourselves to the highest standard. Diversified Tax works to build a culture of industry-leading tax preparers. </p>
                 </Container>
@@ -109,27 +109,27 @@ const Home = () => {
             </Container>
 
             {/* What does DT do? */}
-            <Container className='row p-5 m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+            <Container className='row m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'5em 3em'}}>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5 '>
+                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
                     <h2 className='text-white' style={headings}>What does Diversified Tax do?</h2>
                     <p className='text-white' style={paragraphs}>Diversified Tax makes filing your taxes easier than ever before. What’s easier than having a professional file your taxes for you? Nothing, so you don’t have to worry about a thing. We have customized the customer benefits of the on-demand economy with convenience, security and cost savings and applied it to our tax business. We take all the hassle out of doing taxes to ensure you receive the personalized experience you desire.</p>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-4' src={whatWeDoImg} style={{borderRadius:'5px'}}/>
+                <Container className='col-lg-6 col-xs-12 text-center pt-2'>
+                    <Image fluid className='col-10' src={whatWeDoImg} style={{borderRadius:'5px'}}/>
                 </Container>
 
             </Container>
 
             {/* We're always at your fingertips */}
-            <Container className='row p-5' style={{marginBottom:'3em', marginTop: '3em'}}>
+            <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-4' src={fingertipsImg} style={imgStyle}/>
+                <Container className='col-lg-6 col-xs-12 text-center pb-2'>
+                    <Image fluid className='col-10' src={fingertipsImg} style={imgStyle}/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
                     <h2 style={headings}>We're always at your fingertips</h2>
                     <p style={paragraphs}>We are available 24/7 to pick up any requests submitted. We are always available through phone or email and respond to all inquiries that require a follow-up in a timely manner. We make every effort to reply as soon as we can, however, please note that DT is located within the eastern time zone, therefore response times may lag during late evenings and early morning hours.</p>
                 </Container>

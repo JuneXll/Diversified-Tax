@@ -19,7 +19,7 @@ const Accordion = props => {
     }
 
     return (
-        <Container className='m-3'>
+        <Container className='m-2'>
             <div className="accordion__section" >
                 <button className={`accordion ${active} p-3`} onClick={toggleAccordion} style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}}>
                 <p className="accordion__title">{props.quest}</p>

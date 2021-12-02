@@ -117,37 +117,37 @@ const Personal = () => {
             </div>
 
             {/* Income Section */}
-            <Container className='row p-5'>
+            <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
                     <h2 style={headings}>Income from 1099/W-2/1098 etc.</h2>
                     <p style={paragraphs}>Diversified Tax works with all the common tax forms: 1099s, W-2s, and any other income tax form you may have received this year. All these documents should be uploaded, as applicable, for us to accurately complete your tax return. Providing these documents is as simple as snapping a photo and uploading it to the link provided by your tax agent. We also accept PDFs and excel documents. </p>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Image fluid className='col-10 mt-4' src={formImg} style={imgStyle}/>
+                <Container className='col-lg-6 col-xs-12 text-center pt-2'>
+                    <Image fluid className='col-10' src={formImg} style={imgStyle}/>
                 </Container>
 
             </Container>
 
             {/* How do I know Section */}
-            <Container className='row p-5 mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+            <Container className='row mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'5em 3em'}}>
 
-                <Container className='col-lg-6 col-xs-12 text-center mt-5'>
+                <Container className='col-lg-6 col-xs-12 text-center pb-2'>
                     <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}}/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5 align-center'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
                     <h2 className='text-white' style={headings}>How do you know what I need?</h2>
-                    <p className='text-white p-2' style={paragraphs}>We ask that you provide us with a copy of your prior year tax return so that we may have a baseline to work with. Through discussion, you should make us aware of any new activity that needs to be modified in the current year. We may also discuss items that may have accidentally been missed in prior years as well as options to remedy the problem. Once you've used DT, relevant information will be saved within your profile.</p>
+                    <p className='text-white' style={paragraphs}>We ask that you provide us with a copy of your prior year tax return so that we may have a baseline to work with. Through discussion, you should make us aware of any new activity that needs to be modified in the current year. We may also discuss items that may have accidentally been missed in prior years as well as options to remedy the problem. Once you've used DT, relevant information will be saved within your profile.</p>
                 </Container>
 
             </Container>
 
             {/* Tax Checklist */}
-            <Container className='row p-5 mx-1' style={{backgroundColor:'#e1ad00', borderBottomLeftRadius:'5px',borderBottomRightRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
+            <Container className='row mx-1' style={{backgroundColor:'#e1ad00', borderBottomLeftRadius:'5px',borderBottomRightRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'4em 3em'}}>
 
-                <Container className='col-lg-6 col-xs-12 flex-column'>
+                <Container className='col-lg-6 col-xs-12 flex-column pb-2'>
                     <h2 className='text-white display-3' style={headings}>Not sure if you are ready to file?</h2>
                     <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>Tax Checklist</Button>
                 </Container>

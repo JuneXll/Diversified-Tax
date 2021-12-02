@@ -16,7 +16,8 @@ const headings = {
 const questionDiv = {
     backgroundColor: '#e1ad00',
     borderRadius: '5px',
-    boxShadow: '5px 5px 5px #ccc'
+    boxShadow: '5px 5px 5px #ccc',
+    marginTop: '7em'
 }
 
 const Faq = (props) => {
@@ -28,7 +29,7 @@ const Faq = (props) => {
     }
 
     return(
-        <Container className='p-5' style={questionDiv}>
+        <Container className='p-3' style={questionDiv}>
             <h1 className='text-center' style={headings}>FAQ</h1>
             {props.faq === 'personal' ? personalFaq.map(renderQuestion) : businessFaq.map(renderQuestion)}
         </Container>
