@@ -5,31 +5,31 @@ const showForm = () => {
     const newBusiness = document.getElementById("new-business");
     const extraForms = document.getElementById("extra-forms");
 
-    if( window.location.href === 'http://localhost:3000/new-personal-clients') {
+    if( window.location.href === 'https://diversified-tax.netlify.app/new-personal-clients') {
         if(newPersonal.style.display === 'none') {
             newPersonal.style.display = 'block';
         } else {
             newPersonal.style.display = 'none';
         }
-    } else if(window.location.href === 'http://localhost:3000/returning-personal-clients'){
+    } else if(window.location.href === 'https://diversified-tax.netlify.app/returning-personal-clients'){
         if(returningClient.style.display === 'none') {
             returningClient.style.display = 'block';
         } else {
             returningClient.style.display = 'none';
         }
-    } else if(window.location.href === 'http://localhost:3000/new-business-clients') {
+    } else if(window.location.href === 'https://diversified-tax.netlify.app/new-business-clients') {
         if(newBusiness.style.display === 'none') {
             newBusiness.style.display = 'block';
         } else {
             newBusiness.style.display = 'none';
         }
-    } else if(window.location.href === 'http://localhost:3000/returning-business-clients') {
+    } else if(window.location.href === 'https://diversified-tax.netlify.app/returning-business-clients') {
         if(returningClient.style.display === 'none') {
             returningClient.style.display = 'block';
         } else {
             returningClient.style.display = 'none';
         }
-    } else if(window.location.href === 'http://localhost:3000/extra-forms'){
+    } else if(window.location.href === 'https://diversified-tax.netlify.app/extra-forms'){
         if(extraForms.style.display === 'none') {
             extraForms.style.display = 'block';
         } else {
@@ -41,5 +41,3 @@ const showForm = () => {
  }
 
 export default showForm;
-
-// Netlify - https://determined-bartik-6a1c97.netlify.app/
