@@ -30,11 +30,8 @@ const ContactForm = () => {
             <br/>
 
             <div class="form-group">
-                <textarea class="form-control" id="message" name='message' rows="3" placeholder='Enter message' required></textarea>
+                <textarea class="form-control" id="message" name='message' rows="2" placeholder='Enter message' required></textarea>
             </div>
-            <br/>
-
-            <div data-netlify-recaptcha="true"></div>
             <br/>
             
             <button type="submit" className='text-white float-end p-2' style={blueButton}>Submit</button>
