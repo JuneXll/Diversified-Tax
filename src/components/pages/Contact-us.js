@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Button  } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Instagram from '../widgets/Instagram';
+import ContactForm from '../widgets/ContactForm';
 
 //Header stylings 
 const header = {
@@ -32,13 +33,6 @@ const yellowDiv = {
     borderRadius: 5,
 }
 
-const blueButton = {
-    backgroundColor:'#003054',
-    fontFamily: 'Bebas Neue, cursive',
-    letterSpacing: '4px',
-    border: 'none'
-}
-
 const Contact = () => {
     
     return (
@@ -52,47 +46,9 @@ const Contact = () => {
                     {/* Contact us form */}
                     <Container className="p-5 d-flex justify-content-between row">
                         <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}  id='contactForm'>
-                            <form
-                                name='contact v1' 
-                                method='post'
-                                onSubmit="submit"
-                                netlify
-                            >
-                                <input type="hidden" name="form-name" value="contact v1"/>
+                            {/* Contact us form component */}
+                            <ContactForm/>
 
-                                <input 
-                                    type="text" 
-                                    placeholder="Full Name" name="full-name" 
-                                    className="form-control"
-                                    required/>
-                                <br/>
-                                <input 
-                                    type="email" 
-                                    placeholder="Email" 
-                                    name="email" 
-                                    className="form-control"
-                                    required/>
-                                <br/>
-                                <input 
-                                    type="text" 
-                                    placeholder="Phone Number" 
-                                    name="phone-number"
-                                    className="form-control"
-                                    required/>
-                                <br/>
-                            
-                                <select 
-                                    aria-label="Personal or Business Dropdown" 
-                                    className='form-select'
-                                    name="dropdown">
-                                        <option disable>Personal or Business</option>
-                                        <option value="personal">Personal</option>
-                                        <option value="business">Business</option>
-                                        <option value="both">Personal and Business</option>
-                                </select>
-                                <br/>
-                                <Button type="submit" className='float-end' style={blueButton}>Submit</Button>
-                            </form>
                         </Container>
                         {/* Contact info */}
                         <Container className='flex-column col-md-5 col-xs-12 align-content-center p-3 mb-5' style={yellowDiv}>
