@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container} from 'react-bootstrap';
+import { Container, Form, Button,  } from 'react-bootstrap';
 import Instagram from '../widgets/Instagram';
 
 //Header stylings 
@@ -32,30 +32,15 @@ const yellowDiv = {
     borderRadius: 5,
 }
 
+const blueButton = {
+    backgroundColor:'#003054',
+    fontFamily: 'Bebas Neue, cursive',
+    letterSpacing: '4px',
+    border: 'none'
+}
+
 const Contact = () => {
-    // const formDiv = document.getElementById("contactForm");
-    // const extraForms = document.getElementById("extra-forms");
-
-    // const [href, setHref] = useState('');
-    // const [showForm, setShowForm] = useState(false);
-
-    // const showContactForm = () => {
     
-    //     if(window.location.href === 'http://localhost:3000/contact-us'){
-            
-    //         if(extraForms.style.display === 'none') {
-    //             formDiv.append(extraForms);
-    //             extraForms.style.display = 'block';
-    //         } else {
-    //             extraForms.style.display = 'none';
-    //         }
-    //         setHref('http://localhost:3000/contact-us');
-    //         setShowForm(true);
-    //         return console.log(href +  showForm);
-    //     }
-    
-    // }
-
     return (
         <div style={{paddingTop: 100}}>
             <div style={blueDiv}>
@@ -67,14 +52,48 @@ const Contact = () => {
                     {/* Contact us form */}
                     <Container className="p-5 d-flex justify-content-between row">
                         <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}  id='contactForm'>
-                            {/* {showContactForm()} */}
-                            <h3 style={header}>Form</h3>
-                            <p style={bodyFont}>Form</p>
-                            <p style={bodyFont}>Form</p>
-                            <br/>
-                            <h3 style={header}>Form</h3>
-                            <p style={bodyFont}>Form</p>
-                            <p style={bodyFont}>Form</p>
+                            <Form 
+                                name='contact v1' 
+                                method='post'
+                                data-netlify="true"
+                                onSubmit="submit"
+                                netlify
+                            >
+                                <input type="hidden" name="form-name" value="contact v1"/>
+
+                                <Form.Control 
+                                    size="sm" 
+                                    type="text" 
+                                    placeholder="Full Name" name="full-name" 
+                                    required/>
+                                <br/>
+                                <Form.Control 
+                                    size="sm" 
+                                    type="email" 
+                                    placeholder="Email" 
+                                    name="email" 
+                                    required/>
+                                <br/>
+                                <Form.Control 
+                                    size="sm" 
+                                    type="text" 
+                                    placeholder="Phone Number" 
+                                    name="phone-number"
+                                    required/>
+                                <br/>
+                            
+                                    <Form.Select 
+                                        aria-label="Personal or Business Dropdown" 
+                                        size="sm"
+                                        name="dropdown">
+                                        <option disable>Personal or Business</option>
+                                        <option value="personal">Personal</option>
+                                        <option value="business">Business</option>
+                                        <option value="both">Personal and Business</option>
+                                </Form.Select>
+                                <br/>
+                                <Button type="submit" className='float-end' style={blueButton}>Submit</Button>
+                            </Form>
                         </Container>
                         {/* Contact info */}
                         <Container className='flex-column col-md-5 col-xs-12 align-content-center p-3 mb-5' style={yellowDiv}>
