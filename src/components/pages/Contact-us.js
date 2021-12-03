@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, Button,  } from 'react-bootstrap';
+import { Container, Button  } from 'react-bootstrap';
 import Instagram from '../widgets/Instagram';
 
 //Header stylings 
@@ -60,36 +60,36 @@ const Contact = () => {
                             >
                                 <input type="hidden" name="form-name" value="contact v1"/>
 
-                                <Form.Control 
-                                    size="sm" 
+                                <input 
                                     type="text" 
                                     placeholder="Full Name" name="full-name" 
+                                    className="form-control"
                                     required/>
                                 <br/>
-                                <Form.Control 
-                                    size="sm" 
+                                <input 
                                     type="email" 
                                     placeholder="Email" 
                                     name="email" 
+                                    className="form-control"
                                     required/>
                                 <br/>
-                                <Form.Control 
-                                    size="sm" 
+                                <input 
                                     type="text" 
                                     placeholder="Phone Number" 
                                     name="phone-number"
+                                    className="form-control"
                                     required/>
                                 <br/>
                             
-                                    <Form.Select 
-                                        aria-label="Personal or Business Dropdown" 
-                                        size="sm"
-                                        name="dropdown">
+                                <select 
+                                    aria-label="Personal or Business Dropdown" 
+                                    className='form-select'
+                                    name="dropdown">
                                         <option disable>Personal or Business</option>
                                         <option value="personal">Personal</option>
                                         <option value="business">Business</option>
                                         <option value="both">Personal and Business</option>
-                                </Form.Select>
+                                </select>
                                 <br/>
                                 <Button type="submit" className='float-end' style={blueButton}>Submit</Button>
                             </form>
