@@ -26,7 +26,7 @@ const ContactForm = () => {
                 <input type="number" className="form-control" id="phone-number" name='phone-number' placeholder="Phone Number"/>
             </div>
             <br/>
-            {/* <div className="form-group">
+            <div className="form-group">
                 <select 
                     aria-label="Personal or Business Dropdown" 
                     className='form-select'
@@ -37,7 +37,9 @@ const ContactForm = () => {
                     <option value="both">Personal and Business</option>
                 </select>
             </div>
-            <br/> */}
+            <br/>
+            <div data-netlify-recaptcha="true"></div>
+            <br/>
             <button type="submit" className='text-white float-end p-2' style={blueButton}>Submit</button>
         </form>
     )

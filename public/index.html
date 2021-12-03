@@ -99,12 +99,14 @@
     </div>
     
     <!-- Contact us Form -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="phone-number" />
-      <!-- <select type="select" /> -->
-    </form>
+      <select name="interest[]" multiple>
+        <option value="personal"> Personal</option>
+        <option value="business">Business</option>
+        <option value="both">Personal and Business</option>
   </body>
   <footer>
     
