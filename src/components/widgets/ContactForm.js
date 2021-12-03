@@ -11,7 +11,7 @@ const blueButton = {
 
 const ContactForm = () => {
     return(
-        <form name="contact" method="post" className='mt-2'>
+        <form name="contact v1" method="post" className='mt-2'>
             <input type="hidden" name="form-name" value="contact" />
       
             <div className="form-group">
@@ -33,7 +33,7 @@ const ContactForm = () => {
                 <textarea class="form-control" id="message" name='message' rows="2" placeholder='Enter message' required></textarea>
             </div>
             <br/>
-            
+
             <button type="submit" className='text-white float-end p-2' style={blueButton}>Submit</button>
         </form>
     )
