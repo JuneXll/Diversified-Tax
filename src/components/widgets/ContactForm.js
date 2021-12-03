@@ -18,28 +18,25 @@ const ContactForm = () => {
                 <input type="text" className="form-control" id="name" name='name' placeholder="Full Name" required/>
             </div>
             <br/>
+
             <div className="form-group">
                 <input type="email" className="form-control" id="email" name='email' placeholder="Email"/>
             </div>
             <br/>
+
             <div className="form-group">
-                <input type="number" className="form-control" id="phone-number" name='phone-number' placeholder="Phone Number"/>
+                <input type="text" className="form-control" id="phone-number" name='phone-number' placeholder="Phone Number"/>
             </div>
             <br/>
-            <div className="form-group">
-                <select 
-                    aria-label="Personal or Business Dropdown" 
-                    className='form-select'
-                    name="dropdown">
-                    <option disable>Personal or Business</option>
-                    <option value="personal">Personal</option>
-                    <option value="business">Business</option>
-                    <option value="both">Personal and Business</option>
-                </select>
+
+            <div class="form-group">
+                <textarea class="form-control" id="message" name='message' rows="3" placeholder='Enter message' required></textarea>
             </div>
             <br/>
+
             <div data-netlify-recaptcha="true"></div>
             <br/>
+            
             <button type="submit" className='text-white float-end p-2' style={blueButton}>Submit</button>
         </form>
     )
