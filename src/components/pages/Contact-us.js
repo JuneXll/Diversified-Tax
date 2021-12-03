@@ -52,10 +52,9 @@ const Contact = () => {
                     {/* Contact us form */}
                     <Container className="p-5 d-flex justify-content-between row">
                         <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}  id='contactForm'>
-                            <Form 
+                            <form
                                 name='contact v1' 
                                 method='post'
-                                data-netlify="true"
                                 onSubmit="submit"
                                 netlify
                             >
@@ -93,7 +92,7 @@ const Contact = () => {
                                 </Form.Select>
                                 <br/>
                                 <Button type="submit" className='float-end' style={blueButton}>Submit</Button>
-                            </Form>
+                            </form>
                         </Container>
                         {/* Contact info */}
                         <Container className='flex-column col-md-5 col-xs-12 align-content-center p-3 mb-5' style={yellowDiv}>
