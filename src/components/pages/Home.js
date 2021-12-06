@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+// Bootstrap Components
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
 // Imported images
 import jumbotronImg from '../../images/jumbotron.png';
@@ -78,18 +80,21 @@ const imgStyle = {
 }
 
 const Home = () => {
+
+    const { t } = useTranslation();
+
     return (
         <div style={paddingTop}>
             {/* Cover div */}
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
                     <Container className='flex-column' style={{padding:'4em 0 0 3em'}} >
-                        <h1 className='display-1' style={coverText}>Diversified Tax</h1>
-                        <h3 style={coverText}>Expert Attention</h3>
-                        <h3 style={coverText}>Accurate Calculations</h3>
-                        <h3 style={coverText}>Maximum Refund</h3>
+                        <h1 className='display-1' style={coverText}>{t('main_jumbo_title')}</h1>
+                        <h3 style={coverText}>{t('fist_jumbo_list')}</h3>
+                        <h3 style={coverText}>{t('second_jumbo_list')}</h3>
+                        <h3 style={coverText}>{t('third_jumbo_list')}</h3>
 
-                        <Button href='/new-personal-clients' className='my-3' style={yellowButton}>File Today</Button>
+                        <Button href='/new-personal-clients' className='my-3' style={yellowButton}>{t('jumbo_button')}</Button>
                     </Container>
 
                 </div>
@@ -102,8 +107,8 @@ const Home = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
-                    <h2 style={headings}>About Us</h2>
-                    <p style={paragraphs}>Diversified Tax is a full-service professional tax preparation company dedicated to help with all your personal and business needs. We provide consultations, bookkeeping, LLC and Corporation (S and C) openings, accurate tax filings and more. We are backed by years of tax knowledge and we take pride in helping hundreds of people and businesses each year. When it comes to helping our clients, we hold ourselves to the highest standard. Diversified Tax works to build a culture of industry-leading tax preparers. </p>
+                    <h2 style={headings}>{t('about_header')}</h2>
+                    <p style={paragraphs}>{t('about_content')}</p>
                 </Container>
 
             </Container>
@@ -112,8 +117,8 @@ const Home = () => {
             <Container className='row m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'5em 3em'}}>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
-                    <h2 className='text-white' style={headings}>What does Diversified Tax do?</h2>
-                    <p className='text-white' style={paragraphs}>Diversified Tax makes filing your taxes easier than ever before. What’s easier than having a professional file your taxes for you? Nothing, so you don’t have to worry about a thing. We have customized the customer benefits of the on-demand economy with convenience, security and cost savings and applied it to our tax business. We take all the hassle out of doing taxes to ensure you receive the personalized experience you desire.</p>
+                    <h2 className='text-white' style={headings}>{t('what_does_dt_header')}</h2>
+                    <p className='text-white' style={paragraphs}>{t('what_does_dt_content')}</p>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center pt-2'>
@@ -130,8 +135,8 @@ const Home = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
-                    <h2 style={headings}>We're always at your fingertips</h2>
-                    <p style={paragraphs}>We are available 24/7 to pick up any requests submitted. We are always available through phone or email and respond to all inquiries that require a follow-up in a timely manner. We make every effort to reply as soon as we can, however, please note that DT is located within the eastern time zone, therefore response times may lag during late evenings and early morning hours.</p>
+                    <h2 style={headings}>{t('fingertips_header')}</h2>
+                    <p style={paragraphs}>{t('fingertips_content')}</p>
                 </Container>
 
             </Container>
@@ -142,41 +147,41 @@ const Home = () => {
                     {/* Personal Tax Clients */}
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Personal Taxes</h3></Card.Header>
+                            <Card.Header><h3 style={headings}>{t('personal_header')}</h3></Card.Header>
                             <Card.Img variant="top" src={personalCardImg} style={{borderRadius:'5px'}}/>
                             <Card.Body>
-                                <Card.Title style={headings}>Preparation Services</Card.Title>
+                                <Card.Title style={headings}>{t('p_preparation_title')}</Card.Title>
                                 <Card.Text style={cardList}>
                                     <ul>
-                                        <li>Current and prior years</li>
-                                        <li>Federal 1040, all related schedules</li>
-                                        <li>All state returns, all related schedules</li>
-                                        <li>No upfront fees</li>
-                                        <li>Audit protection</li>
-                                        <li>Refund advances. Subject to approval</li>
+                                        <li>{t('p_first_li')}</li>
+                                        <li>{t('p_second_li')}</li>
+                                        <li>{t('p_third_li')}</li>
+                                        <li>{t('p_fourth_li')}</li>
+                                        <li>{t('p_fifth_li')}</li>
+                                        <li>{t('p_sixth_li')}</li>
                                     </ul>
                                 </Card.Text>
-                                <Button href='/personal-tax' className='my-3' style={yellowButton}>Learn More</Button>
+                                <Button href='/personal-tax' className='my-3' style={yellowButton}>{t('personal_button')}</Button>
                             </Card.Body>
                         </Card>
                     </Col>
                     {/* Business tax Clients */}
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Business Taxes</h3></Card.Header>
+                            <Card.Header><h3 style={headings}>{t('business_header')}</h3></Card.Header>
                             <Card.Img variant="top" src={businessCardImg} style={{borderRadius:'5px'}}/>
                             <Card.Body>
-                                <Card.Title style={headings}>Preparation Services</Card.Title>
+                                <Card.Title style={headings}>{t('b_preparation_title')}</Card.Title>
                                 <Card.Text style={cardList}>
                                     <ul>
-                                        <li>EIN filing and filing with corresponding state</li>
-                                        <li>Year round bookkeeping</li>
-                                        <li>Single member LLC's, sole proprietor</li>
-                                        <li>Partnerships, mutli-member LLC as partnership or corporation, all schedules </li>
-                                        <li>Corporations, C or S, all schedules</li>
+                                        <li>{t('b_first_li')}</li>
+                                        <li>{t('b_second_li')}</li>
+                                        <li>{t('b_third_li')}</li>
+                                        <li>{t('b_fourth_li')}</li>
+                                        <li>{t('b_fifth_li')}</li>
                                     </ul>
                                 </Card.Text>
-                                <Button href='/business-tax' className='my-3' style={yellowButton}>Learn More</Button>
+                                <Button href='/business-tax' className='my-3' style={yellowButton}>{t('business_button')}</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -187,32 +192,32 @@ const Home = () => {
             <Container>
                 <Container className='pt-3 my-5 text-center' style={{backgroundColor:'#e1ad00', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc'}}>
                     <Container className='text-white'>
-                        <h1 style={headings}>When you choose Diversified Tax, you choose</h1>
+                        <h1 style={headings}>{t('when_you_choose_dt')}</h1>
                         <Row className='my-5'>
                             <Col>
                             <i className="fas fa-shield-alt fa-3x" style={iconsBlue}></i>
-                            <p style={iconP}>Reliable Tax Professionals</p>
+                            <p style={iconP}>{t('first_icon')}</p>
                             </Col>
                             <Col>
                             <i className="fas fa-globe fa-3x" style={iconsBlue}></i>
-                            <p style={iconP}>Multilingual Employees</p>
+                            <p style={iconP}>{t('second_icon')}</p>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <i className="fas fa-concierge-bell fa-3x" style={iconsBlue}></i>
-                                <p style={iconP}>Personalized Customer Service</p>
+                                <p style={iconP}>{t('third_icon')}</p>
                             </Col>
                             <Col>
                                 <i className="fas fa-user-clock fa-3x" style={iconsBlue}></i>
-                                <p style={iconP}>Quick Responses</p>
+                                <p style={iconP}>{t('fourth_icon')}</p>
                             </Col>
                             <Col>
                                 <i className="fas fa-file-alt fa-3x" style={iconsBlue}></i>
-                                <p style={iconP}>IRS e-file Authorized Filer</p>
+                                <p style={iconP}>{t('fifth_icon')}</p>
                             </Col>
                         </Row>
-                        <Button href='/new-personal-clients' className='my-5' style={blueButton}>File Today</Button>
+                        <Button href='/new-personal-clients' className='my-5' style={blueButton}>{t('choose_button')}</Button>
                     </Container>
                 </Container>
             </Container>

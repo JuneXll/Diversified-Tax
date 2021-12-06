@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Container } from 'react-bootstrap';
 import Arrow from './Arrow';
 
-import './Accordion.css';
+import '../../styles/Accordion.css';
 
 const Accordion = props => {
 

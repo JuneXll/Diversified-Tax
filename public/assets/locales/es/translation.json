@@ -1,0 +1,45 @@
+{
+    "main_jumbo_title": "Diversified Tax",
+    "fist_jumbo_list": "Atención Experta",
+    "second_jumbo_list": "Cálculos Precisos",
+    "third_jumbo_list": "Reembolso Máximo",
+    "jumbo_button": "Presentar Hoy",
+
+    "about_header": "Sobre Nosotros",
+    "about_content": "Diversified Tax es una empresa de preparación de impuestos profesional de servicio completo dedicada a ayudarlo con todas sus necesidades personales y comerciales. Brindamos consultas, contabilidad, aperturas de LLC y Corporaciones (S y C), presentaciones de impuestos precisas y más. Estamos respaldados por años de conocimiento tributario y nos enorgullece ayudar a cientos de personas y empresas cada año. Cuando se trata de ayudar a nuestros clientes, nos mantenemos al más alto nivel. Diversified Tax trabaja para construir una cultura de preparadores de impuestos líderes en la industria",
+    
+    "what_does_dt_header": "Que hace Diversified Tax?",
+    "what_does_dt_content": "Diversified Tax hace que presentar sus impuestos sea más fácil que nunca. ¿Qué es más fácil que tener un profesional que presente sus impuestos por usted? Nada, para que no tengas que preocuparte por nada. Hemos personalizado los beneficios para el cliente de la economía a pedido con conveniencia, seguridad y ahorro de costos y los hemos aplicado a nuestro negocio de impuestos. Eliminamos todas las molestias de hacer impuestos para asegurarnos de que reciba la experiencia personalizada que desea.",
+
+    "fingertips_header": "Siempre estamos a tu alcance",
+    "fingertips_content": "Estamos disponibles las 24 horas del día, los 7 días de la semana para recoger cualquier solicitud enviada. Siempre estamos disponibles por teléfono o correo electrónico y respondemos a todas las consultas que requieren un seguimiento de manera oportuna. Hacemos todo lo posible para responder lo antes posible, sin embargo, tenga en cuenta que DT se encuentra dentro de la zona horaria del este, por lo que los tiempos de respuesta pueden demorarse durante las últimas horas de la noche y las primeras horas de la mañana.",
+
+    "personal_header": "Impuestos Personales",
+    "p_preparation_title": "Servicios de Preparación",
+    "p_first_li": "Años actuales y anteriores",
+    "p_second_li": "Federal 1040, todos los horarios relacionados",
+    "p_third_li": "Todas las declaraciones estatales, todos los horarios relacionados",
+    "p_fourth_li": "Sin tarifas por adelantado",
+    "p_fifth_li": "Protección de auditoría",
+    "p_sixth_li": "Reembolso de anticipos. Sujeto a aprobación",
+    "personal_button": "Aprende Más",
+
+    "business_header": "Impuestos Comerciales",
+    "b_preparation_title" : "Servicios de Preparación",
+    "b_first_li" : "Presentación de EIN y presentación ante el estado correspondiente",
+    "b_second_li"  : "Contabilidad durante todo el año",
+    "b_third_li" : "LLC de un solo miembro, propietario único",
+    "b_fourth_li" : "Sociedades, LLC de varios miembros como sociedad o corporación, todos los horarios",
+    "b_fifth_li" : "Corporaciones, C o S, todos los horarios",
+    "b_sixth_li" : "",
+    "business_button": "Aprende Más",
+
+    "when_you_choose_dt" : "Cuando elige Diversified Tax, elige",
+    "first_icon": "Profesionales de Impuestos Confiables",
+    "second_icon" : "Empleados Multilingües",
+    "third_icon" : "Atención al Cliente Personalizada",
+    "fourth_icon" : "Respuestas Rápidas",
+    "fifth_icon" : "Presentador Autorizado del IRS e-file",
+    "choose_button" : "Presentar Hoy"
+
+}
