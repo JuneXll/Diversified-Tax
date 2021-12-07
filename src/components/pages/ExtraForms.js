@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import  { Container } from 'react-bootstrap';
 import showForm from '../../showForm';
 
@@ -27,12 +28,15 @@ const paragraph = {
 }   
 
 const ExtraForms = () => {
+
+    const { t } = useTranslation();
+
     return(
         <div style={paddingTop}>
             <Container>
                 <Container style={blueDiv} className='m1'>
-                    <h1 className='text-center text-white' style={heading}>Forgot something?</h1>
-                    <p className='text-center text-white' style={paragraph}>Don't worry! Add any missing documents below.</p>
+                    <h1 className='text-center text-white' style={heading}>{t('extra_forms_header')}</h1>
+                    <p className='text-center text-white' style={paragraph}>{t('extra_forms_subtitle')}</p>
                 </Container>
             </Container>
             <Container>

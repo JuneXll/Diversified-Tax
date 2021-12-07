@@ -177,10 +177,10 @@ const Personal = () => {
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>{t('p_get_started')}</h1>
                     <LinkCard 
-                        firstLink='New Clients' 
+                        firstLink={t('link_card_new_clients')} 
                         firstHref='/new-personal-clients'
                         firstSrc={personalNewImg}
-                        secondLink='Returning Clients' 
+                        secondLink={t('link_card_returning_clients')} 
                         secondHref='/returning-personal-clients'
                         secondSrc={personalReturningImg}
                         />

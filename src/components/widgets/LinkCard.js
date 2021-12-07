@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 // Imported images
 import extraFormsImg from '../../images/extra-forms.png';
@@ -15,6 +16,8 @@ const anchorHref = {
 
 
 const LinkDiv = (props) => {
+
+    const { t } = useTranslation();
 
     return (
         <Container className='my-5'>
@@ -48,7 +51,7 @@ const LinkDiv = (props) => {
                 <Col className='col' >
                     <a href='/extra-forms' style={anchorHref}>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
-                            <Card.Header><h3 style={headings}>Submit Extra Forms</h3></Card.Header>
+                            <Card.Header><h3 style={headings}>{t('link_card_submit_extra')}</h3></Card.Header>
                                 <Card.Img 
                                     variant="top" 
                                     src={extraFormsImg} 

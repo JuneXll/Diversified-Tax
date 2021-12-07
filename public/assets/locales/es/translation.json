@@ -84,7 +84,7 @@
     "contact_us_header": "Contacta con Nosotros",
     "ig_header": "No olvides hacer un seguimiento en Instagram",
 
-    
+
     "new_p_form_header": "Gracias por unirse a nuestra familia de Diversified Tax!",
     "new_p_form_subtitle": "Complete los formularios a continuación.",
 
@@ -95,5 +95,14 @@
     "new_b_form_subtitle": "Tu negocio está en buenas manos.",
 
     "returning_b_form_header": "Bienvenido de nuevo!",
-    "returning_b_form_subtitle": "Su negocio siempre es muy apreciado."
+    "returning_b_form_subtitle": "Su negocio siempre es muy apreciado.",
+
+
+    "extra_forms_header": "Olvido algo?",
+    "extra_forms_subtitle": "No te preocupes! Agregue los documentos que faltan a continuación.",
+
+
+    "link_card_new_clients": "Nuevos Clientes",
+    "link_card_returning_clients": "Clientes que Regresan",
+    "link_card_submit_extra": "Enviar Formularios Adicionales"
 }

@@ -128,10 +128,10 @@ const Business = () => {
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>{t('b_get_started')}</h1>
                     <LinkCard 
-                        firstLink='New Clients' 
+                        firstLink={t('link_card_new_clients')} 
                         firstHref='/new-business-clients'
                         firstSrc={businessNewImg}
-                        secondLink='Returning Clients' 
+                        secondLink={t('link_card_returning_clients')} 
                         secondHref='/returning-business-clients'
                         secondSrc={businessReturningImg}/>
             </Container>
