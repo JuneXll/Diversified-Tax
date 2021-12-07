@@ -105,9 +105,10 @@
     "link_card_submit_extra": "Submit Extra Forms",
 
 
-    "contact_form_name": "Full name",
+    "contact_form_name": "Full Name",
     "contact_form_email": "Email",
     "contact_form_phone": "Phone Number",
-    "contact_form_message": "Message"
+    "contact_form_message": "Message",
+    "contact_form_submit": "Submit"
 
 }

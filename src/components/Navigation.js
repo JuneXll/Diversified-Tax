@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import i18next from 'i18next';
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logo from '../images/logo.png';
 
 const logoStyle = {
@@ -16,9 +17,23 @@ const links = {
     letterSpacing: 4
 }
 
+const languages = [
+    {
+        code: 'en',
+        name: 'English',
+        country_code: 'gb'
+    },
+    {
+        code: 'es',
+        name: 'Español',
+        country_code: 'es'
+    }
+]
+
 const Navigation = () => {
 
     const { t } = useTranslation();
+    const worldIcon = (<i className="fas fa-globe" style={{color:"#003054"}}></i>)
 
     return (
     
@@ -38,6 +53,14 @@ const Navigation = () => {
                     <Nav.Link href="/contact-us" style={links}>
                         {t('nav_contact_us')}
                     </Nav.Link>
+                    <NavDropdown title={worldIcon} style={{color:"#003054"}}>
+                        {languages.map(({code, name, country_code})=>(
+                            <NavDropdown.Item 
+                                key={country_code} 
+                                onClick={()=>i18next.changeLanguage(code)}>
+                                    {name}</NavDropdown.Item>
+                        ))}
+                    </NavDropdown>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
