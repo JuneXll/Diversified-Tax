@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const blueButton = {
     backgroundColor:'#003054',
@@ -8,8 +9,9 @@ const blueButton = {
     borderRadius: '5px'
 }
 
-
 const ContactForm = () => {
+
+    const { t } = useTranslation();
 
     // const [form, setForm] = useState({});
     // const [errors, setErrors] = useState({});
@@ -44,7 +46,7 @@ const ContactForm = () => {
                     className="form-control" 
                     id="name" 
                     name='name' 
-                    placeholder="Full Name" 
+                    placeholder={t('contact_form_name')}
                     // onChange={e => setField('name', e.target.value)}
                     required/>
             </div>
@@ -56,7 +58,7 @@ const ContactForm = () => {
                     className="form-control" 
                     id="email" 
                     name='email' 
-                    placeholder="Email" 
+                    placeholder={t('contact_form_email')}
                     // onChange={e => setField('email', e.target.value)}
                     required/>
             </div>
@@ -65,7 +67,10 @@ const ContactForm = () => {
             <div className="form-group">
                 <input 
                     type="text" 
-                    className="form-control" id="phoneNumber" name='phoneNumber' placeholder="Phone Number" 
+                    className="form-control" 
+                    id="phoneNumber" 
+                    name='phoneNumber' 
+                    placeholder={t('contact_form_phone')}
                     // onChange={e => setField('phoneNumber', e.target.value)}
                     required/>
             </div>
@@ -77,13 +82,13 @@ const ContactForm = () => {
                 id="message" 
                 name='message' 
                 rows="2" 
-                placeholder='Enter message' 
+                placeholder={t('contact_form_message')} 
                 // onChange={e => setField('message', e.target.value)}
                 required></textarea>
             </div>
             <br/>
 
-            <button type="submit" className='text-white float-end p-2' style={blueButton}>Submit</button>
+            <button type="submit" className='text-white float-end p-2' style={blueButton}>{t('contact_form_submit')}</button>
         </form>
     )
 }
