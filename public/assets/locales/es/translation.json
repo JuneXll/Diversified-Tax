@@ -104,5 +104,13 @@
 
     "link_card_new_clients": "Nuevos Clientes",
     "link_card_returning_clients": "Clientes que Regresan",
-    "link_card_submit_extra": "Formularios Adicionales"
+    "link_card_submit_extra": "Formularios Adicionales",
+
+
+    "contact_form_name": "Nombre Completo",
+    "contact_form_email": "Correo Electrónico",
+    "contact_form_phone": "Número de Teléfono",
+    "contact_form_message": "Mensaje",
+    "contact_form_submit": "Enviar"
+    
 }
