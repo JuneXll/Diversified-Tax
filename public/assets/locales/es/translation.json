@@ -1,4 +1,9 @@
 {
+    "nav_personal": "Impuestos Personales",
+    "nav_business": "Impuestos Comerciales",
+    "nav_contact_us": "Contacta con Nosotros",
+
+
     "main_jumbo_title": "Diversified Tax",
     "fist_jumbo_list": "Atención Experta",
     "second_jumbo_list": "Cálculos Precisos",
@@ -42,6 +47,7 @@
     "fifth_icon" : "Presentador Autorizado del IRS e-file",
     "choose_button" : "Presentar Hoy",
 
+
     "p_page_cover": "Impuestos Personales",
     "p_first_header": "Seguro y",
     "p_second_header": "Servicio Confiable",
@@ -58,6 +64,7 @@
     
     "p_get_started": "Empiece hoy!",
 
+
     "b_page_header": "Su negocio está seguro con nosotros",
 
     "b_tax_plan": "Planificación Fiscal",
@@ -71,6 +78,22 @@
     "outside_fourth_li": "Asistencia de impuestos de ocupación",
     "outside_fifth_li": "Servicios Notariales",
 
-    "b_get_started": "Empiece hoy!"
+    "b_get_started": "Empiece hoy!",
 
+
+    "contact_us_header": "Contacta con Nosotros",
+    "ig_header": "No olvides hacer un seguimiento en Instagram",
+
+    
+    "new_p_form_header": "Gracias por unirse a nuestra familia de Diversified Tax!",
+    "new_p_form_subtitle": "Complete los formularios a continuación.",
+
+    "returning_p_form_header": "Bienvenido de nuevo!",
+    "returning_p_form_subtitle": "Su negocio siempre es muy apreciado.",
+
+    "new_b_form_header": "Gracias por unirse a nuestra familia de Diversified Tax!",
+    "new_b_form_subtitle": "Tu negocio está en buenas manos.",
+
+    "returning_b_form_header": "Bienvenido de nuevo!",
+    "returning_b_form_subtitle": "Su negocio siempre es muy apreciado."
 }

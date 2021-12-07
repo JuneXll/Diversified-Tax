@@ -3,6 +3,7 @@
     "nav_business": "Business Taxes",
     "nav_contact_us": "Contact Us",
 
+
     "main_jumbo_title": "Diversified Tax",
     "fist_jumbo_list": "Expert Attention",
     "second_jumbo_list": "Accurate Calculations",
@@ -45,6 +46,7 @@
     "fifth_icon" : "IRS e-file Authorized Filer",
     "choose_button" : "File Today",
 
+
     "p_page_cover": "Personal Taxes",
     "p_first_header": "Safe and",
     "p_second_header": "Reliable Service",
@@ -58,8 +60,8 @@
 
     "not_sure": "Not sure if you are ready to file?",
     "tax_checklist": "Tax Checklist",
-    
     "p_get_started": "Get started today!",
+
 
     "b_page_header": "Your Business is safe with us",
 
@@ -74,10 +76,23 @@
     "outside_fourth_li": "Occupancy tax assistance",
     "outside_fifth_li": "Notary Services",
 
-    "b_get_started": "Get started today!"
+    "b_get_started": "Get started today!",
 
 
+    "contact_us_header": "Contact Us",
+    "ig_header": "Don't forget to follow up on Instagram",
 
+    "new_p_form_header": "Thanks for joining our Diversified Tax family!",
+    "new_p_form_subtitle": "Fill out the forms below.",
+
+    "returning_p_form_header": "Welcome back!",
+    "returning_p_form_subtitle": "Your business is always greatly appreciated.",
+
+    "new_b_form_header": "Thanks for joining our Diversified Tax family!",
+    "new_b_form_subtitle": "Your business is in great hands.",
+
+    "returning_b_form_header": "Welcome back!",
+    "returning_b_form_subtitle": "Your business is always greatly appreciated."
 
 
 }

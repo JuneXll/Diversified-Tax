@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container } from 'react-bootstrap';
 import showForm from '../../showForm';
 
@@ -27,12 +28,15 @@ const paragraph = {
 }
 
 const ReturningPersonal = () => {
+
+    const { t } = useTranslation();
+     
     return(
         <div style={paddingTop}>
             <Container>
                 <Container style={blueDiv} className='m1'>
-                    <h1 className='text-center text-white' style={heading}>Welcome back!</h1>
-                    <p className='text-center text-white' style={paragraph}>Your business is always greatly appreciated.</p>
+                    <h1 className='text-center text-white' style={heading}>{t('returning_p_form_header')}</h1>
+                    <p className='text-center text-white' style={paragraph}>{t('returning_p_form_subtitle')}</p>
                 </Container>
             </Container>
             <Container>
