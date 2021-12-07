@@ -175,7 +175,7 @@ const Personal = () => {
 
             {/* Links for getting started */}
             <Container className='my-5'>
-                <h1 className='display-3 text-center' style={headings}>{t('get_started')}</h1>
+                <h1 className='display-3 text-center' style={headings}>{t('p_get_started')}</h1>
                     <LinkCard 
                         firstLink='New Clients' 
                         firstHref='/new-personal-clients'

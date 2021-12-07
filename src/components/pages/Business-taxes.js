@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 //Imported Images
 import businessHeaderImg from '../../images/business-header.png';
@@ -81,12 +82,15 @@ const rightColumn = {
 
 
 const Business = () => {
+
+    const { t } = useTranslation();
+
     return (
 
         <div style={paddingTop}>
             {/* Header section */}
             <div style={blueDiv}>
-                <h1 className='text-white text-center pt-5 m-5' style={coverHeading}>Your Business is safe with us</h1>
+                <h1 className='text-white text-center pt-5 m-5' style={coverHeading}>{t('b_page_header')}</h1>
             </div>
             <div className='position-relative'>
                 <div className='position-absolute top-0 start-50 translate-middle'style={picDiv}>
@@ -96,8 +100,8 @@ const Business = () => {
 
             {/* Tax Planning Section */}
             <Container style={{marginTop:'35vh', marginBottom:'15vh'}}>
-                <h1 className='text-center' style={headings}>Tax Planning</h1>
-                <p className='m-5' style={paragraphs}>Tax planning is critical to self-employed and small business taxpayers. It is the first step to ensuring you are paying the lowest amount of legal tax. There are many ways to structure a business to lower the overall tax rates. Entity choice, accounting method, financing structure, benefit plans are all looked at from a tax optimization perspective. The plan we create is reviewed against your actual results going forward and adjustments are suggested as they become necessary. </p>
+                <h1 className='text-center' style={headings}>{t('b_tax_plan')}</h1>
+                <p className='m-5' style={paragraphs}>{t('b_tax_plan_content')}</p>
             </Container>
 
             {/* Outside Services Section */}
@@ -107,14 +111,14 @@ const Business = () => {
                         <Image fluid className='position-relative' src={outsideServicesImg} style={leftColumnPic}/>
                     </Col>
                     <Col className='col-lg-6 col-md-12 col-sm-12' style={rightColumn}>
-                        <h2 className='text-white' style={serviceText}>Can I request services outside of income taxes?</h2>
-                        <p className='text-white' style={paragraphs}>Currently, the only services that can be provided by DT are identified below. However, if you have an open job, you can reach out to us with any requests and we'll see what we can do to help you out. We are able to help you with the following services or even some that may not be listed here:</p>
+                        <h2 className='text-white' style={serviceText}>{t('outside_services')}</h2>
+                        <p className='text-white' style={paragraphs}>{t('outside_content')}</p>
                             <ul style={paragraphs} className='text-white'>
-                                <li>Bookkeeping</li>
-                                <li>Incorporation/Organization services</li>
-                                <li>Estimates payment assistance</li>
-                                <li>Occupancy tax assistance</li>
-                                <li>Notary Services</li>
+                                <li>{t('outside_first_li')}</li>
+                                <li>{t('outside_second_li')}</li>
+                                <li>{t('outside_third_li')}</li>
+                                <li>{t('outside_fourth_li')}</li>
+                                <li>{t('outside_fifth_li')}</li>
                             </ul>
                     </Col>
                 </Row>
@@ -122,7 +126,7 @@ const Business = () => {
 
             {/* Links for getting started */}
             <Container className='my-5'>
-                <h1 className='display-3 text-center' style={headings}>Get started today!</h1>
+                <h1 className='display-3 text-center' style={headings}>{t('b_get_started')}</h1>
                     <LinkCard 
                         firstLink='New Clients' 
                         firstHref='/new-business-clients'

@@ -1,4 +1,8 @@
 {
+    "nav_personal": "Personal Taxes",
+    "nav_business": "Business Taxes",
+    "nav_contact_us": "Contact Us",
+
     "main_jumbo_title": "Diversified Tax",
     "fist_jumbo_list": "Expert Attention",
     "second_jumbo_list": "Accurate Calculations",
@@ -55,7 +59,23 @@
     "not_sure": "Not sure if you are ready to file?",
     "tax_checklist": "Tax Checklist",
     
-    "get_started": "Get started today!"
+    "p_get_started": "Get started today!",
+
+    "b_page_header": "Your Business is safe with us",
+
+    "b_tax_plan": "Tax Planning",
+    "b_tax_plan_content": "Tax planning is critical to self-employed and small business taxpayers. It is the first step to ensuring you are paying the lowest amount of legal tax. There are many ways to structure a business to lower the overall tax rates. Entity choice, accounting method, financing structure, benefit plans are all looked at from a tax optimization perspective. The plan we create is reviewed against your actual results going forward and adjustments are suggested as they become necessary.",
+
+    "outside_services": "Can I request services outside of income taxes?",
+    "outside_content": "Currently, the only services that can be provided by DT are identified below. However, if you have an open job, you can reach out to us with any requests and we'll see what we can do to help you out. We are able to help you with the following services or even some that may not be listed here:",
+    "outside_first_li": "Bookkeeping",
+    "outside_second_li": "Incorporation/Organization services",
+    "outside_third_li": "Estimates payment assistance",
+    "outside_fourth_li": "Occupancy tax assistance",
+    "outside_fifth_li": "Notary Services",
+
+    "b_get_started": "Get started today!"
+
 
 
 

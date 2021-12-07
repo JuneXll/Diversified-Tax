@@ -56,6 +56,21 @@
     "not_sure": "No estás seguro de si estás listo para presentar?",
     "tax_checklist": "Lista de Verificación de Impuestos",
     
-    "get_started": "Empiece hoy!"
+    "p_get_started": "Empiece hoy!",
+
+    "b_page_header": "Su negocio está seguro con nosotros",
+
+    "b_tax_plan": "Planificación Fiscal",
+    "b_tax_plan_content": "La planificación fiscal es fundamental para los contribuyentes que trabajan por cuenta propia y las pequeñas empresas. Es el primer paso para asegurarse de que está pagando la menor cantidad de impuestos legales. Hay muchas formas de estructurar una empresa para reducir las tasas impositivas generales. La elección de la entidad, el método contable, la estructura de financiación y los planes de beneficios se analizan desde una perspectiva de optimización fiscal. El plan que creamos se revisa con sus resultados reales en el futuro y se sugieren ajustes a medida que sean necesarios.",
+
+    "outside_services": "Puedo solicitar servicios fuera del impuesto sobre la renta?",
+    "outside_content": "Actualmente, los únicos servicios que puede proporcionar DT se identifican a continuación. Sin embargo, si tiene un trabajo disponible, puede comunicarse con nosotros con cualquier solicitud y veremos qué podemos hacer para ayudarlo. Podemos ayudarlo con los siguientes servicios o incluso con algunos que pueden no estar enumerados aquí:",
+    "outside_first_li": "Teneduría de libros",
+    "outside_second_li": "Servicios de Incorporación / Organización",
+    "outside_third_li": "Asistencia de pago de estimaciones",
+    "outside_fourth_li": "Asistencia de impuestos de ocupación",
+    "outside_fifth_li": "Servicios Notariales",
+
+    "b_get_started": "Empiece hoy!"
 
 }

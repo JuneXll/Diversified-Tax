@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import logo from '../images/logo.png';
 
@@ -16,6 +17,9 @@ const links = {
 }
 
 const Navigation = () => {
+
+    const { t } = useTranslation();
+
     return (
     
         <Navbar expand='md' fixed='top' style={{padding:10, backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
@@ -26,13 +30,13 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls='navbarScroll'/>
                 <Navbar.Collapse className='justify-content-around'>
                     <Nav.Link href="/personal-tax" style={links}>
-                        Personal Taxes
+                        {t('nav_personal')}
                     </Nav.Link>
                     <Nav.Link href="/business-tax" style={links}>
-                        Business Taxes
+                        {t('nav_business')}
                     </Nav.Link>
                     <Nav.Link href="/contact-us" style={links}>
-                        Contact Us
+                        {t('nav_contact_us')}
                     </Nav.Link>
                 </Navbar.Collapse>
             </Container>
