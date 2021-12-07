@@ -40,6 +40,22 @@
     "third_icon" : "Atención al Cliente Personalizada",
     "fourth_icon" : "Respuestas Rápidas",
     "fifth_icon" : "Presentador Autorizado del IRS e-file",
-    "choose_button" : "Presentar Hoy"
+    "choose_button" : "Presentar Hoy",
+
+    "p_page_cover": "Impuestos Personales",
+    "p_first_header": "Seguro y",
+    "p_second_header": "Servicio Confiable",
+    "p_cover_button": "Presentar Hoy",
+
+    "p_income": "Ingresos de 1099 / W-2/1098, etc.",
+    "p_income_content": "Diversified Tax funciona con todos los formularios de impuestos comunes: 1099, W-2 y cualquier otro formulario de impuesto sobre la renta que haya recibido este año. Todos estos documentos deben cargarse, según corresponda, para que podamos completar con precisión su declaración de impuestos. Proporcionar estos documentos es tan simple como tomar una foto y cargarla en el enlace proporcionado por su agente fiscal. También aceptamos PDF y documentos de Excel.",
+
+    "how_do_i_know": "Cómo sabes lo que necesito?",
+    "how_do_content": "Le pedimos que nos proporcione una copia de su declaración de impuestos del año anterior para que podamos tener una línea de base con la que trabajar. A través de la discusión, debe informarnos de cualquier actividad nueva que deba modificarse en el año en curso. También podemos discutir elementos que pueden haberse perdido accidentalmente en años anteriores, así como opciones para solucionar el problema. Una vez que haya utilizado DT, la información relevante se guardará en su perfil.",
+
+    "not_sure": "No estás seguro de si estás listo para presentar?",
+    "tax_checklist": "Lista de Verificación de Impuestos",
+    
+    "get_started": "Empiece hoy!"
 
 }
