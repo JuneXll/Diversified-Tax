@@ -39,6 +39,25 @@
     "third_icon" : "Personalized Customer Service",
     "fourth_icon" : "Quick Responses",
     "fifth_icon" : "IRS e-file Authorized Filer",
-    "choose_button" : "File Today"
+    "choose_button" : "File Today",
+
+    "p_page_cover": "Personal Taxes",
+    "p_first_header": "Safe and",
+    "p_second_header": "Reliable Service",
+    "p_cover_button": "File Today",
+
+    "p_income": "Income from 1099/W-2/1098 etc.",
+    "p_income_content": "Diversified Tax works with all the common tax forms: 1099s, W-2s, and any other income tax form you may have received this year. All these documents should be uploaded, as applicable, for us to accurately complete your tax return. Providing these documents is as simple as snapping a photo and uploading it to the link provided by your tax agent. We also accept PDFs and excel documents.",
+
+    "how_do_i_know": "How do you know what I need?",
+    "how_do_content": "We ask that you provide us with a copy of your prior year tax return so that we may have a baseline to work with. Through discussion, you should make us aware of any new activity that needs to be modified in the current year. We may also discuss items that may have accidentally been missed in prior years as well as options to remedy the problem. Once you've used DT, relevant information will be saved within your profile.",
+
+    "not_sure": "Not sure if you are ready to file?",
+    "tax_checklist": "Tax Checklist",
+    
+    "get_started": "Get started today!"
+
+
+
 
 }
