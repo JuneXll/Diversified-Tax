@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import cookie from 'js-cookie';
+// import cookie from 'js-cookie';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logo from '../images/logo.png';
 
@@ -32,12 +32,12 @@ const languages = [
 ]
 
 const Navigation = () => {
-
-    const currentLanguageCode = cookie.get(i18next) || 'en';
-    const currentLanguage = languages.find(l => l.code === currentLanguageCode);
-
-    const { t } = useTranslation();
+    //World icon for language dropdown
     const worldIcon = (<i className="fas fa-globe" style={{color:"#003054"}}></i>)
+
+    //Set language of page when use clicks on language options
+    const [lang, setLang] = useState('English');
+    const { t } = useTranslation();
 
     return (
     
@@ -61,8 +61,11 @@ const Navigation = () => {
                         {languages.map(({code, name, country_code})=>(
                             <NavDropdown.Item 
                                 key={country_code} 
-                                onClick={() =>i18next.changeLanguage(code)}
-                                disabled={code === currentLanguage}>
+                                onClick={(e) =>{
+                                    i18next.changeLanguage(code)
+                                    setLang(e.currentTarget.innerHTML)}}
+                                disabled={name === lang}
+                                >
                                     {name}</NavDropdown.Item>
                         ))}
                     </NavDropdown>
