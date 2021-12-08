@@ -2,7 +2,7 @@ export const personalFaq = [
     {
         id: 1,
         question: 'How long until I receive my tax refund?',
-        answer: 'After your return has been filed, it may take some time before your refund is received. For returns that have been e-filed with direct deposit information, the standard transit time is ten to twenty-one business days. The toll-free phone number to check your Federal refund status is 1-800-829-1954. Automatic service is available every day of the week, 24 hours per day or you can go here and check via the Internet. https://www.irs.gov/refunds'
+        answer: 'After your return has been filed, it may take some time before your refund is received. For returns that have been e-filed with direct deposit information, the standard transit time is ten to twenty-one business days. The toll-free phone number to check your Federal refund status is 1-800-829-1954. Automatic service is available every day of the week, 24 hours per day or you can check via the Internet at https://www.irs.gov/refunds'
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const personalFaq = [
         id: 6,
         question: `What if I can't afford to pay my tax liability?`,
         answer: `As long as you owe $50,000 or less and have already filed your return, you may apply for an installment plan with the IRS. 
-        If you owe more than $50,000 but less than $100,000, you may apply for a short-term agreement, but note the following: You must pay higher installments, the IRS will require proof of your financial situation, a mandatory tax lien will apply on your property and your Credit report may take a hit`
+        If you owe more than $50,000 but less than $100,000, you may apply for a short-term agreement, but note the following: You must pay higher installments, the IRS will require proof of your financial situation, a mandatory tax lien will apply on your property and your Credit report may take a hit.`
     }
 
 ]

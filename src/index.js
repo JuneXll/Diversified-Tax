@@ -7,8 +7,6 @@ import HttpApi from 'i18next-http-backend';
 
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Spinner } from 'react-bootstrap';
-
 
 i18n
   .use(initReactI18next)//passes i18n down to react-i18next
@@ -29,10 +27,8 @@ i18n
   const loadingMarkup = (
     <div className='py-4 text-center'>
       <h2 className='display-2'>
-        Loading
-        <Spinner animation="border" role="status" variant="warning">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner>
+        Loading...
+        <span className="visually-hidden">Loading...</span>
       </h2>
     </div>
 

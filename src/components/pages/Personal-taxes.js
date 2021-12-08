@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
+import i18next from 'i18next';
+import cookie from 'js-cookie';
 //Imported Images
 import personalHeaderImg from '../../images/personal-header.png';
 import formImg from '../../images/forms.png';
@@ -102,6 +104,8 @@ const dlChecklist = (e) => {
 
 const Personal = () => {
 
+    const cookies = cookie.get(i18next);
+    console.log(cookies)
     const { t } = useTranslation();
 
     return (

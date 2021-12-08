@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-// import cookie from 'js-cookie';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logo from '../images/logo.png';
 
