@@ -1,8 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
-import i18next from 'i18next';
-import cookie from 'js-cookie';
 //Imported Images
 import personalHeaderImg from '../../images/personal-header.png';
 import formImg from '../../images/forms.png';
@@ -104,8 +102,6 @@ const dlChecklist = (e) => {
 
 const Personal = () => {
 
-    const cookies = cookie.get(i18next);
-    console.log(cookies)
     const { t } = useTranslation();
 
     return (
@@ -114,7 +110,7 @@ const Personal = () => {
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
                     <Container className='flex-column p-5 text-white'>
-                        <h1 className='display-4' style={coverHeading}>{t('p_page_cover')}</h1>
+                        <h1 className='display-4' id='p-cover-heading' style={coverHeading}>{t('p_page_cover')}</h1>
                         <br/>
                         <h5 style={coverP}>{t('p_first_header')}</h5>
                         <h5 style={coverP}>{t('p_second_header')}</h5>
@@ -191,10 +187,12 @@ const Personal = () => {
             </Container>
             
             {/* FAQ component*/}
-            <Faq faq='personal'/>
+            <Faq faq='personal' />
 
         </div>
     )
 }
 
 export default Personal;
+
+// lang={document.getElementById('p-cover-heading').textContent === "Personal Taxes" ? console.log('en') : console.log('es')}
