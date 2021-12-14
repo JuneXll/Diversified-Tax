@@ -5,6 +5,9 @@ import { personalFaq } from '../../questionData/personalFaq';
 import { businessFaq } from '../../questionData/businessFaq';
 //import accordion effect
 import Accordion from './Accordion';
+//Js cookie import
+import Cookie from 'js-cookie';
+import i18next from 'i18next';
 
 const headings = {
     lineHeight: '2',
@@ -21,6 +24,9 @@ const questionDiv = {
 }
 
 const Faq = (props) => {
+
+    const cookie = Cookie.get(i18next);
+    console.log(cookie);
 
     const renderQuestion = (question) => {
         return(

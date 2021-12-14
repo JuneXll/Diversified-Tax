@@ -41,6 +41,7 @@ i18n
     color: "#003054"
   }
 
+  //Loading screen markup and animation
   const loadingMarkup = (
     <div className="loading d-column w-100 text-center">
       <div className="balls d-flex justify-content-center">
