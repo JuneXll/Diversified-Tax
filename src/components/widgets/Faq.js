@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container} from 'react-bootstrap';
 //Import questions 
 import { personalFaq } from '../../questionData/personalFaq';
@@ -25,8 +25,12 @@ const questionDiv = {
 
 const Faq = (props) => {
 
-    const cookie = Cookie.get(i18next);
-    console.log(cookie);
+    const cookie = Cookie.get(i18next) || 'en';
+
+    useEffect(()=>{
+        console.log(cookie);
+    })
+    
 
     const renderQuestion = (question) => {
         return(
