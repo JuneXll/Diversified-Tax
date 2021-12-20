@@ -35,12 +35,12 @@ const yellowDiv = {
 
 const showIG = () => {
     const igFeed = document.getElementById("ig-feed");
-    const wrapper = document.getElementById("poweredbywrapper");
+    const wrapper = document.getElementByClass("poweredbywrapper");
 
     if(window.location.href === 'https://diversified-tax.netlify.app/contact-us') {
         if(igFeed.style.display === 'none') {
             igFeed.style.display = 'block';
-            wrapper.style.display = 'none';
+            wrapper.setAttribute('style','display:none');
         } else {
             igFeed.style.display = 'none';
         }
