@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
 //Imported Images
@@ -21,10 +21,9 @@ const paddingTop = {
 //Jumbotron image styles
 const jumbotronCover = {
     backgroundImage: `url(${personalHeaderImg})`,
-    backgroundSize: 'contain',
+    backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    height: '55vh',
-    backgroundColor: '#003054',
+    height: '60vh',
     borderRadius: '5px',
     boxShadow: '5px 5px 5px #ccc'
   }
@@ -101,14 +100,23 @@ const dlChecklist = (e) => {
 }
 
 const Personal = () => {
+    //Sets state for smaller devices
+    const [matches, setMatches] = useState(window.matchMedia("(min-width:400px)").matches)
+    //Updates when change occurs
+    useEffect(()=>{
+        window
+        .matchMedia("(min-width:400px)")
+        .addEventListener('change', e => setMatches(e.matches));
+    }, []);
 
+    //Sets translations for the page
     const { t } = useTranslation();
 
     return (
         <div style={paddingTop}>
             {/* Jumbotron Section */}
-            <div>
-                <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
+            <div className={"d-flex justify-content-center"}>
+                <div className="jumbotron jumbotron-fluid col-xl-10 col-md-12 col-sm-12 col-xs-12 mb-3" style={jumbotronCover}>
                     <Container className='flex-column p-5 text-white'>
                         <h1 className='display-4' id='p-cover-heading' style={coverHeading}>{t('p_page_cover')}</h1>
                         <br/>
@@ -155,20 +163,22 @@ const Personal = () => {
                     <h2 className='text-white display-3' style={headings}>{t('not_sure')}</h2>
                     <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>{t('tax_checklist')}</Button>
                 </Container>
-                {/* Container for checklist images */}
+                {/* Container for checklist images, is hidden on smaller devices */}
                 <Container className='col-lg-6 col-xs-12 text-center'>
-                    <Container className='p-5 m-1'>
+                {matches && (
+                    <Container className='mt-4'>
                         <Image 
-                            className='col-10' 
+                            className='col-lg-10' 
                             src={checklist2} 
                             style={checklist2Style} alt='diversified-tax-checklist2'
                             onClick={dlChecklist}/>
-                        <Image 
-                            className='col-10' 
+                        <Image
+                            className='col-lg-10' 
                             src={checklist1} 
                             style={checklist1Style} alt='diversified-tax-checklist1'
                             onClick={dlChecklist}/>
                     </Container>
+                    )}
                 </Container>
                 <Container id='linksCard'></Container>
             </Container>
@@ -195,4 +205,3 @@ const Personal = () => {
 
 export default Personal;
 
-// lang={document.getElementById('p-cover-heading').textContent === "Personal Taxes" ? console.log('en') : console.log('es')}

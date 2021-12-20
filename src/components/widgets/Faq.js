@@ -29,7 +29,7 @@ const Faq = (props) => {
 
     useEffect(()=>{
         console.log(cookie);
-    })
+    },[cookie])
     
 
     const renderQuestion = (question) => {
