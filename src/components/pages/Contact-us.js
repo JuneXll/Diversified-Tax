@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container } from 'react-bootstrap';
-import Instagram from '../widgets/Instagram';
 import ContactForm from '../widgets/ContactForm';
 
 //Header stylings 
@@ -34,6 +33,19 @@ const yellowDiv = {
     borderRadius: 5,
 }
 
+const showIG = () => {
+    const igFeed = document.getElementById("ig-feed");
+
+    if(window.location.href === 'https://diversified-tax.netlify.app/contact-us') {
+        if(igFeed.style.display === 'none') {
+            igFeed.style.display = 'block';
+        } else {
+            igFeed.style.display = 'none';
+        }
+    }
+
+}
+
 const Contact = () => {
     
     const { t } = useTranslation();
@@ -55,8 +67,8 @@ const Contact = () => {
                         {/* Contact info */}
                         <Container className='flex-column col-md-5 col-xs-12 align-content-center p-3 mb-5' style={yellowDiv}>
                             <h3 style={blueHeader}>Diversified Tax</h3>
-                            <p style={bodyFont}>6532 Miami Lakes Drive,</p>
-                            <p style={bodyFont}>Miami Lakes, Florida 33014</p>
+                            <p style={bodyFont}>7900 Oak Lane, ST 400</p>
+                            <p style={bodyFont}>Miami Lakes, Florida 33016</p>
                             <br/>
                             <h3 style={blueHeader}>Ricardo Pachon</h3>
                             <p style={bodyFont}>(305)-527-5133</p>
@@ -73,7 +85,7 @@ const Contact = () => {
                     <h1 className='text-center text-black' style={header}>{t('ig_header')}</h1> 
                 </Container>
 
-                <Instagram />
+                {showIG()}
             </Container>
         </div>
     )
