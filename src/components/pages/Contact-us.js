@@ -40,7 +40,7 @@ const showIG = () => {
     if(window.location.href === 'https://diversified-tax.netlify.app/contact-us') {
         if(igFeed.style.display === 'none') {
             igFeed.style.display = 'block';
-            wrapper.setAttribute('style','display:none');
+            wrapper.style.display = 'none';
         } else {
             igFeed.style.display = 'none';
         }
