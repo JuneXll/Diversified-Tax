@@ -1,24 +1,10 @@
 import React from 'react';
-import InstagramEmbed from 'react-instagram-embed';
 
 const Instagram = () => {
     return(
-        <div>
-            <InstagramEmbed
-            url='https://www.instagram.com/p/CWYhvlZLNL_/'
-            clientAccessToken='416926586587247|e84510f6029802084a4d5885ba92f0d5'
-            maxWidth={320}
-            hideCaption={false}
-            containerTagName='div'
-            protocol=''
-            injectScript
-            onLoading={() => {}}
-            onSuccess={() => {}}
-            onAfterRender={() => {}}
-            onFailure={() => {}}
-            />
-            {/* <h1>IG Feed here</h1> */}
-        </div>
+        <div className="container" id="ig-feed">
+        <div className="tagembed-container" style={{ width:"100%",height:"100%",overflow: "auto"}}><div className="tagembed-socialwall" data-wall-id="20025" view-url="https://widget.tagembed.com/20025?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
+      </div>
     )
 }
 
