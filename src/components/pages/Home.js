@@ -33,14 +33,14 @@ const coverText = {
 //Button styles
 const yellowButton = {
     backgroundColor:'#e1ad00',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: '4px',
     border: 'none'
 }
 
 const blueButton = {
     backgroundColor:'#003054',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: '4px',
     border: 'none'
 }
@@ -61,7 +61,7 @@ const cardList = {
 const headings = {
     lineHeight: '2',
     letterSpacing: '4px',
-    fontFamily: 'Bebas Neue, cursive'
+    fontFamily: 'Bebas Neue, tahoma'
 }
 //Icon styles
 const iconsBlue = {

@@ -38,13 +38,13 @@ const coverP = {
 const coverHeading = {
     lineHeight: '2',
     letterSpacing: '4px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     textAlign: 'right'
 }
 //Button styles
 const yellowButton = {
     backgroundColor:'#e1ad00',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: '4px',
     border: 'none',
     textAlign: 'align-right'
@@ -52,7 +52,7 @@ const yellowButton = {
 
 const blueButton = {
     backgroundColor:'#003054',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: '4px',
     border: 'none'
 }
@@ -68,7 +68,7 @@ const paragraphs = {
 const headings = {
     lineHeight: '2',
     letterSpacing: '4px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
 }
 //Checklist image styles
 const checklist1Style = {

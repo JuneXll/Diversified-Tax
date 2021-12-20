@@ -7,7 +7,7 @@ import extraFormsImg from '../../images/extra-forms.png';
 const headings = {
     lineHeight: '2',
     letterSpacing: '4px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
 }
 
 const anchorHref = {

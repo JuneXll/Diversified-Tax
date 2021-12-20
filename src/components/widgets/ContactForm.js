@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const blueButton = {
     backgroundColor:'#003054',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: '4px',
     border: 'none',
     borderRadius: '5px'

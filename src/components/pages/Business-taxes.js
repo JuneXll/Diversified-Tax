@@ -39,7 +39,7 @@ const img = {
 const coverHeading = {
     lineHeight: '2',
     letterSpacing: '6px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     textAlign: 'right',
     textDecoration: 'underline'
 }
@@ -47,12 +47,12 @@ const coverHeading = {
 const headings = {
     lineHeight: '2',
     letterSpacing: '4px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
 }
 
 const serviceText = {
     letterSpacing: '2px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
 }
 
 const paragraphs = {

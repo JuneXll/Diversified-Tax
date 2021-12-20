@@ -12,7 +12,7 @@ import i18next from 'i18next';
 const headings = {
     lineHeight: '2',
     letterSpacing: '10px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
     color: 'white'
 }
 

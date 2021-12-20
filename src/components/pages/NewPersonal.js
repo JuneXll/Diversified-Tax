@@ -18,7 +18,7 @@ const blueDiv = {
 const heading = {
     lineHeight: '2',
     letterSpacing: '8px',
-    fontFamily: 'Bebas Neue, cursive',
+    fontFamily: 'Bebas Neue, tahoma',
 }
 
 const paragraph = {
