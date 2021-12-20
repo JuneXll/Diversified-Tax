@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 //Imported Images
@@ -82,7 +82,16 @@ const rightColumn = {
 
 
 const Business = () => {
+    //Sets state for smaller devices
+    const [matches, setMatches] = useState(window.matchMedia("(min-width:580px)").matches)
+    //Updates when change occurs
+    useEffect(()=>{
+        window
+        .matchMedia("(min-width:580px)")
+        .addEventListener('change', e => setMatches(e.matches));
+    }, []);
 
+    //Sets translations for the page
     const { t } = useTranslation();
 
     return (
@@ -107,9 +116,11 @@ const Business = () => {
             {/* Outside Services Section */}
             <Container>
                 <Row>
+                    {matches && (
                     <Col className='col-lg-6 col-md-12 col-sm-12' style={leftColumn}>
                         <Image fluid className='position-relative' src={outsideServicesImg} style={leftColumnPic}/>
                     </Col>
+                    )}
                     <Col className='col-lg-6 col-md-12 col-sm-12' style={rightColumn}>
                         <h2 className='text-white' style={serviceText}>{t('outside_services')}</h2>
                         <p className='text-white' style={paragraphs}>{t('outside_content')}</p>
