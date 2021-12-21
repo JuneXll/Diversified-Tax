@@ -33,6 +33,8 @@ const yellowDiv = {
     borderRadius: 5,
 }
 
+
+//Function showing ig feed
 const showIG = () => {
     const igFeed = document.getElementById("ig-feed");
 
@@ -47,8 +49,9 @@ const showIG = () => {
 }
 
 const Contact = () => {
-    
+    //Translations for the page
     const { t } = useTranslation();
+    
     return (
         <div style={{paddingTop: 100}}>
             <div style={blueDiv}>

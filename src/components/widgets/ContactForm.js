@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const blueButton = {
@@ -13,78 +13,83 @@ const ContactForm = () => {
 
     const { t } = useTranslation();
 
-    // const [form, setForm] = useState({});
-    // const [errors, setErrors] = useState({});
+    (function () {
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
 
-    // const setField = (field, value) => {
-    //     setForm({
-    //         ...form,
-    //         [field]:value
-    //     })
-    // }
-
-    // const findFormError = () => {
-    //     const {name, email, phoneNumber, message} = form;
-    //     const newError = {};
-    //     //name errors
-    //     if( !name || name === ''){
-    //         newErrors.name = 'Field cannot be blank.'
-    //     } else if (name.length > 30){
-    //         newErrors.name = "Name is too long."
-    //     }
-    //     //email errors
-        
-    // }
 
     return(
-        <form name="contact v1" method="post" className='mt-2'>
+        <form name="contact v1" method="post" className='mt-2 needs-validation' noValidate>
             <input type="hidden" name="form-name" value="contact" />
       
-            <div className="form-group">
+            <div className="form-group has-validation">
                 <input 
                     type="text" 
                     className="form-control" 
                     id="name" 
                     name='name' 
                     placeholder={t('contact_form_name')}
-                    // onChange={e => setField('name', e.target.value)}
                     required/>
+                    <div class="invalid-feedback">
+                        Please enter full name.
+                    </div>
             </div>
             <br/>
 
-            <div className="form-group">
+            <div className="form-group has-validation">
                 <input 
                     type="email"
                     className="form-control" 
                     id="email" 
                     name='email' 
                     placeholder={t('contact_form_email')}
-                    // onChange={e => setField('email', e.target.value)}
                     required/>
+                    <div class="invalid-feedback">
+                        Please enter valid email.
+                    </div>
             </div>
             <br/>
 
-            <div className="form-group">
+            <div className="form-group has-validation">
                 <input 
                     type="text" 
                     className="form-control" 
                     id="phoneNumber" 
                     name='phoneNumber' 
                     placeholder={t('contact_form_phone')}
-                    // onChange={e => setField('phoneNumber', e.target.value)}
                     required/>
+                    <div class="invalid-feedback">
+                        Please enter phone number.
+                    </div>
             </div>
             <br/>
 
-            <div class="form-group">
+            <div class="form-group has-validation">
                 <textarea 
-                className="form-control" 
-                id="message" 
-                name='message' 
-                rows="2" 
-                placeholder={t('contact_form_message')} 
-                // onChange={e => setField('message', e.target.value)}
-                required></textarea>
+                    className="form-control" 
+                    id="message" 
+                    name='message' 
+                    rows="2" 
+                    placeholder={t('contact_form_message')} 
+                    required></textarea>
+                    <div class="invalid-feedback">
+                        Please write a message.
+                    </div>
             </div>
             <br/>
 
