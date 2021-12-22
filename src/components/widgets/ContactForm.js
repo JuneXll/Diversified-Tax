@@ -53,11 +53,12 @@ const ContactForm = () => {
     const onSubmit = (data, e) => {
         e.preventDefault();
         // const form = e.target;
+        console.log(data);
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ 
-                "form-name": "contact",
+                "form-name": e.target.getAttribute("name"),
                 ...data
             })
         })
