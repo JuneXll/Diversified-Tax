@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 //Validation of form
 // import { navigate } from 'gatsby'
 import { useForm } from 'react-hook-form';
-// import { yupResolver } from '@hookform/resolvers/yup';
-// import * as yup from 'yup';
 //Translations
 import { useTranslation } from 'react-i18next';
 
@@ -15,14 +13,6 @@ const blueButton = {
     border: 'none',
     borderRadius: '5px'
 }
-
-// const schema = yup.object().shape({
-//     name: yup.string().required(),
-//     email: yup.string().required().email(),
-//     phoneNumber: yup.number().required().min(10).max(10),
-//     message: yup.string().required().min(10)
-
-// });
 
 const encode = data => {
     return Object.keys(data)
@@ -44,18 +34,16 @@ const ContactForm = () => {
         // resolvers: yupResolver(schema),
         mode: 'onChange'
     });
-
-   const [state, setState] = useState({});
-
-   const handleChange = e => {
-    setState({...state, [e.target.name]: e.target.value})
+    //Set state for form
+    const [state, setState] = useState({});
+    //Handle form changes
+    const handleChange = e => {
+        setState({...state, [e.target.name]: e.target.value})
     };
     
-    // submit
+    // Submit
     const onSubmit = (data, e) => {
         e.preventDefault();
-        // const form = e.target;
-        console.log(data);
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -82,15 +70,15 @@ const ContactForm = () => {
                 <input 
                     type="text" 
                     className="form-control" 
-                    // id="name" 
                     name='name' 
                     placeholder={t('contact_form_name')}
                     onChange={handleChange}
                     {...register('name', { 
-                        required: true
+                        required: true,
+                        pattern: /^[A-Z][a-z]{2,}\s[A-Z][a-z]{2,}$/
                     })}
                     />
-                    {errors.name && errors.name.type === 'required' && <p className="p-1 text-white">Name is required</p>}
+                    {errors.name && <p className="p-1 text-white">Enter first and last name.</p>}
             </div>
             <br/>
 
@@ -98,16 +86,15 @@ const ContactForm = () => {
                 <input 
                     type="email"
                     className="form-control" 
-                    // id="email" 
                     name='email' 
                     placeholder={t('contact_form_email')}
                     onChange={handleChange}
                     {...register('email', {
                         required: true,
-                        pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                        pattern:/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                       })}
                     />
-                    {errors.email && errors.email.type === 'required' &&
+                    {errors.email &&
                     <p className="p-1 text-white">Enter a valid email.</p>}
             </div>
             <br/>
@@ -116,16 +103,16 @@ const ContactForm = () => {
                 <input 
                     type="text" 
                     className="form-control" 
-                    // id="phoneNumber" 
                     name='phoneNumber' 
                     placeholder={t('contact_form_phone')}
                     onChange={handleChange}
                     {...register('phoneNumber', {
                         required: true,
-                        pattern: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
-                    })}
+                        maxLength: 10, 
+                        pattern: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/i
+                        })}
                     />
-                    {errors.phoneNumber && errors.phoneNumber.type === 'required' &&
+                    {errors.phoneNumber &&
                     <p className="p-1 text-white">Enter a valid phone number.</p>}
             </div>
             <br/>
@@ -133,18 +120,17 @@ const ContactForm = () => {
             <div class="form-group">
                 <textarea 
                     className="form-control" 
-                    // id="message" 
                     name='message' 
                     rows="2" 
                     placeholder={t('contact_form_message')} 
                     onChange={handleChange}
                     {...register('message', {
                         required: true,
-                        minLength: 5
+                        minLength: 10
                     })}
                     ></textarea>
-                    {errors.message && errors.message.type === 'required' &&
-                    <p className="p-1 text-white">Enter a massage longer than 5 characters.</p>}
+                    {errors.message &&
+                    <p className="p-1 text-white">Enter a message longer than 10 characters.</p>}
             </div>
             <br/>
 
