@@ -82,7 +82,7 @@ const ContactForm = () => {
                 <input 
                     type="text" 
                     className="form-control" 
-                    id="name" 
+                    // id="name" 
                     name='name' 
                     placeholder={t('contact_form_name')}
                     onChange={handleChange}
@@ -90,7 +90,7 @@ const ContactForm = () => {
                         required: true
                     })}
                     />
-                    {errors.name && errors.name.type === 'required' &&<p>Name is required</p>}
+                    {errors.name && errors.name.type === 'required' && <p className="p-1 text-white">Name is required</p>}
             </div>
             <br/>
 
@@ -98,7 +98,7 @@ const ContactForm = () => {
                 <input 
                     type="email"
                     className="form-control" 
-                    id="email" 
+                    // id="email" 
                     name='email' 
                     placeholder={t('contact_form_email')}
                     onChange={handleChange}
@@ -108,7 +108,7 @@ const ContactForm = () => {
                       })}
                     />
                     {errors.email && errors.email.type === 'required' &&
-                    <p>Enter a valid email.</p>}
+                    <p className="p-1 text-white">Enter a valid email.</p>}
             </div>
             <br/>
 
@@ -116,24 +116,24 @@ const ContactForm = () => {
                 <input 
                     type="text" 
                     className="form-control" 
-                    id="phoneNumber" 
+                    // id="phoneNumber" 
                     name='phoneNumber' 
                     placeholder={t('contact_form_phone')}
                     onChange={handleChange}
                     {...register('phoneNumber', {
-                        require: true,
+                        required: true,
                         pattern: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
                     })}
                     />
                     {errors.phoneNumber && errors.phoneNumber.type === 'required' &&
-                    <p>Enter a valid phone number.</p>}
+                    <p className="p-1 text-white">Enter a valid phone number.</p>}
             </div>
             <br/>
 
             <div class="form-group">
                 <textarea 
                     className="form-control" 
-                    id="message" 
+                    // id="message" 
                     name='message' 
                     rows="2" 
                     placeholder={t('contact_form_message')} 
@@ -144,7 +144,7 @@ const ContactForm = () => {
                     })}
                     ></textarea>
                     {errors.message && errors.message.type === 'required' &&
-                    <p>Enter a massage longer than 5 characters.</p>}
+                    <p className="p-1 text-white">Enter a massage longer than 5 characters.</p>}
             </div>
             <br/>
 
