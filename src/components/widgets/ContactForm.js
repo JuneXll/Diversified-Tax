@@ -24,16 +24,16 @@ const ContactForm = () => {
     //Set translation for page
     const { t } = useTranslation();
 
-     //react-hook form
-     const{  
+    //react-hook form
+    const{  
         register,
         handleSubmit,
         formState: { errors },
         reset
       } = useForm({
-        // resolvers: yupResolver(schema),
-        mode: 'onChange'
-    });
+            mode: 'onChange'
+            });
+
     //Set state for form
     const [state, setState] = useState({});
     //Handle form changes
@@ -63,6 +63,7 @@ const ContactForm = () => {
             name="contact v1" 
             method="POST" 
             className='mt-2' 
+            action='/success'
             onSubmit={handleSubmit(onSubmit)}>
             <input type="hidden" name="form-name" value="contact" />
       
