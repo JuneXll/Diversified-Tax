@@ -108,9 +108,13 @@
 
 
     "contact_form_name": "Nombre Completo",
+    "contact_name_error": "Ingrese nombre y apellido.",
     "contact_form_email": "Correo Electrónico",
+    "contact_email_error": "Introduzca un correo electrónico válido.",
     "contact_form_phone": "Número de Teléfono",
+    "contact_phone_error": "Ingrese un número de teléfono válido.",
     "contact_form_message": "Mensaje",
+    "contact_message_error": "Ingrese un mensaje de más de 10 caracteres.",
     "contact_form_submit": "Enviar"
     
 }

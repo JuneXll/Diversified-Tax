@@ -15,8 +15,8 @@ const blueButton = {
 }
 
 const errorPadding = {
-    paddingTop: '1em',
-    paddingRight: '1em'
+    paddingTop: '3em',
+    paddingRight: '3em'
 }
 
 const encode = data => {
@@ -85,7 +85,7 @@ const ContactForm = () => {
                         pattern: /^[A-Z][a-z]{2,}\s[A-Z][a-z]{2,}$/
                     })}
                     />
-                    {errors.name && <p className="text-white" style={errorPadding}>Enter first and last name.</p>}
+                    {errors.name && <p className="text-white" style={errorPadding}>{t('contact_name_error')}</p>}
             </div>
             <br/>
 
@@ -102,7 +102,7 @@ const ContactForm = () => {
                       })}
                     />
                     {errors.email &&
-                    <p className="text-white" style={errorPadding}>Enter a valid email.</p>}
+                    <p className="text-white" style={errorPadding}>{t('contact_email_error')}</p>}
             </div>
             <br/>
 
@@ -120,7 +120,7 @@ const ContactForm = () => {
                         })}
                     />
                     {errors.phoneNumber &&
-                    <p className="text-white" style={errorPadding}>Enter a valid phone number.</p>}
+                    <p className="text-white" style={errorPadding}>{t('contact_phone_error')}</p>}
             </div>
             <br/>
 
@@ -137,7 +137,7 @@ const ContactForm = () => {
                     })}
                     ></textarea>
                     {errors.message &&
-                    <p className="text-white" style={errorPadding}>Enter a message longer than 10 characters.</p>}
+                    <p className="text-white" style={errorPadding}>{t('contact_message_error')}</p>}
             </div>
             <br/>
 

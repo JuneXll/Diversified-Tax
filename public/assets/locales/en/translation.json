@@ -106,9 +106,13 @@
 
 
     "contact_form_name": "Full Name",
+    "contact_name_error": "Enter first and last name.",
     "contact_form_email": "Email",
+    "contact_email_error": "Enter a valid email.",
     "contact_form_phone": "Phone Number",
+    "contact_phone_error": "Enter a valid phone number.",
     "contact_form_message": "Message",
+    "contact_message_error": "Enter a message longer than 10 characters.",
     "contact_form_submit": "Submit"
 
 }
