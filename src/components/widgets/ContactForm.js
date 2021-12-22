@@ -14,6 +14,11 @@ const blueButton = {
     borderRadius: '5px'
 }
 
+const errorPadding = {
+    paddingTop: '1em',
+    paddingRight: '1em'
+}
+
 const encode = data => {
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -55,6 +60,7 @@ const ContactForm = () => {
           .then(response => {
               reset();
               console.log(response);
+              window.location.assign('https://diversified-tax.netlify.app/success');
           })
           .catch(error => console.log(error));
       };
@@ -79,7 +85,7 @@ const ContactForm = () => {
                         pattern: /^[A-Z][a-z]{2,}\s[A-Z][a-z]{2,}$/
                     })}
                     />
-                    {errors.name && <p className="p-1 text-white">Enter first and last name.</p>}
+                    {errors.name && <p className="text-white" style={errorPadding}>Enter first and last name.</p>}
             </div>
             <br/>
 
@@ -96,7 +102,7 @@ const ContactForm = () => {
                       })}
                     />
                     {errors.email &&
-                    <p className="p-1 text-white">Enter a valid email.</p>}
+                    <p className="text-white" style={errorPadding}>Enter a valid email.</p>}
             </div>
             <br/>
 
@@ -114,7 +120,7 @@ const ContactForm = () => {
                         })}
                     />
                     {errors.phoneNumber &&
-                    <p className="p-1 text-white">Enter a valid phone number.</p>}
+                    <p className="text-white" style={errorPadding}>Enter a valid phone number.</p>}
             </div>
             <br/>
 
@@ -131,7 +137,7 @@ const ContactForm = () => {
                     })}
                     ></textarea>
                     {errors.message &&
-                    <p className="p-1 text-white">Enter a message longer than 10 characters.</p>}
+                    <p className="text-white" style={errorPadding}>Enter a message longer than 10 characters.</p>}
             </div>
             <br/>
 
