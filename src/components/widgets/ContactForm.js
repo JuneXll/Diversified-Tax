@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 //Validation of form
 // import { navigate } from 'gatsby'
 import { useForm } from 'react-hook-form';
-// import { yupResolver } from '@hookform/resolvers/yup';
-// import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 import { useTranslation } from 'react-i18next';
 
 const blueButton = {
@@ -14,13 +14,13 @@ const blueButton = {
     borderRadius: '5px'
 }
 
-// const schema = yup.object().shape({
-//     name: yup.string().required(),
-//     email: yup.string().required().email(),
-//     phoneNumber: yup.number().required().min(10).max(10),
-//     message: yup.string().required().min(10)
+const schema = yup.object().shape({
+    name: yup.string().required(),
+    email: yup.string().required().email(),
+    phoneNumber: yup.number().required().min(10).max(10),
+    message: yup.string().required().min(10)
 
-// });
+});
 
 const encode = data => {
     return Object.keys(data)
@@ -39,7 +39,7 @@ const ContactForm = () => {
         formState: { errors },
         reset
       } = useForm({
-        // resolvers: yupResolver(schema)
+        resolvers: yupResolver(schema),
         mode: 'onChange'
     });
 
@@ -62,15 +62,12 @@ const ContactForm = () => {
                 ...data
             })
         })
-          .then(response=>{
+          .then(response => {
               reset();
               console.log(response);
           })
           .catch(error => console.log(error));
       };
-    // const onSubmit = (data) => console.log(data);
-    // console.log(errors)
-
     return(
         <form 
             name="contact v1" 
