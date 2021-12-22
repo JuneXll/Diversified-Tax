@@ -51,17 +51,17 @@ const showIG = () => {
 const Contact = () => {
     //Translations for the page
     const { t } = useTranslation();
-    
+
     return (
         <div style={{paddingTop: 100}}>
             <div style={blueDiv}>
                 <Container>
                     {/* Heading */}
-                    <Container className='flex-column col-10 justify-content-center pt-5'>
+                    <Container className='flex-column col-10 justify-content-center pt-4'>
                         <h1 style={header}>{t('contact_us_header')}</h1>
                     </Container>
                     {/* Contact us form */}
-                    <Container className="p-5 d-flex justify-content-between row">
+                    <Container className="p-4 d-flex justify-content-between row">
                         <Container className='p-3 mb-5 col-md-5 col-xs-12' style={yellowDiv}  id='contactForm'>
                             {/* Contact us form component */}
                             <ContactForm/>
