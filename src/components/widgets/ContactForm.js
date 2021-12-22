@@ -15,8 +15,8 @@ const blueButton = {
 }
 
 const errorPadding = {
-    paddingTop: '3em',
-    paddingRight: '3em'
+    paddingTop: '1em',
+    paddingLeft: '1em'
 }
 
 const encode = data => {
