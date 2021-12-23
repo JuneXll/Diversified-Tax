@@ -161,7 +161,7 @@ const Home = () => {
                                         <li>{t('p_sixth_li')}</li>
                                     </ul>
                                 </Card.Text>
-                                <Button href='/personal-tax' className='my-3' style={yellowButton}>{t('personal_button')}</Button>
+                                <Button href='/personal-tax' className='my-3' style={yellowButton} aria-label='Go to personal tax page'>{t('personal_button')}</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -181,7 +181,7 @@ const Home = () => {
                                         <li>{t('b_fifth_li')}</li>
                                     </ul>
                                 </Card.Text>
-                                <Button href='/business-tax' className='my-3' style={yellowButton}>{t('business_button')}</Button>
+                                <Button href='/business-tax' className='my-3' style={yellowButton} aria-label='Go to business tax page'>{t('business_button')}</Button>
                             </Card.Body>
                         </Card>
                     </Col>

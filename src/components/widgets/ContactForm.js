@@ -79,6 +79,7 @@ const ContactForm = () => {
                     className="form-control" 
                     name='name' 
                     placeholder={t('contact_form_name')}
+                    aria-label='Your name'
                     onChange={handleChange}
                     {...register('name', { 
                         required: true,
@@ -96,6 +97,7 @@ const ContactForm = () => {
                     name='email' 
                     placeholder={t('contact_form_email')}
                     onChange={handleChange}
+                    aria-label='Your email'
                     {...register('email', {
                         required: true,
                         pattern:/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -112,6 +114,7 @@ const ContactForm = () => {
                     className="form-control" 
                     name='phoneNumber' 
                     placeholder={t('contact_form_phone')}
+                    aria-label='Your phone number'
                     onChange={handleChange}
                     {...register('phoneNumber', {
                         required: true,
@@ -130,6 +133,7 @@ const ContactForm = () => {
                     name='message' 
                     rows="2" 
                     placeholder={t('contact_form_message')} 
+                    aria-label='Your message'
                     onChange={handleChange}
                     {...register('message', {
                         required: true,
@@ -141,7 +145,7 @@ const ContactForm = () => {
             </div>
             <br/>
 
-            <button type="submit" className='text-white float-end p-2' style={blueButton}>{t('contact_form_submit')}</button>
+            <button type="submit" className='text-white float-end p-2' style={blueButton} aria-label='Submit form'>{t('contact_form_submit')}</button>
         </form>
     )
 }

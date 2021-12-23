@@ -21,7 +21,7 @@ const Accordion = props => {
     return (
         <Container className='m-2'>
             <div className="accordion__section" >
-                <button className={`accordion ${active} p-3`} onClick={toggleAccordion} style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}}>
+                <button className={`accordion ${active} p-3`} onClick={toggleAccordion} style={{borderTopRightRadius:'5px', borderTopLeftRadius:'5px'}} aria-label='Toggle open'>
                 <p className="accordion__title">{props.quest}</p>
                 <Arrow className={`${rotate}`} width={10} fill={"white"} />
                 </button>

@@ -25,7 +25,7 @@ const LinkDiv = (props) => {
             <Row className='d-flex justify-content-around'>
 
                 <Col className='col'>
-                    <a href={props.firstHref} style={anchorHref}>
+                    <a href={props.firstHref} style={anchorHref} aria-label='New Clients'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>{props.firstLink}</h3></Card.Header>
                                 <Card.Img 
@@ -37,7 +37,7 @@ const LinkDiv = (props) => {
                 </Col>
 
                 <Col className='col' >
-                    <a href={props.secondHref} style={anchorHref}>
+                    <a href={props.secondHref} style={anchorHref} aria-label='Returning Clients'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>{props.secondLink}</h3></Card.Header>
                                 <Card.Img 
@@ -49,7 +49,7 @@ const LinkDiv = (props) => {
                 </Col>
 
                 <Col className='col' >
-                    <a href='/extra-forms' style={anchorHref}>
+                    <a href='/extra-forms' style={anchorHref} aria-label='Extra forms'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>{t('link_card_submit_extra')}</h3></Card.Header>
                                 <Card.Img 

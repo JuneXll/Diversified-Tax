@@ -123,7 +123,7 @@ const Personal = () => {
                         <h5 style={coverP}>{t('p_first_header')}</h5>
                         <h5 style={coverP}>{t('p_second_header')}</h5>
 
-                        <Button href='#linksCard' style={yellowButton} className='my-3 float-end'>{t('p_cover_button')}</Button>
+                        <Button href='#linksCard' style={yellowButton} className='my-3 float-end' aria-label='File now section'>{t('p_cover_button')}</Button>
                     </Container>
                 </div>
             </div>
@@ -161,7 +161,7 @@ const Personal = () => {
 
                 <Container className='col-lg-6 col-xs-12 flex-column pb-2'>
                     <h2 className='text-white display-3' style={headings}>{t('not_sure')}</h2>
-                    <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton}><i className="fas fa-arrow-down m-1"></i>{t('tax_checklist')}</Button>
+                    <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton} aria-label='Download tax checklist'><i className="fas fa-arrow-down m-1"></i>{t('tax_checklist')}</Button>
                 </Container>
                 {/* Container for checklist images, is hidden on smaller devices */}
                 <Container className='col-lg-6 col-xs-12 text-center'>

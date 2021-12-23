@@ -42,18 +42,18 @@ const Navigation = () => {
     
         <Navbar expand='md' fixed='top' style={{padding:10, backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
             <Container>
-                <Navbar.Brand href='/' to='/'>
+                <Navbar.Brand href='/' to='/' aria-labelledby='Diversified Tax logo'>
                     <img src={logo} alt="diversified-tax-logo" style={logoStyle}></img>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='navbarScroll'/>
                 <Navbar.Collapse className='justify-content-around'>
-                    <Nav.Link href="/personal-tax" style={links}>
+                    <Nav.Link href="/personal-tax" style={links} aria-labelledby='Personal Taxes'>
                         {t('nav_personal')}
                     </Nav.Link>
-                    <Nav.Link href="/business-tax" style={links}>
+                    <Nav.Link href="/business-tax" style={links} aria-labelledby='Business Taxes'>
                         {t('nav_business')}
                     </Nav.Link>
-                    <Nav.Link href="/contact-us" style={links}>
+                    <Nav.Link href="/contact-us" style={links} aria-labelledby='Contact Us'>
                         {t('nav_contact_us')}
                     </Nav.Link>
                     <NavDropdown title={worldIcon} style={{color:"#003054"}}>
@@ -64,6 +64,7 @@ const Navigation = () => {
                                     i18next.changeLanguage(code)
                                     setLang(e.currentTarget.innerHTML)}}
                                 disabled={name === lang}
+                                aria-labelledby={name === lang}
                                 >
                                     {name}</NavDropdown.Item>
                         ))}
