@@ -89,10 +89,10 @@ const Home = () => {
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
                     <Container className='flex-column' style={{padding:'4em 0 0 3em'}} >
-                        <h1 className='display-1' style={coverText}>{t('main_jumbo_title')}</h1>
-                        <h3 style={coverText}>{t('fist_jumbo_list')}</h3>
-                        <h3 style={coverText}>{t('second_jumbo_list')}</h3>
-                        <h3 style={coverText}>{t('third_jumbo_list')}</h3>
+                        <h1 className='' style={coverText}>{t('main_jumbo_title')}</h1>
+                        <h2 style={coverText}>{t('fist_jumbo_list')}</h2>
+                        <h2 style={coverText}>{t('second_jumbo_list')}</h2>
+                        <h2 style={coverText}>{t('third_jumbo_list')}</h2>
 
                         <Button href='/new-personal-clients' className='my-3' style={yellowButton}>{t('jumbo_button')}</Button>
                     </Container>

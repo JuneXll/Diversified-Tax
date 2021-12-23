@@ -42,7 +42,7 @@ const Navigation = () => {
     
         <Navbar expand='md' fixed='top' style={{padding:10, backgroundColor: 'rgba(255, 255, 255, 0.9)'}}>
             <Container>
-                <Navbar.Brand href='/' to='/' aria-labelledby='Diversified Tax logo'>
+                <Navbar.Brand href='/' to='/' aria-labelledby='Diversified Tax Homepage'>
                     <img src={logo} alt="diversified-tax-logo" style={logoStyle}></img>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='navbarScroll'/>
@@ -56,7 +56,7 @@ const Navigation = () => {
                     <Nav.Link href="/contact-us" style={links} aria-labelledby='Contact Us'>
                         {t('nav_contact_us')}
                     </Nav.Link>
-                    <NavDropdown title={worldIcon} style={{color:"#003054"}}>
+                    <NavDropdown title={worldIcon} style={{color:"#003054"}} aria-labelledby='Language Dropdown Menu'>
                         {languages.map(({code, name, country_code})=>(
                             <NavDropdown.Item 
                                 key={country_code} 
