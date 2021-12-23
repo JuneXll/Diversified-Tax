@@ -32,7 +32,7 @@ const languages = [
 
 const Navigation = () => {
     //World icon for language dropdown
-    const worldIcon = (<i className="fas fa-globe" style={{color:"#003054"}}></i>)
+    const worldIcon = (<i className="fas fa-globe" style={{color:"#003054"}} role='menu' aria-label='Language Menu'></i>)
 
     //Set language of page when use clicks on language options
     const [lang, setLang] = useState('English');
@@ -56,7 +56,7 @@ const Navigation = () => {
                     <Nav.Link href="/contact-us" style={links} aria-labelledby='Contact Us'>
                         {t('nav_contact_us')}
                     </Nav.Link>
-                    <NavDropdown title={worldIcon} style={{color:"#003054"}} aria-labelledby='Language Dropdown'>
+                    <NavDropdown title={worldIcon} style={{color:"#003054"}}>
                         {languages.map(({code, name, country_code})=>(
                             <NavDropdown.Item 
                                 key={country_code} 
@@ -64,7 +64,8 @@ const Navigation = () => {
                                     i18next.changeLanguage(code)
                                     setLang(e.currentTarget.innerHTML)}}
                                 disabled={name === lang}
-                                aria-label={`Language: ${lang}`}
+                                aria-label={`Language: ${name}`}
+                                role='menuitem'
                                 >
                                     {name}</NavDropdown.Item>
                         ))}

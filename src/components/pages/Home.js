@@ -24,12 +24,18 @@ const jumbotronCover = {
     boxShadow: '5px 5px 5px #ccc'
   }
 //Jumbotron cover text styles
-const coverText = {
+const dtText = {
     fontFamily: 'Open Sans, sans-serif',
     color: 'white',
     letterSpacing: '4px',
     lineHeight: '1.5',
-    fontSize='48px'
+    fontSize: '52px'
+}
+const coverText = {
+    fontFamily: 'Open Sans, sans-serif',
+    color: 'white',
+    letterSpacing: '4px',
+    lineHeight: '1.5'
 }
 //Button styles
 const yellowButton = {
@@ -90,7 +96,7 @@ const Home = () => {
             <div>
                 <div className="jumbotron jumbotron-fluid" style={jumbotronCover}>
                     <Container className='flex-column' style={{padding:'4em 0 0 3em'}} >
-                        <h1 className='' style={coverText}>{t('main_jumbo_title')}</h1>
+                        <h1 className='' style={dtText}>{t('main_jumbo_title')}</h1>
                         <h2 style={coverText}>{t('fist_jumbo_list')}</h2>
                         <h2 style={coverText}>{t('second_jumbo_list')}</h2>
                         <h2 style={coverText}>{t('third_jumbo_list')}</h2>

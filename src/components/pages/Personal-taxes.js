@@ -171,7 +171,7 @@ const Personal = () => {
                             className='col-lg-10' 
                             src={checklist2} 
                             style={checklist2Style} alt='diversified-tax-checklist2'
-                            alt='Diversified Tax Checklist'
+                            alt='Diversified Tax checklist'
                             onClick={dlChecklist}/>
                         <Image
                             className='col-lg-10' 
