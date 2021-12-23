@@ -56,7 +56,7 @@ const Navigation = () => {
                     <Nav.Link href="/contact-us" style={links} aria-labelledby='Contact Us'>
                         {t('nav_contact_us')}
                     </Nav.Link>
-                    <NavDropdown title={worldIcon} style={{color:"#003054"}} aria-labelledby='Language Dropdown Menu'>
+                    <NavDropdown title={worldIcon} style={{color:"#003054"}} role='menu' aria-labelledby='Language Dropdown Menu'>
                         {languages.map(({code, name, country_code})=>(
                             <NavDropdown.Item 
                                 key={country_code} 
@@ -65,6 +65,7 @@ const Navigation = () => {
                                     setLang(e.currentTarget.innerHTML)}}
                                 disabled={name === lang}
                                 aria-labelledby={name === lang}
+                                role='menuitem'
                                 >
                                     {name}</NavDropdown.Item>
                         ))}

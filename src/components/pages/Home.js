@@ -28,7 +28,8 @@ const coverText = {
     fontFamily: 'Open Sans, sans-serif',
     color: 'white',
     letterSpacing: '4px',
-    lineHeight: '1.5'
+    lineHeight: '1.5',
+    fontSize='48px'
 }
 //Button styles
 const yellowButton = {
