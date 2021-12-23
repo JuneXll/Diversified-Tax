@@ -56,7 +56,7 @@ const Navigation = () => {
                     <Nav.Link href="/contact-us" style={links} aria-labelledby='Contact Us'>
                         {t('nav_contact_us')}
                     </Nav.Link>
-                    <NavDropdown title={worldIcon} style={{color:"#003054"}} role='menu' aria-labelledby='Language Dropdown Menu'>
+                    <NavDropdown title={worldIcon} style={{color:"#003054"}} aria-labelledby='Language Dropdown'>
                         {languages.map(({code, name, country_code})=>(
                             <NavDropdown.Item 
                                 key={country_code} 
@@ -64,8 +64,7 @@ const Navigation = () => {
                                     i18next.changeLanguage(code)
                                     setLang(e.currentTarget.innerHTML)}}
                                 disabled={name === lang}
-                                aria-labelledby={name === lang}
-                                role='menuitem'
+                                aria-label={`Language: ${lang}`}
                                 >
                                     {name}</NavDropdown.Item>
                         ))}
