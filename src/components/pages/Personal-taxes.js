@@ -137,7 +137,7 @@ const Personal = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center pt-2'>
-                    <Image fluid className='col-10' src={formImg} style={imgStyle}/>
+                    <Image fluid className='col-10' src={formImg} style={imgStyle} alt='Stack of W-2 papers'/>
                 </Container>
 
             </Container>
@@ -146,7 +146,7 @@ const Personal = () => {
             <Container className='row mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'5em 3em'}}>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2'>
-                    <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}}/>
+                    <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}} alt='Man holding a notebook with a question mark'/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
@@ -171,11 +171,13 @@ const Personal = () => {
                             className='col-lg-10' 
                             src={checklist2} 
                             style={checklist2Style} alt='diversified-tax-checklist2'
+                            alt='Diversified Tax Checklist'
                             onClick={dlChecklist}/>
                         <Image
                             className='col-lg-10' 
                             src={checklist1} 
                             style={checklist1Style} alt='diversified-tax-checklist1'
+                            alt='Diversified Tax checklist slightly rotated'
                             onClick={dlChecklist}/>
                     </Container>
                     )}

@@ -31,7 +31,8 @@ const LinkDiv = (props) => {
                                 <Card.Img 
                                 variant="top" 
                                 src={props.firstSrc} 
-                                style={{borderRadius:'5px'}}/>
+                                style={{borderRadius:'5px'}}
+                                alt='Happy New Clients'/>
                         </Card>
                     </a>
                 </Col>
@@ -43,7 +44,8 @@ const LinkDiv = (props) => {
                                 <Card.Img 
                                     variant="top" 
                                     src={props.secondSrc}
-                                    style={{borderRadius:'5px'}} />
+                                    style={{borderRadius:'5px'}} 
+                                    alt='Excited Returning Clients'/>
                         </Card>
                     </a>
                 </Col>
@@ -55,7 +57,8 @@ const LinkDiv = (props) => {
                                 <Card.Img 
                                     variant="top" 
                                     src={extraFormsImg} 
-                                    style={{borderRadius:'5px'}}/>
+                                    style={{borderRadius:'5px'}}
+                                    alt='1040 form with a calculator and pencil over it'/>
                         </Card>
                     </a>
                 </Col>

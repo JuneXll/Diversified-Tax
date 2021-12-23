@@ -103,7 +103,7 @@ const Business = () => {
             </div>
             <div className='position-relative'>
                 <div className='position-absolute top-0 start-50 translate-middle'style={picDiv}>
-                    <Image fluid src={businessHeaderImg} style={img}/>
+                    <Image fluid src={businessHeaderImg} style={img} alt='Coffee shop business owners working and smiling'/>
                 </div>
             </div>
 
@@ -118,7 +118,7 @@ const Business = () => {
                 <Row>
                     {matches && (
                     <Col className='col-lg-6 col-md-12 col-sm-12' style={leftColumn}>
-                        <Image fluid className='position-relative' src={outsideServicesImg} style={leftColumnPic}/>
+                        <Image fluid className='position-relative' src={outsideServicesImg} style={leftColumnPic} alt='Pens on top of a calculator'/>
                     </Col>
                     )}
                     <Col className='col-lg-6 col-md-12 col-sm-12' style={rightColumn}>

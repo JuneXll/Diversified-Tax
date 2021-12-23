@@ -103,7 +103,7 @@ const Home = () => {
             <Container className='row p-5 my-5'>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2'>
-                    <Image fluid className='col-10' src={aboutUsImg} style={imgStyle}/>
+                    <Image fluid className='col-10' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
@@ -122,7 +122,7 @@ const Home = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center pt-2'>
-                    <Image fluid className='col-10' src={whatWeDoImg} style={{borderRadius:'5px'}}/>
+                    <Image fluid className='col-10' src={whatWeDoImg} style={{borderRadius:'5px'}} alt='Graphic of calculator with tax icons around'/>
                 </Container>
 
             </Container>
@@ -131,7 +131,7 @@ const Home = () => {
             <Container className='row p-5 my-5'>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2'>
-                    <Image fluid className='col-10' src={fingertipsImg} style={imgStyle}/>
+                    <Image fluid className='col-10' src={fingertipsImg} style={imgStyle} alt='Smiling woman holding a phone'/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
@@ -148,7 +148,7 @@ const Home = () => {
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12'>
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>{t('personal_header')}</h3></Card.Header>
-                            <Card.Img variant="top" src={personalCardImg} style={{borderRadius:'5px'}}/>
+                            <Card.Img variant="top" src={personalCardImg} style={{borderRadius:'5px'}} alt='Studious woman at the office reviewing tax papers'/>
                             <Card.Body>
                                 <Card.Title style={headings}>{t('p_preparation_title')}</Card.Title>
                                 <Card.Text style={cardList}>
@@ -169,7 +169,7 @@ const Home = () => {
                     <Col className='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-xs-12' >
                         <Card className='p-3 mb-3 text-white' style={{backgroundColor:'#003054',boxShadow: '5px 5px 5px #ccc'}}>
                             <Card.Header><h3 style={headings}>{t('business_header')}</h3></Card.Header>
-                            <Card.Img variant="top" src={businessCardImg} style={{borderRadius:'5px'}}/>
+                            <Card.Img variant="top" src={businessCardImg} style={{borderRadius:'5px'}} alt='Happy coffee shop owners reviewing information on a computer'/>
                             <Card.Body>
                                 <Card.Title style={headings}>{t('b_preparation_title')}</Card.Title>
                                 <Card.Text style={cardList}>
