@@ -3,12 +3,18 @@ import { useTranslation } from 'react-i18next';
 // Bootstrap Components
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
 // Imported images
-import jumbotronImg from '../../images/compressed/jumbotron.png';
-import aboutUsImg from '../../images/compressed/about-us.png';
-import whatWeDoImg from '../../images/compressed/what-does-dt-do.png';
-import fingertipsImg from '../../images/compressed/fingertips.png';
-import personalCardImg from '../../images/compressed/personalCard.png';
-import businessCardImg from '../../images/compressed/businessCard.png';
+// import jumbotronImg from '../../images/compressed/jumbotron.png';
+import jumbotronImg from 'https://ik.imagekit.io/diversifiedtax/images/jumbotron.png?updatedAt=1640385312525';
+// import aboutUsImg from '../../images/compressed/about-us.png';
+import aboutUsImg from '../../images/compressed/about-us.pnghttps://ik.imagekit.io/diversifiedtax/images/about-us.png?updatedAt=1640385227813';
+// import whatWeDoImg from '../../images/compressed/what-does-dt-do.png';
+import whatWeDoImg from 'https://ik.imagekit.io/diversifiedtax/images/what-does-dt-do.png?updatedAt=1640385412027';
+// import fingertipsImg from '../../images/compressed/fingertips.png';
+import fingertipsImg from 'https://ik.imagekit.io/diversifiedtax/images/fingertips.png?updatedAt=1640385371781';
+// import personalCardImg from '../../images/compressed/personalCard.png';
+import personalCardImg from 'https://ik.imagekit.io/diversifiedtax/images/personalCard.png?updatedAt=1640385260228';
+// import businessCardImg from '../../images/compressed/businessCard.png';
+import businessCardImg from 'https://ik.imagekit.io/diversifiedtax/images/businessCard.png?updatedAt=1640385248595';
 
 // Styles for page
 //Set padding for to make space for navbar
