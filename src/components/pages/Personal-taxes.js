@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
 //Imported Images
-import personalHeaderImg from '../../images/personal-header.png';
-import formImg from '../../images/forms.png';
-import howDoImg from '../../images/how-do-i-know.png';
-import personalNewImg from '../../images/personal-new-client.png';
-import personalReturningImg from '../../images/personal-returning.png';
-import checklist1 from '../../images/Checklist1.png';
-import checklist2 from '../../images/Checklist2.png';
+import personalHeaderImg from '../../images/compressed/personal-header.png';
+import formImg from '../../images/compressed/forms.png';
+import howDoImg from '../../images/compressed/how-do-i-know.png';
+import personalNewImg from '../../images/compressed/personal-new-client.png';
+import personalReturningImg from '../../images/compressed/personal-returning.png';
+import checklist1 from '../../images/compressed/Checklist1.png';
+import checklist2 from '../../images/compressed/Checklist2.png';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';

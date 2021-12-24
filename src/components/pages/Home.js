@@ -3,12 +3,12 @@ import { useTranslation } from 'react-i18next';
 // Bootstrap Components
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
 // Imported images
-import jumbotronImg from '../../images/jumbotron.png';
-import aboutUsImg from '../../images/about-us.png';
-import whatWeDoImg from '../../images/what-does-dt-do.png';
-import fingertipsImg from '../../images/fingertips.png';
-import personalCardImg from '../../images/personalCard.png';
-import businessCardImg from '../../images/businessCard.png';
+import jumbotronImg from '../../images/compressed/jumbotron.png';
+import aboutUsImg from '../../images/compressed/about-us.png';
+import whatWeDoImg from '../../images/compressed/what-does-dt-do.png';
+import fingertipsImg from '../../images/compressed/fingertips.png';
+import personalCardImg from '../../images/compressed/personalCard.png';
+import businessCardImg from '../../images/compressed/businessCard.png';
 
 // Styles for page
 //Set padding for to make space for navbar
