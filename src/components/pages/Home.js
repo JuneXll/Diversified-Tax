@@ -4,11 +4,14 @@ import { useTranslation } from 'react-i18next';
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
 // Imported images-imagekit.io as webp cdn
 import jumbotronImg from 'https://ik.imagekit.io/diversifiedtax/images/jumbotron.png?updatedAt=1640385312525';
-import aboutUsImg from '../../images/compressed/about-us.pnghttps://ik.imagekit.io/diversifiedtax/images/about-us.png?updatedAt=1640385227813';
+// import aboutUsImg from '../../images/compressed/about-us.pnghttps://ik.imagekit.io/diversifiedtax/images/about-us.png?updatedAt=1640385227813';
 import whatWeDoImg from 'https://ik.imagekit.io/diversifiedtax/images/what-does-dt-do.png?updatedAt=1640385412027';
 import fingertipsImg from 'https://ik.imagekit.io/diversifiedtax/images/fingertips.png?updatedAt=1640385371781';
 import personalCardImg from 'https://ik.imagekit.io/diversifiedtax/images/personalCard.png?updatedAt=1640385260228';
 import businessCardImg from 'https://ik.imagekit.io/diversifiedtax/images/businessCard.png?updatedAt=1640385248595';
+//Imagekit 
+import { IKImage } from 'imagekitio-react';
+const urlEndpoint = 'https://ik.imagekit.io/diversifiedtax';
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -110,7 +113,13 @@ const Home = () => {
             <Container className='row p-5 my-5'>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2'>
-                    <Image fluid className='col-10' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/>
+                    {/* <Image fluid className='col-10' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/> */}
+                    <IKImage
+                        urlEndpoint={urlEndpoint}
+                        path="/images/about-us.png"
+                        style={imgStyle}
+                        className='col-10'
+                    />
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
