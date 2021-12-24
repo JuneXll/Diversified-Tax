@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 // Bootstrap Components
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
+
 // Imported images-imagekit.io as webp cdn
 const jumbotronImg = 'https://ik.imagekit.io/diversifiedtax/images/jumbotron.png?updatedAt=1640385312525';
 const aboutUsImg = 'https://ik.imagekit.io/diversifiedtax/images/about-us.png?updatedAt=1640385227813';

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+//Importing logo from imagekit
 const logo = 'https://ik.imagekit.io/diversifiedtax/images/logo.png?updatedAt=1640385434649';
 
 const logoStyle = {

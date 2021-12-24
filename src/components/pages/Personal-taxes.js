@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
+//Imported widgets
+import LinkCard from '../widgets/LinkCard';
+import Faq from '../widgets/Faq';
 //Imported Images
 const personalHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-header.png?updatedAt=1640385292558';
 const formImg = 'https://ik.imagekit.io/diversifiedtax/images/forms.png?updatedAt=1640385275535';
@@ -9,9 +12,7 @@ const personalNewImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-ne
 const personalReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
 const checklist1 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist1.png?updatedAt=1640385426982';
 const checklist2 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist2.png?updatedAt=1640385418168';
-//Imported widgets
-import LinkCard from '../widgets/LinkCard';
-import Faq from '../widgets/Faq';
+
 
 // Styles for page
 //Set padding for to make space for navbar
