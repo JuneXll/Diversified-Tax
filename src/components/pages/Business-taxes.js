@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 //Imported Images
-import businessHeaderImg from '../../images/business-header.png';
-import outsideServicesImg from '../../images/outside-services.png';
-import businessNewImg from '../../images/business-new-client.png';
-import businessReturningImg from '../../images/business-returning.png';
+import businessHeaderImg from 'https://ik.imagekit.io/diversifiedtax/images/business-header.png?updatedAt=1640385360004';
+import outsideServicesImg from 'https://ik.imagekit.io/diversifiedtax/images/outside-services.png?updatedAt=1640385340053';
+import businessNewImg from 'https://ik.imagekit.io/diversifiedtax/images/business-new-client.png?updatedAt=1640385381552';
+import businessReturningImg from 'https://ik.imagekit.io/diversifiedtax/images/business-returning.png?updatedAt=1640385349651';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
