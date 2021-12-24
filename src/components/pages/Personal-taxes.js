@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
 //Imported Images
-import personalHeaderImg from 'https://ik.imagekit.io/diversifiedtax/images/personal-header.png?updatedAt=1640385292558';
-import formImg from 'https://ik.imagekit.io/diversifiedtax/images/forms.png?updatedAt=1640385275535';
-import howDoImg from 'https://ik.imagekit.io/diversifiedtax/images/how-do-i-know.png?updatedAt=1640385285446';
-import personalNewImg from 'https://ik.imagekit.io/diversifiedtax/images/personal-new-client.png?updatedAt=1640385388965';
-import personalReturningImg from 'https://ik.imagekit.io/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
-import checklist1 from 'https://ik.imagekit.io/diversifiedtax/images/Checklist1.png?updatedAt=1640385426982';
-import checklist2 from 'https://ik.imagekit.io/diversifiedtax/images/Checklist2.png?updatedAt=1640385418168';
+const personalHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-header.png?updatedAt=1640385292558';
+const formImg = 'https://ik.imagekit.io/diversifiedtax/images/forms.png?updatedAt=1640385275535';
+const howDoImg = 'https://ik.imagekit.io/diversifiedtax/images/how-do-i-know.png?updatedAt=1640385285446';
+const personalNewImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-new-client.png?updatedAt=1640385388965';
+const personalReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
+const checklist1 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist1.png?updatedAt=1640385426982';
+const checklist2 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist2.png?updatedAt=1640385418168';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
