@@ -59,7 +59,8 @@ const serviceText = {
 const paragraphs = {
     lineHeight: '1.5',
     letterSpacing: '2px',
-    fontFamily: 'Open Sans, sans-serif'
+    fontFamily: 'Open Sans, sans-serif',
+    textIndent: '20px'
 }
 //Styles for pic/ text yellow dic]v
 const leftColumn = {
