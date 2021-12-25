@@ -5,11 +5,11 @@ import { Container, Button, Image } from 'react-bootstrap';
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
 //Imported Images
-const personalHeaderImg = 'https://ik.imagekit.io/tr:w-950/diversifiedtax/images/personal-header.png?updatedAt=1640391118577';
-const formImg = 'https://ik.imagekit.io/diversifiedtax/tr:w-400/images/forms.png?updatedAt=1640390870193';
-const howDoImg = 'https://ik.imagekit.io/tr:w-400/diversifiedtax/images/how-do-i-know.png?updatedAt=1640391103537';
-const personalNewImg = 'https://ik.imagekit.io/tr:w-300/diversifiedtax/images/personal-new-client.png?updatedAt=1640385388965';
-const personalReturningImg = 'https://ik.imagekit.io/tr:w-300/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
+const personalHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-header.png?updatedAt=1640391118577';
+const formImg = 'https://ik.imagekit.io/diversifiedtax/images/forms.png?updatedAt=1640390870193';
+const howDoImg = 'https://ik.imagekit.io/diversifiedtax/images/how-do-i-know.png?updatedAt=1640391103537';
+const personalNewImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-new-client.png?updatedAt=1640385388965';
+const personalReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
 const checklist1 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist1.png?updatedAt=1640385426982';
 const checklist2 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist2.png?updatedAt=1640385418168';
 
