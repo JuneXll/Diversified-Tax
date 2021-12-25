@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 // Imported images
-const extraFormsImg = 'https://ik.imagekit.io/diversifiedtax/images/extra-forms.png?updatedAt=1640385299840';
+const extraFormsImg = 'https://ik.imagekit.io/diversifiedtax/images/extra-forms.png?updatedAt=1640391110995';
 
 const headings = {
     lineHeight: '2',
