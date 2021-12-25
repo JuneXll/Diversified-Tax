@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
 
 // Imported images-imagekit.io as webp cdn
-const jumbotronImg = 'https://ik.imagekit.io/diversifiedtax/images/jumbotron.png?updatedAt=1640385312525';
+const jumbotronImg = 'https://ik.imagekit.io/diversifiedtax/images/jumbotron.png?updatedAt=1640391124338';
 const aboutUsImg = 'https://ik.imagekit.io/diversifiedtax/images/about-us.png?updatedAt=1640390724180';
 const whatWeDoImg = 'https://ik.imagekit.io/diversifiedtax/images/what-does-dt-do.png?updatedAt=1640385412027';
 const fingertipsImg = 'https://ik.imagekit.io/diversifiedtax/images/fingertips.png?updatedAt=1640385371781';
 const personalCardImg = 'https://ik.imagekit.io/diversifiedtax/images/personalCard.png?updatedAt=1640390885673';
 const businessCardImg = 'https://ik.imagekit.io/diversifiedtax/images/businessCard.png?updatedAt=1640390876577';
-// //Imagekit 
+
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -55,7 +55,6 @@ const blueButton = {
 }
 //Styles for text on page
 const paragraphs = {
-    textAlign: 'justify',
     lineHeight: '1.5',
     letterSpacing: '2px',
     fontFamily: 'Open Sans, sans-serif'
