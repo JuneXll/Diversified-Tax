@@ -35,8 +35,15 @@ const Navigation = () => {
     //World icon for language dropdown
     const worldIcon = (<i className="fas fa-globe" style={{color:"#003054"}} role='menu' aria-label='Language Menu'></i>)
 
-    //Set language of page when use clicks on language options
-    const [lang, setLang] = useState('English');
+    //Set language of page when use clicks on language options or by cookie
+    let cookie = document.cookie
+        .split(';')
+        .map(cookie=> cookie.split('='))
+        .reduce((accumulator, [key,value]) => 
+            ({ ...accumulator, [key.trim()]:decodeURIComponent(value) }),
+            {});
+    let langCookie = cookie.i18next;
+    const [lang, setLang] = useState(langCookie);
     const { t } = useTranslation();
 
     return (

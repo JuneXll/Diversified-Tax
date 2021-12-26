@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Image, Row, Col } from 'react-bootstrap';
+//Imports media hoook
+import useMediaQuery from '../../hooks/useMediaQuery';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
@@ -83,14 +85,9 @@ const rightColumn = {
 
 
 const Business = () => {
-    //Sets state for smaller devices
-    const [matches, setMatches] = useState(window.matchMedia("(min-width:580px)").matches)
-    //Updates when change occurs
-    useEffect(()=>{
-        window
-        .matchMedia("(min-width:580px)")
-        .addEventListener('change', e => setMatches(e.matches));
-    }, []);
+    
+    // //Sets media for smaller devices
+    const matches = useMediaQuery("(min-width:580px)");
 
     //Sets translations for the page
     const { t } = useTranslation();

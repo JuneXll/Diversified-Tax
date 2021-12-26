@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Button, Image } from 'react-bootstrap';
+//Imports media hoook
+import useMediaQuery from '../../hooks/useMediaQuery';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
@@ -101,14 +103,8 @@ const dlChecklist = (e) => {
 }
 
 const Personal = () => {
-    //Sets state for smaller devices
-    const [matches, setMatches] = useState(window.matchMedia("(min-width:400px)").matches)
-    //Updates when change occurs
-    useEffect(()=>{
-        window
-        .matchMedia("(min-width:400px)")
-        .addEventListener('change', e => setMatches(e.matches));
-    }, []);
+    //Sets media for smaller devices
+    const matches = useMediaQuery("(min-width:400px)");
 
     //Sets translations for the page
     const { t } = useTranslation();
@@ -132,7 +128,7 @@ const Personal = () => {
             {/* Income Section */}
             <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-1 my-auto'>
                     <h2 style={headings}>{t('p_income')}</h2>
                     <p style={paragraphs}>{t('p_income_content')}</p>
                 </Container>
@@ -150,7 +146,7 @@ const Personal = () => {
                     <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}} alt='Man holding a notebook with a question mark'/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-1 my-auto'>
                     <h2 className='text-white' style={headings}>{t('how_do_i_know')}</h2>
                     <p className='text-white' style={paragraphs}>{t('how_do_content')}</p>
                 </Container>
@@ -179,7 +175,7 @@ const Personal = () => {
                             style={checklist1Style} alt='diversified-tax-checklist1'
                             onClick={dlChecklist}/>
                     </Container>
-                    )}
+                    )} 
                 </Container>
                 <Container id='linksCard'></Container>
             </Container>
