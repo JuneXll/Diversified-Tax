@@ -113,7 +113,7 @@ const Personal = () => {
         <div style={paddingTop}>
             {/* Jumbotron Section */}
             <div className={"d-flex justify-content-center"}>
-                <div className="jumbotron jumbotron-fluid col-xl-10 col-md-12 col-sm-12 col-xs-12 mb-3" style={jumbotronCover}>
+                <div className="col-xl-10 col-md-12 col-sm-12 col-xs-12 mb-3" style={jumbotronCover}>
                     <Container className='flex-column p-5 text-white'>
                         <h1 className='display-4' id='p-cover-heading' style={coverHeading}>{t('p_page_cover')}</h1>
                         <br/>
@@ -134,7 +134,7 @@ const Personal = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center pt-2 my-auto'>
-                    <Image fluid className='col-10' src={formImg} style={imgStyle} alt='Stack of W-2 papers'/>
+                    <Image fluid className='col-lg-10 col-xs-12' src={formImg} style={imgStyle} alt='Stack of W-2 papers'/>
                 </Container>
 
             </Container>
@@ -143,7 +143,7 @@ const Personal = () => {
             <Container className='row mx-1' style={{backgroundColor:'#003054', borderTopLeftRadius:'5px',borderTopRightRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'5em 3em'}}>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2 my-auto'>
-                    <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}} alt='Man holding a notebook with a question mark'/>
+                    <Image fluid className='col-lg-10 col-xs-12' src={howDoImg} style={{borderRadius:'5px'}} alt='Man holding a notebook with a question mark'/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-1 my-auto'>

@@ -127,7 +127,7 @@ const Home = () => {
             <Container className='row p-5 my-5'>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2 my-auto'>
-                    <Image fluid className='col-10' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/>
+                    <Image fluid className='col-lg-10 col-xs-12' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-1 my-auto'>
@@ -146,7 +146,7 @@ const Home = () => {
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 text-center pt-2 my-auto'>
-                    <Image fluid className='col-10' src={whatWeDoImg} style={{borderRadius:'5px'}} alt='Graphic of calculator with tax icons around'/>
+                    <Image fluid className='col-lg-10 col-xs-12' src={whatWeDoImg} style={{borderRadius:'5px'}} alt='Graphic of calculator with tax icons around'/>
                 </Container>
 
             </Container>
@@ -155,7 +155,7 @@ const Home = () => {
             <Container className='row p-5 my-5'>
 
                 <Container className='col-lg-6 col-xs-12 text-center pb-2 my-auto'>
-                    <Image fluid className='col-10' src={fingertipsImg} style={imgStyle} alt='Smiling woman holding a phone'/>
+                    <Image fluid className='col-lg-10 col-xs-12' src={fingertipsImg} style={imgStyle} alt='Smiling woman holding a phone'/>
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-1 my-auto'>
@@ -246,6 +246,7 @@ const Home = () => {
                 </Container>
             </Container>
 
+            {/* Google Feed */}
             <Container>
                 <h1 className='display-3 text-center' style={headings}>{t('What-customers-say')}</h1>
                 {showGoogle()}
