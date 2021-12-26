@@ -111,14 +111,8 @@ const Home = () => {
             {/* About Section */}
             <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 text-center pb-2'>
+                <Container className='col-lg-6 col-xs-12 text-center pb-2 my-auto'>
                     <Image fluid className='col-10' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/>
-                    {/* <IKImage
-                        urlEndpoint={urlEndpoint}
-                        path="/images/about-us.png"
-                        style={imgStyle}
-                        className='col-10'
-                    /> */}
                 </Container>
 
                 <Container className='col-lg-6 col-xs-12 flex-column p-3'>
@@ -136,7 +130,7 @@ const Home = () => {
                     <p className='text-white' style={paragraphs}>{t('what_does_dt_content')}</p>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 text-center pt-2'>
+                <Container className='col-lg-6 col-xs-12 text-center pt-2 my-auto'>
                     <Image fluid className='col-10' src={whatWeDoImg} style={{borderRadius:'5px'}} alt='Graphic of calculator with tax icons around'/>
                 </Container>
 
@@ -145,7 +139,7 @@ const Home = () => {
             {/* We're always at your fingertips */}
             <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 text-center pb-2'>
+                <Container className='col-lg-6 col-xs-12 text-center pb-2 my-auto'>
                     <Image fluid className='col-10' src={fingertipsImg} style={imgStyle} alt='Smiling woman holding a phone'/>
                 </Container>
 
