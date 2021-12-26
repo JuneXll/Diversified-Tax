@@ -247,7 +247,7 @@ const Home = () => {
             </Container>
 
             <Container>
-                <h1 className='display-3 text-center' style={headings}>{t('p_get_started')}</h1>
+                <h1 className='display-3 text-center' style={headings}>{t('What-customers-say')}</h1>
                 {showGoogle()}
             </Container>
 
