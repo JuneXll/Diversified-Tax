@@ -13,7 +13,7 @@ const useMediaQuery = (query, defaultMatches = window.matchMedia(query)) => {
         media.addEventListener('change', listener);
 
         return () => media.removeEventListener('change', listener);
-    }, []);
+    }, [query, matches]);
 
     return matches;
 }

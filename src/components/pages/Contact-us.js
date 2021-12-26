@@ -33,7 +33,6 @@ const yellowDiv = {
     borderRadius: 5,
 }
 
-
 //Function showing ig feed
 const showIG = () => {
     const igFeed = document.getElementById("ig-feed");

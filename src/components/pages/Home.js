@@ -88,6 +88,21 @@ const imgStyle = {
     boxShadow: '5px 5px 5px #ccc'
 }
 
+
+//Function showing google feed
+const showGoogle = () => {
+    const googleFeed = document.getElementById("google-feed");
+
+    if(window.location.href === 'https://diversified-tax.netlify.app/') {
+        if(googleFeed.style.display === 'none') {
+            googleFeed.style.display = 'block';
+        } else {
+            googleFeed.style.display = 'none';
+        }
+    }
+
+}
+
 const Home = () => {
 
     const { t } = useTranslation();
@@ -229,6 +244,11 @@ const Home = () => {
                         <Button href='/new-personal-clients' className='my-5' style={blueButton}>{t('choose_button')}</Button>
                     </Container>
                 </Container>
+            </Container>
+
+            <Container>
+                <h1 className='display-3 text-center' style={headings}>{t('p_get_started')}</h1>
+                {showGoogle()}
             </Container>
 
 
