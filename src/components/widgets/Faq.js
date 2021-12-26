@@ -25,7 +25,7 @@ const questionDiv = {
 
 const Faq = (props) => {
 
-    const cookie = Cookie.get(i18next) || 'en';
+    const cookie = Cookie.get(i18next);
 
     useEffect(()=>{
         console.log(cookie);

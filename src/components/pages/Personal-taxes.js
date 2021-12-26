@@ -17,7 +17,7 @@ const checklist2 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist2.png?
 // Styles for page
 //Set padding for to make space for navbar
 const paddingTop = {
-    paddingTop: 100
+    paddingTop: 125
 }
 //Jumbotron image styles
 const jumbotronCover = {
@@ -132,7 +132,7 @@ const Personal = () => {
             {/* Income Section */}
             <Container className='row p-5 my-5'>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 style={headings}>{t('p_income')}</h2>
                     <p style={paragraphs}>{t('p_income_content')}</p>
                 </Container>
@@ -150,7 +150,7 @@ const Personal = () => {
                     <Image fluid className='col-10' src={howDoImg} style={{borderRadius:'5px'}} alt='Man holding a notebook with a question mark'/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 className='text-white' style={headings}>{t('how_do_i_know')}</h2>
                     <p className='text-white' style={paragraphs}>{t('how_do_content')}</p>
                 </Container>

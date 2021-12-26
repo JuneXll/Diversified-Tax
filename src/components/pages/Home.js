@@ -115,7 +115,7 @@ const Home = () => {
                     <Image fluid className='col-10' src={aboutUsImg} style={imgStyle} alt='Employee huddle with hands in the middle'/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 style={headings}>{t('about_header')}</h2>
                     <p style={paragraphs}>{t('about_content')}</p>
                 </Container>
@@ -125,7 +125,7 @@ const Home = () => {
             {/* What does DT do? */}
             <Container className='row m-1' style={{backgroundColor:'#003054', borderRadius:'5px', boxShadow: '5px 5px 5px #ccc', padding:'5em 3em'}}>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 className='text-white' style={headings}>{t('what_does_dt_header')}</h2>
                     <p className='text-white' style={paragraphs}>{t('what_does_dt_content')}</p>
                 </Container>
@@ -143,7 +143,7 @@ const Home = () => {
                     <Image fluid className='col-10' src={fingertipsImg} style={imgStyle} alt='Smiling woman holding a phone'/>
                 </Container>
 
-                <Container className='col-lg-6 col-xs-12 flex-column p-3'>
+                <Container className='col-lg-6 col-xs-12 flex-column p-5'>
                     <h2 style={headings}>{t('fingertips_header')}</h2>
                     <p style={paragraphs}>{t('fingertips_content')}</p>
                 </Container>
