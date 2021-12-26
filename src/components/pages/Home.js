@@ -248,10 +248,10 @@ const Home = () => {
             </Container>
 
             {/* Google Feed */}
-            <Container>
+            {/* <Container>
                 <h1 className='display-3 text-center' style={headings}>{t('What-customers-say')}</h1>
                 {showGoogle()}
-            </Container>
+            </Container> */}
 
 
         </div>
