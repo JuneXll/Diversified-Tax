@@ -25,6 +25,7 @@ const paddingTop = {
 const jumbotronCover = {
     backgroundImage: `url(${personalHeaderImg})`,
     backgroundSize: 'cover',
+    backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     height: '60vh',
     borderRadius: '5px',
