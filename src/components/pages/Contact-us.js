@@ -56,7 +56,7 @@ const Contact = () => {
             <div style={blueDiv}>
                 <Container>
                     {/* Heading */}
-                    <Container className='flex-column col-10 justify-content-center pt-4'>
+                    <Container className='flex-column col-11 justify-content-center pt-4'>
                         <h1 style={header}>{t('contact_us_header')}</h1>
                     </Container>
                     {/* Contact us form */}

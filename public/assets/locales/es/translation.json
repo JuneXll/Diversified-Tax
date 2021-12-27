@@ -1,7 +1,7 @@
 {
     "nav_personal": "Impuestos Personales",
-    "nav_business": "Impuestos Comerciales",
-    "nav_contact_us": "Contacta con Nosotros",
+    "nav_business": "Impuestos de Negocio",
+    "nav_contact_us": "Contactanos",
 
 
     "main_jumbo_title": "Diversified Tax",
@@ -22,20 +22,20 @@
     "personal_header": "Impuestos Personales",
     "p_preparation_title": "Servicios de Preparación",
     "p_first_li": "Años actuales y anteriores",
-    "p_second_li": "Federal 1040, todos los horarios relacionados",
-    "p_third_li": "Todas las declaraciones estatales, todos los horarios relacionados",
+    "p_second_li": "Federal 1040, todas las formas relacionadas",
+    "p_third_li": "Todas las declaraciones estatales, todas las formas relacionadoas",
     "p_fourth_li": "Sin tarifas por adelantado",
     "p_fifth_li": "Protección de auditoría",
     "p_sixth_li": "Reembolso de anticipos. Sujeto a aprobación",
     "personal_button": "Aprende Más",
 
-    "business_header": "Impuestos Comerciales",
+    "business_header": "Impuestos de Negocio",
     "b_preparation_title" : "Servicios de Preparación",
     "b_first_li" : "Presentación de EIN y presentación ante el estado correspondiente",
     "b_second_li"  : "Contabilidad durante todo el año",
     "b_third_li" : "LLC de un solo miembro, propietario único",
-    "b_fourth_li" : "Sociedades, LLC de varios miembros como sociedad o corporación, todos los horarios",
-    "b_fifth_li" : "Corporaciones, C o S, todos los horarios",
+    "b_fourth_li" : "Sociedades, LLC de varios miembros como sociedad o corporación, todas las formas relacionadas",
+    "b_fifth_li" : "Corporaciones, C o S, todas las formas relacionadas",
     "b_sixth_li" : "",
     "business_button": "Aprende Más",
 
@@ -78,11 +78,14 @@
     "outside_third_li": "Asistencia de pago de estimaciones",
     "outside_fourth_li": "Asistencia de impuestos de ocupación",
     "outside_fifth_li": "Servicios Notariales",
+    "outside_sixth_li": "Servicios para inversores extranjeros (apertura de LLC, ITIN, etc)",
+    "outside_seventh_li": "Presentaciones trimestrales y anuales del Departamento de Ingresos de la Florida",
+    "outside_eighth_li": "Consultoria y coaching para pequenas empresas.",
 
     "b_get_started": "Empiece hoy!",
 
 
-    "contact_us_header": "Contacta con Nosotros",
+    "contact_us_header": "Contactanos",
     "ig_header": "No olvides hacer un seguimiento en Instagram",
 
 

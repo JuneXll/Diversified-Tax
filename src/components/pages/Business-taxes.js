@@ -76,7 +76,7 @@ const leftColumnPic = {
 }
 
 const rightColumn = {
-    padding: '4em 3em',
+    padding: '3em 2em',
     borderTopRightRadius: '5px',
     borderBottomRightRadius: '5px',
     backgroundColor: '#e1ad00',
@@ -128,6 +128,9 @@ const Business = () => {
                                 <li>{t('outside_third_li')}</li>
                                 <li>{t('outside_fourth_li')}</li>
                                 <li>{t('outside_fifth_li')}</li>
+                                <li>{t('outside_sixth_li')}</li>
+                                <li>{t('outside_seventh_li')}</li>
+                                <li>{t('outside_eighth_li')}</li>
                             </ul>
                     </Col>
                 </Row>

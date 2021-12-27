@@ -31,7 +31,7 @@ export const esPersonalFaq = [
         id: 6,
         question: `Qué pasa si no puedo pagar mi obligación tributaria?`,
         answer: `Siempre que deba $ 50,000 o menos y ya haya presentado su declaración, puede solicitar un plan de pagos a plazos con el IRS.
-        Si debe más de $ 50,000 pero menos de $ 100,000, puede solicitar un acuerdo a corto plazo, pero tenga en cuenta lo siguiente: Debe pagar cuotas más altas, el IRS requerirá prueba de su situación financiera, se aplicará un gravamen de impuestos obligatorio sobre su propiedad y su informe de crédito puede verse afectado.`
+        Si debe más de $ 50,000 pero menos de $ 100,000, puede solicitar un acuerdo a corto plazo, pero tenga en cuenta lo siguiente: Debe pagar cuotas más altas, el IRS requerirá prueba de su situación financiera, se aplicará un gravamen de impuestos obligatorio sobre su propiedad y su informe de crédito puede verse afectado. Si este es el caso, contáctanos lo antes posible.`
     }
 
 ]

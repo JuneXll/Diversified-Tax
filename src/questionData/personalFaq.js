@@ -31,7 +31,7 @@ export const personalFaq = [
         id: 6,
         question: `What if I can't afford to pay my tax liability?`,
         answer: `As long as you owe $50,000 or less and have already filed your return, you may apply for an installment plan with the IRS. 
-        If you owe more than $50,000 but less than $100,000, you may apply for a short-term agreement, but note the following: You must pay higher installments, the IRS will require proof of your financial situation, a mandatory tax lien will apply on your property and your Credit report may take a hit.`
+        If you owe more than $50,000 but less than $100,000, you may apply for a short-term agreement, but note the following: You must pay higher installments, the IRS will require proof of your financial situation, a mandatory tax lien will apply on your property and your Credit report may take a hit. If this is the case, contact us as soon as possible.`
     }
 
 ]
