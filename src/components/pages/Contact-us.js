@@ -73,7 +73,7 @@ const Contact = () => {
                             <p style={bodyFont}>Miami Lakes, Florida 33016</p>
                             <br/>
                             <h3 style={blueHeader}>Ricardo Pachon</h3>
-                            <p style={bodyFont}>(305)-527-5133</p>
+                            <p style={bodyFont}>(786)-527-5133</p>
                             <p style={bodyFont}>taxes@diversifiedtax.us</p>
                         </Container>
                     </Container>
@@ -82,13 +82,13 @@ const Contact = () => {
             </div>
 
             {/* Instagram section */}
-            {/* <Container className='text-center'>
+            <Container className='text-center'>
                 <Container style={{marginTop:'15vh', marginBottom:'5vh'}}>
                     <h1 className='text-center text-black' style={header}>{t('ig_header')}</h1> 
                 </Container>
 
                 {showIG()}
-            </Container> */}
+            </Container>
         </div>
     )
 }
