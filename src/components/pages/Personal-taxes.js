@@ -99,7 +99,7 @@ const imgStyle = {
 
 //Function that opens new window for checklist onClick
 const dlChecklist = (e) => {
-    window.open('https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view');
+    window.open('https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view?usp=sharing');
 
 }
 
@@ -159,7 +159,7 @@ const Personal = () => {
 
                 <Container className='col-lg-6 col-xs-12 flex-column pb-2'>
                     <h2 className='text-white display-3' style={headings}>{t('not_sure')}</h2>
-                    <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view' target='_blank' className='my-3' style={blueButton} aria-label='Download tax checklist'><i className="fas fa-arrow-down m-1"></i>{t('tax_checklist')}</Button>
+                    <Button href='https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view?usp=sharing' target='_blank' className='my-3' style={blueButton} aria-label='Download tax checklist'><i className="fas fa-arrow-down m-1"></i>{t('tax_checklist')}</Button>
                 </Container>
                 {/* Container for checklist images, is hidden on smaller devices */}
                 <Container className='col-lg-6 col-xs-12 text-center'>
