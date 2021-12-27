@@ -2,7 +2,8 @@ export const esPersonalFaq = [
     {
         id: 1,
         question: 'Cuánto tiempo hasta que reciba mi reembolso de impuestos?',
-        answer: 'Después de que se haya presentado su declaración, puede tomar algún tiempo antes de que se reciba su reembolso. Para las declaraciones que se han presentado electrónicamente con información de depósito directo, el tiempo de tránsito estándar es de diez a veintiún días hábiles. El número de teléfono gratuito para verificar el estado de su reembolso federal es 1-800-829-1954. El servicio automático está disponible todos los días de la semana, las 24 horas del día o puede consultar a través de Internet en https://www.irs.gov/refunds'
+        answer: 'Después de que se haya presentado su declaración, puede tomar algún tiempo antes de que se reciba su reembolso. Para las declaraciones que se han presentado electrónicamente con información de depósito directo, el tiempo de tránsito estándar es de 10-21 días hábiles. El número de teléfono gratuito para verificar el estado de su reembolso federal es 1-800-829-1954. El servicio automático está disponible 24 horas al día, 7 días a la semana o puede consultar a través de Internet con el enlace a continuación:',
+        link: "https://www.irs.gov/refunds"
     },
     {
         id: 2,

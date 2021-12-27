@@ -36,7 +36,7 @@ const Faq = (props) => {
 
     const renderQuestion = (question) => {
         return(
-            <Accordion quest={question.question} ans={question.answer}/> 
+            <Accordion quest={question.question} ans={question.answer} link={question.link}/> 
         )
     }
 

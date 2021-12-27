@@ -6,6 +6,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 //Imported widgets
 import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
+import ResourceLinks from '../widgets/ResourceLinks'
 //Imported Images
 const personalHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-header.png?updatedAt=1640391118577';
 const formImg = 'https://ik.imagekit.io/diversifiedtax/images/forms.png?updatedAt=1640390870193';
@@ -193,6 +194,9 @@ const Personal = () => {
                         secondSrc={personalReturningImg}
                         />
             </Container>
+
+            {/*Resource Section */}
+            <ResourceLinks />
             
             {/* FAQ component*/}
             <Faq faq='personal' />

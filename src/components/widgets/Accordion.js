@@ -32,7 +32,7 @@ const Accordion = props => {
                 >
                 <div
                     className="accordion__text"
-                    dangerouslySetInnerHTML={{ __html: props.ans }}
+                    dangerouslySetInnerHTML={props.ans && props.link ? ({ __html: `${props.ans} <a href=${props.link} aria-labelledby='IRS-Where is my refund' style="color:#E1AD00" target='_blank' rel="noreferrer">here.</a>`}) : ({ __html: props.ans}) }
                 />
                 </div>
             </div>
@@ -41,3 +41,4 @@ const Accordion = props => {
 }
 
 export default Accordion;
+
