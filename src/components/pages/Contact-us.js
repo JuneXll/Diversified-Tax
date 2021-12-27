@@ -7,30 +7,30 @@ import ContactForm from '../widgets/ContactForm';
 const header = {
     color: 'white',
     fontFamily: 'Bebas Neue, tahoma',
-    letterSpacing: 6,
+    letterSpacing: '6px',
 }
 //Text stylings
 const blueHeader = {
     fontFamily: 'Bebas Neue, tahoma',
-    letterSpacing: 5,
+    letterSpacing: '5px',
     color: '#003054'
 }
 
 const bodyFont = {
     color: 'white',
     fontFamily: 'Open Sans, san serif',
-    letterSpacing: 2
+    letterSpacing: '2px'
 }
 //Div stylings for page
 const blueDiv = {
     backgroundColor:'#003054', 
-    borderRadius:5,
+    borderRadius:'5px',
     boxShadow: '5px 5px 5px #ccc' 
 }
 
 const yellowDiv = {
     backgroundColor: '#e1ad00',
-    borderRadius: 5,
+    borderRadius: '5px',
 }
 
 //Function showing ig feed
@@ -82,13 +82,13 @@ const Contact = () => {
             </div>
 
             {/* Instagram section */}
-            <Container className='text-center'>
+            {/* <Container className='text-center'>
                 <Container style={{marginTop:'15vh', marginBottom:'5vh'}}>
                     <h1 className='text-center text-black' style={header}>{t('ig_header')}</h1> 
                 </Container>
 
                 {showIG()}
-            </Container>
+            </Container> */}
         </div>
     )
 }

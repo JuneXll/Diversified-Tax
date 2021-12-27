@@ -15,7 +15,7 @@ const logoStyle = {
 const links = {
     color: '#003054',
     fontFamily: 'Bebas Neue, tahoma',
-    letterSpacing: 4
+    letterSpacing: '4px'
 }
 
 const languages = [
