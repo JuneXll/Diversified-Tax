@@ -1,0 +1,25 @@
+/* CSS for language dropdown menu */
+div.dropdown-menu.show {
+    background-color: #003054;
+}
+
+a.dropdown-toggle.nav-link {
+    color: #003054;
+}
+
+a.dropdown-item {
+    color: #ffffff;
+}
+
+a.dropdown-item:active {
+    background-color: #E1AD00;
+    color: #003054;
+}
+
+a.nav-link:active {
+    text-decoration: underline;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+}
