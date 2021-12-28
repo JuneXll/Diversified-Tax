@@ -62,8 +62,27 @@
 
     "not_sure": "No estás seguro de si estás listo para presentar?",
     "tax_checklist": "Lista de Verificación de Impuestos",
-    
     "p_get_started": "Empiece hoy!",
+
+    "resource_header": "Recursos Extra",
+    "card_one_title": "Donde esta mi reembolso?",
+    "card_one_text": "Para mostrar el estado de su reembolso, necesitará su número de Seguro Social o ITIN, su estado civil para efectos de la declaración y el monto exacto de su reembolso.",
+    "card_one_button": "Localizar Reembolso",
+    "card_two_title": "Hacer un pago al IRS",
+    "card_two_text": "El IRS acepta pagos totales y parciales, incluidos los pagos hacia un plan de pago (incluidos los acuerdos de pago a plazos).",
+    "card_two_button": "Realizar un Pago",
+    "card_three_title": "Préstamos de la SBA",
+    "card_three_text": "Vea cómo la SBA puede proporcionar préstamos por desastre a bajo interés para ayudarlo a usted, como empresa o propietario de vivienda, a recuperarse de desastres declarados.",
+    "card_three_button": "Saber Más",
+    "card_four_title": "Solicitar un pago del IRS",
+    "card_four_text": "Solicite copias de los registros de impuestos (transcripciones de declaraciones de impuestos anteriores, información de cuentas de impuestos, declaraciones de ingresos y salarios y cartas de no declarantes).",
+    "card_four_button": "Obtener Transcripción",
+    "card_five_title" : "Desempleo de Florida",
+    "card_five_text": "Para aquellos que califican, el estado de Florida proporciona beneficios de reemplazo de ingresos parciales temporales y recursos de asistencia laboral a los trabajadores desempleados.",
+    "card_five_button" : "Visita la Página",
+    "card_six_title": "Preguntas sobre pagos por impacto económico del IRS",
+    "card_six_text" : "El IRS ha emitido todos los pagos de impacto económico primero y segundo. Como lo exige la ley, dejarán de realizar los terceros pagos antes del 31 de diciembre de 2021.",
+    "card_six_button": "Saber Más",
 
 
     "b_page_header": "Su negocio está seguro con nosotros",
