@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 const showCalendar = () => {
     const calendar = document.getElementById("calendar");
 
-    if(window.location.href === 'http://localhost:3000/calendar') {
+    if(window.location.href === 'https://diversified-tax.netlify.app/calendar') {
         if(calendar.style.display === 'none') {
             calendar.style.display = 'block';
         } else {
