@@ -1,0 +1,44 @@
+#modalBody {
+  background-color: #003054;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+#closeBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+#modalText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#btns {
+  font-family: "Bebas Neue", tahoma;
+  background-color: #e1ad00;
+  color: #003054;
+  border: none;
+  font-size: 24px;
+  padding: 4px 12px;
+}
+
+#btns:hover {
+  background-color: white;
+  color: #003054;
+}

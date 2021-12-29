@@ -7,6 +7,7 @@ import Personal from './components/pages/Personal-taxes';
 import Business from './components/pages/Business-taxes';
 import Contact from './components/pages/Contact-us';
 import Success from './components/pages/Success';
+import Calendar from './components/pages/Calendar';
 // Form pages
 import NewPersonal from './components/pages/NewPersonal';
 import ReturningPersonal from './components/pages/ReturningPersonal';
@@ -36,6 +37,7 @@ function App() {
               <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
               <Route exact path='/extra-forms' component={ExtraForms}/>
               <Route exact path='/success' component={Success}/>
+              <Route exact path='/calendar' component={Calendar}/>
             </Container>
             <Route render={()=><h1 className='display-2'>Oops! Wrong Page!</h1>}/>
           </Switch>

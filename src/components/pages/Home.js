@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 // Bootstrap Components
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
+import FileModal from '../widgets/FileModal';
 
 // Imported images-imagekit.io as webp cdn
 const jumbotronImg = 'https://ik.imagekit.io/diversifiedtax/images/jumbotron.png?updatedAt=1640391124338';
@@ -101,12 +102,14 @@ const showGoogle = () => {
             googleFeed.style.display = 'none';
         }
     }
-
 }
 
 const Home = () => {
-
+    //set translation for page
     const { t } = useTranslation();
+
+    //set modal state
+    const [openModal, setOpenModal] = useState(false);
 
     return (
         <div style={paddingTop}>
@@ -118,12 +121,26 @@ const Home = () => {
                         <h2 style={coverText}>{t('fist_jumbo_list')}</h2>
                         <h2 style={coverText}>{t('second_jumbo_list')}</h2>
                         <h2 style={coverText}>{t('third_jumbo_list')}</h2>
-
-                        <Button href='/new-personal-clients' className='my-3' style={yellowButton}>{t('jumbo_button')}</Button>
+                        <Container fluid className='p-0'>
+                            <Button 
+                                className='my-3' 
+                                style={yellowButton}
+                                onClick={()=>setOpenModal(true)}
+                                >{t('jumbo_button_one')}</Button>
+                            <Button 
+                                href='/calendar' 
+                                className='my-3 mx-2' 
+                                style={yellowButton}
+                                >{t('jumbo_button_two')}</Button>
+                        </Container>
                     </Container>
 
                 </div>
             </div>
+            
+            {/* If openModal is true then modal will show, using props to pass state to modal component */}
+            {openModal && <FileModal closeModal={setOpenModal}/>}
+
             {/* About Section */}
             <Container className='row p-5 my-5'>
 
