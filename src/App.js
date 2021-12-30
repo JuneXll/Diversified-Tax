@@ -16,7 +16,7 @@ const ReturningPersonal = React.lazy(() => import(/* webpackChunkName: "Returnin
 const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/Home'));
 const ReturningBusiness = React.lazy(() => import(/* webpackChunkName: "ReturningBusiness" */ './components/pages/ReturningBusiness'));
 const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
-const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/pages/Navigation'));
+const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
 
 const ballStyle = {
   width: 10,
@@ -31,6 +31,7 @@ const ballStyle = {
 const text = {
   color: "#003054"
 }
+
  //Loading screen markup and animation
  const loadingMarkup = (
   <div className="loading d-column w-100 text-center">
@@ -51,6 +52,22 @@ const text = {
   </div>
 )
 
+const yellowButton = {
+  backgroundColor:'#e1ad00',
+  fontFamily: 'Bebas Neue, tahoma',
+  letterSpacing: '4px',
+  border: 'none'
+}
+
+const oops = (
+  <div className='text-center'style={{paddingTop:'100px'}}>
+    <h1 className='display-2'>Oops! Something went wrong!</h1>
+    <br/>
+    <a href='/'><button style={yellowButton}>Go Back to Homepage</button></a>
+  </div>
+)
+
+
 function App() {
   return (
 
@@ -65,16 +82,16 @@ function App() {
                 <Route exact path='/personal-tax' component={Personal}/>
                 <Route exact path='/business-tax' component={Business}/>
                 <Route exact path='/contact-us' component={Contact}/>
+                <Route exact path='/success' component={Success}/>
+                <Route exact path='/calendar' component={Calendar}/>
                 {/* Form pages */}
                 <Route exact path='/new-personal-clients' component={NewPersonal}/>
                 <Route exact path='/returning-personal-clients' component={ReturningPersonal}/>
                 <Route exact path='/new-business-clients' component={NewBusiness}/>
                 <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
                 <Route exact path='/extra-forms' component={ExtraForms}/>
-                <Route exact path='/success' component={Success}/>
-                <Route exact path='/calendar' component={Calendar}/>
               </Container>
-            <Route render={()=><h1 className='display-2'>Oops! Wrong Page!</h1>}/>
+              <Route render={()=> oops}/>
             </Suspense>
           </Switch>
       </Router>
