@@ -21,6 +21,11 @@ const links = {
     letterSpacing: '4px'
 }
 
+const dropdownLinks = {
+    letterSpacing: '2px',
+    fontFamily: 'Open Sans, sans-serif'
+}
+
 const languages = [
     {
         code: 'en',
@@ -64,9 +69,20 @@ const Navigation = () => {
                     <Nav.Link href="/business-tax" style={links} aria-labelledby='Business Taxes'>
                         {t('nav_business')}
                     </Nav.Link>
-                    <Nav.Link href="/contact-us" style={links} aria-labelledby='Contact Us'>
-                        {t('nav_contact_us')}
-                    </Nav.Link>
+                    <NavDropdown title={t('nav_contact_us')} style={links}>
+                            <NavDropdown.Item
+                                href='/contact-us'
+                                aria-label='Contact us'
+                                style={dropdownLinks}>
+                                Send us a Message
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                href='/calendar'
+                                style={dropdownLinks}
+                                >
+                                Make an appointment
+                            </NavDropdown.Item>
+                    </NavDropdown>
                     <NavDropdown title={worldIcon} style={{color:"#003054"}}>
                         {languages.map(({code, name, country_code})=>(
                             <NavDropdown.Item 
@@ -78,7 +94,8 @@ const Navigation = () => {
                                 aria-label={`Language: ${name}`}
                                 role='menuitem'
                                 >
-                                    {name}</NavDropdown.Item>
+                                    {name}
+                            </NavDropdown.Item>
                         ))}
                     </NavDropdown>
                 </Navbar.Collapse>
