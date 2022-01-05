@@ -81,8 +81,9 @@ function App() {
       <Navigation/>
         <Router>
           <Switch>
-            <Suspense fallback={loadingMarkup}>
+            
               <Container>
+              <Suspense fallback={loadingMarkup}>
                 {/* Main Pages */}
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/personal-tax' component={Personal}/>
@@ -90,6 +91,7 @@ function App() {
                 <Route exact path='/contact-us' component={Contact}/>
                 <Route exact path='/success' component={Success}/>
                 <Route exact path='/calendar' component={Calendar}/>
+                </Suspense>
                 {/* Form pages */}
                 <Route exact path='/new-personal-clients' component={NewPersonal}/>
                 <Route exact path='/returning-personal-clients' component={ReturningPersonal}/>
@@ -98,7 +100,7 @@ function App() {
                 <Route exact path='/extra-forms' component={ExtraForms}/>
               </Container>
               <Route render={()=> oops}/>
-            </Suspense>
+            
           </Switch>
       </Router>
     </div>
