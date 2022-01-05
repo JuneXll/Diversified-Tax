@@ -12,8 +12,11 @@ const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './c
 
 // Form pages
 const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
+// import NewPersonal from './components/pages/NewPersonal';
 const ReturningPersonal = React.lazy(() => import(/* webpackChunkName: "ReturningPersonal" */ './components/pages/ReturningPersonal'));
-const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/Home'));
+// import ReturningPersonal from './components/pages/ReturningPersonal';
+const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/NewBusiness '));
+// import NewBusiness from './components/pages/ReturningPersonal';
 const ReturningBusiness = React.lazy(() => import(/* webpackChunkName: "ReturningBusiness" */ './components/pages/ReturningBusiness'));
 const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
 const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
