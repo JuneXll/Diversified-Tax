@@ -2,13 +2,6 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import {Animated} from "react-animated-css";
-// Main Pages
-const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
-const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
-const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
-const Contact = React.lazy(() => import(/* webpackChunkName: "Contact" */ './components/pages/Contact-us'));
-const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
-const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
 
 // Form pages
 // const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
@@ -21,6 +14,14 @@ import NewBusiness from './components/pages/NewBusiness';
 import ReturningBusiness from './components/pages/ReturningBusiness';
 // const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
 import ExtraForms from './components/pages/ExtraForms';
+
+// Main Pages
+const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
+const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
+const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
+const Contact = React.lazy(() => import(/* webpackChunkName: "Contact" */ './components/pages/Contact-us'));
+const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
+const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
 const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
 
 const ballStyle = {
