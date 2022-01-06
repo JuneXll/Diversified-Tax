@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import {Animated} from "react-animated-css";
+// import {Animated} from "react-animated-css";
 
 // Form pages
 // const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
@@ -16,47 +16,54 @@ import ReturningBusiness from './components/pages/ReturningBusiness';
 import ExtraForms from './components/pages/ExtraForms';
 
 // Main Pages
-const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
-const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
-const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
-const Contact = React.lazy(() => import(/* webpackChunkName: "Contact" */ './components/pages/Contact-us'));
-const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
-const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
-const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
+// const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
+import Home from './components/pages/Home';
+// const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
+import Personal from './components/pages/Personal-taxes';
+// const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
+import Business from './components/pages/Business-taxes';
+// const Contact = React.lazy(() => import(/* webpackChunkName: "Contact" */ './components/pages/Contact-us'));
+import Contact from './components/pages/Contact-us';
+// const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
+import Success from './components/pages/Success';
+// const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
+import Calendar from './components/pages/Calendar';
+// const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
+import Navigation from './components/Navigation';
 
-const ballStyle = {
-  width: 10,
-  height: 10,
-  borderRadius: '50%',
-  backgroundColor: "#003054",
-  marginRight: 10,
-  marginTop: '3em',
-  animation: ".5 ease infinite alternate"
-}
+// const ballStyle = {
+//   width: 10,
+//   height: 10,
+//   borderRadius: '50%',
+//   backgroundColor: "#003054",
+//   marginRight: 10,
+//   marginTop: '3em',
+//   animation: ".5 ease infinite alternate"
+// }
 
-const text = {
-  color: "#003054"
-}
+// const text = {
+//   color: "#003054"
+// }
 
- //Loading screen markup and animation
- const loadingMarkup = (
-  <div className="loading d-column w-100 text-center">
-    <div className="balls d-flex justify-content-center">
-      <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1000} animationOutDuration={1000} isVisible={true}>
-        <div className="ball1 display-1" style={ballStyle}></div>
-      </Animated>
+//  //Loading screen markup and animation
+//  const loadingMarkup = (
+//   <div className="loading d-column w-100 text-center">
+//     <div className="balls d-flex justify-content-center">
+//       <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1000} animationOutDuration={1000} isVisible={true}>
+//         <div className="ball1 display-1" style={ballStyle}></div>
+//       </Animated>
 
-      <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1400} animationOutDuration={1400} isVisible={true}>
-        <div className="ball2 display-1" style={ballStyle}></div>
-      </Animated>
+//       <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1400} animationOutDuration={1400} isVisible={true}>
+//         <div className="ball2 display-1" style={ballStyle}></div>
+//       </Animated>
 
-      <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
-        <div className="ball3 display-1" style={ballStyle}></div>
-      </Animated>
-    </div>
-    <span className="display-3" style={text}>Loading</span>
-  </div>
-)
+//       <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
+//         <div className="ball3 display-1" style={ballStyle}></div>
+//       </Animated>
+//     </div>
+//     <span className="display-3" style={text}>Loading</span>
+//   </div>
+// )
 
 const yellowButton = {
   backgroundColor:'#e1ad00',
@@ -81,9 +88,8 @@ function App() {
       <Navigation/>
         <Router>
           <Switch>
-            
+            {/* <Suspense fallback={loadingMarkup}> */}
               <Container>
-              <Suspense fallback={loadingMarkup}>
                 {/* Main Pages */}
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/personal-tax' component={Personal}/>
@@ -91,7 +97,6 @@ function App() {
                 <Route exact path='/contact-us' component={Contact}/>
                 <Route exact path='/success' component={Success}/>
                 <Route exact path='/calendar' component={Calendar}/>
-                </Suspense>
                 {/* Form pages */}
                 <Route exact path='/new-personal-clients' component={NewPersonal}/>
                 <Route exact path='/returning-personal-clients' component={ReturningPersonal}/>
@@ -100,7 +105,7 @@ function App() {
                 <Route exact path='/extra-forms' component={ExtraForms}/>
               </Container>
               <Route render={()=> oops}/>
-            
+            {/* </Suspense> */}
           </Switch>
       </Router>
     </div>
