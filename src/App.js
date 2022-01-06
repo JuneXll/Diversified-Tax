@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-// import {Animated} from "react-animated-css";
 
 // Form pages
 // const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
