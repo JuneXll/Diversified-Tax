@@ -74,13 +74,13 @@ const Navigation = () => {
                                 href='/contact-us'
                                 aria-label='Contact us'
                                 style={dropdownLinks}>
-                                Send us a Message
+                                {t('nav_send_message')}
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 href='/calendar'
                                 style={dropdownLinks}
                                 >
-                                Make an appointment
+                                {t('nav_appointment')}
                             </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title={worldIcon} style={{color:"#003054"}}>

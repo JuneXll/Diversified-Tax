@@ -6,9 +6,7 @@ const showForm = () => {
     const extraForms = document.getElementById("extra-forms");
     const hostUrl = 'https://diversified-tax.netlify.app';
     // const hostUrl = 'http://localhost:3000/'
-
-    console.log(window.location.href);
-
+    
     if( window.location.href === `${hostUrl}/new-personal-clients`) {
         if(newPersonal.style.display === 'none') {
             newPersonal.style.display = 'block';
