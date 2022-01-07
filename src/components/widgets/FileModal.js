@@ -10,15 +10,16 @@ const filedModalImg = 'https://ik.imagekit.io/diversifiedtax/images/filed-modal.
 //Jumbotron image styles
 const imgCover = {
     backgroundImage: `url(${filedModalImg})`,
-    backgroundSize: '100%',
-    backgroundPosition: 'center'
+    backgroundSize: 'cover',
+    backgroundPosition: 'top',
+    height: '100%',
   }
 
 
 const FileModal = ({closeModal}) => {
 
     // //Sets media for smaller devices
-    const matches = useMediaQuery("(min-width:580px)"); 
+    const matches = useMediaQuery("(min-width:992px)"); 
 
     return (
         <Modal
@@ -32,10 +33,12 @@ const FileModal = ({closeModal}) => {
             <Modal.Body className='p-0'>
                 <Container className='row p-0 m-0'>
                     {matches && (
-                    <Col className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mx-auto p-0 m-0">
+                    <Col className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto p-0 m-0">
                         <div className='jumbotron' style={imgCover}>
-                            {/* <Image fluid src={filedModalImg}/> */}
-                            <div></div>
+                            <Image fluid />
+                            {/* <div style={{display:"none", height:'100px', width:'100px'}}>
+                                Test
+                            </div> */}
                         </div>
                     </Col>
                     )}
