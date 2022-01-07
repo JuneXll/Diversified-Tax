@@ -9,12 +9,12 @@ const showCalendar = () => {
 
     if(window.location.href === `${hostUrl}/calendar`) {
         if(calendar.style.display === 'none') {
-            calendar.style.display = 'block';
             console.log("Now showing calendar")
+            calendar.style.display = 'block';
+            
         } else {
-            calendar.style.display = 'none';
             console.log("Calendar is now hidden")
-
+            calendar.style.display = 'none';
         }
     }
 
