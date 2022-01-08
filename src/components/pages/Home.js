@@ -98,9 +98,10 @@ const showGoogle = () => {
     // const hostUrl = 'https://diversified-tax.netlify.app';
     // const hostUrl = 'localhost: 3000'
 
-    if(window.location.href === `${hostUrl}`) {
+    if(window.location.href === hostUrl) {
         if(googleFeed.style.display === 'none') {
             googleFeed.style.display = 'block';
+            console.log("showing google feed");
         } else {
             googleFeed.style.display = 'none';
         }
