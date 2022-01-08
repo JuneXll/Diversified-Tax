@@ -36,7 +36,8 @@ const yellowDiv = {
 //Function showing ig feed
 const showIG = () => {
     const igFeed = document.getElementById("ig-feed");
-    const hostUrl = 'https://diversified-tax.netlify.app';
+    const hostUrl = 'www.diversified.tax';
+    // const hostUrl = 'https://diversified-tax.netlify.app';
     // const hostUrl = 'localhost: 3000'
 
     if(window.location.href === `${hostUrl}/contact-us`) {

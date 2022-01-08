@@ -94,8 +94,11 @@ const imgStyle = {
 //Function showing google feed
 const showGoogle = () => {
     const googleFeed = document.getElementById("google-feed");
+    const hostUrl = 'www.diversified.tax';
+    // const hostUrl = 'https://diversified-tax.netlify.app';
+    // const hostUrl = 'localhost: 3000'
 
-    if(window.location.href === 'https://diversified-tax.netlify.app/') {
+    if(window.location.href === `${hostUrl}`) {
         if(googleFeed.style.display === 'none') {
             googleFeed.style.display = 'block';
         } else {

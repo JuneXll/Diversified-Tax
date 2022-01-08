@@ -4,7 +4,8 @@ import { Container } from 'react-bootstrap';
 
 const showCalendar = () => {
     const calendar = document.getElementById("calendar");
-    const hostUrl = 'https://diversified-tax.netlify.app';
+    const hostUrl = 'www.diversified.tax';
+    // const hostUrl = 'https://diversified-tax.netlify.app';
     // const hostUrl = 'localhost:3000';
 
     if(window.location.href === `${hostUrl}/calendar`) {
