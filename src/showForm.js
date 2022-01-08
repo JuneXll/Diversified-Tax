@@ -4,7 +4,7 @@ const showForm = () => {
     const returningClient = document.getElementById("returning-client");
     const newBusiness = document.getElementById("new-business");
     const extraForms = document.getElementById("extra-forms");
-    const hostUrl = 'www.diversified.tax';
+    const hostUrl = 'https://diversified.tax';
     // const hostUrl = 'https://diversified-tax.netlify.app';
     // const hostUrl = 'http://localhost:3000/'
     
