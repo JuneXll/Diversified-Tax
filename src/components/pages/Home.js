@@ -101,7 +101,6 @@ const showGoogle = () => {
     if(window.location.href === hostUrl) {
         if(googleFeed.style.display === 'none') {
             googleFeed.style.display = 'block';
-            console.log("showing google feed");
         } else {
             googleFeed.style.display = 'none';
         }
