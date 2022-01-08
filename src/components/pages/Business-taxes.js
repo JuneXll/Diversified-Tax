@@ -34,7 +34,7 @@ const picDiv = {
 
 const img = {
     objectFit: 'cover',
-    objectPosition: 'left',
+    objectPosition: '25% 50%',
     width: '100%',
     height: '100%',
     borderRadius: '5px'

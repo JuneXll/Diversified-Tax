@@ -22,7 +22,7 @@ const paddingTop = {
 const jumbotronCover = {
     backgroundImage: `url(${jumbotronImg})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'left',
+    backgroundPosition: '20% 50%',
     height: '75vh',
     borderRadius: '5px',
     boxShadow: '5px 5px 5px #ccc'
