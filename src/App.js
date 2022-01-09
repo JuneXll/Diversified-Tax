@@ -69,9 +69,8 @@ function App() {
                 <Route exact path='/new-business-clients' component={NewBusiness}/>
                 <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
                 <Route exact path='/extra-forms' component={ExtraForms}/>
-
-                <Route render={()=> oops}/>
               </Container>
+              <Route render={()=> oops}/>
           </Switch>
       </Router>
     </div>
