@@ -8,12 +8,6 @@ import ReturningPersonal from './components/pages/ReturningPersonal';
 import NewBusiness from './components/pages/NewBusiness';
 import ReturningBusiness from './components/pages/ReturningBusiness';
 import ExtraForms from './components/pages/ExtraForms';
-//lazy-loading
-// const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
-// const ReturningPersonal = React.lazy(() => import(/* webpackChunkName: "ReturningPersonal" */ './components/pages/ReturningPersonal'));
-// const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/NewBusiness'));
-// const ReturningBusiness = React.lazy(() => import(/* webpackChunkName: "ReturningBusiness" */ './components/pages/ReturningBusiness'));
-// const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
 
 // Main Pages
 import Home from './components/pages/Home';
@@ -23,6 +17,15 @@ import Contact from './components/pages/Contact-us';
 import Success from './components/pages/Success';
 import Calendar from './components/pages/Calendar';
 import Navigation from './components/Navigation';
+import Oops from './components/pages/Oops';
+
+//Forms lazy-loading
+// const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
+// const ReturningPersonal = React.lazy(() => import(/* webpackChunkName: "ReturningPersonal" */ './components/pages/ReturningPersonal'));
+// const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/NewBusiness'));
+// const ReturningBusiness = React.lazy(() => import(/* webpackChunkName: "ReturningBusiness" */ './components/pages/ReturningBusiness'));
+// const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
+//Main
 // const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
 // const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
 // const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
@@ -30,23 +33,6 @@ import Navigation from './components/Navigation';
 // const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
 // const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
 // const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
-
-
-const yellowButton = {
-  backgroundColor:'#e1ad00',
-  fontFamily: 'Bebas Neue, tahoma',
-  letterSpacing: '4px',
-  border: 'none'
-}
-
-const oops = (
-  <div className='text-center'style={{paddingTop:'100px'}}>
-    <h1 className='display-2'>Oops! Something went wrong!</h1>
-    <br/>
-    <a href='/'><button style={yellowButton}>Go Back to Homepage</button></a>
-  </div>
-)
-
 
 function App() {
   return (
@@ -70,7 +56,7 @@ function App() {
                 <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
                 <Route exact path='/extra-forms' component={ExtraForms}/>
               </Container>
-              <Route render={()=> oops}/>
+              <Route component={Oops}/>
           </Switch>
       </Router>
     </div>
