@@ -7,7 +7,7 @@ const yellowButton = {
     border: 'none'
   }
 
-const Oops = () => {
+const NotFound = () => {
    return (
         <div className='text-center'style={{paddingTop:'100px'}}>
           <h1 className='display-2'>Oops! Something went wrong!</h1>
@@ -17,4 +17,4 @@ const Oops = () => {
       )
 }
 
-export default Oops;
+export default NotFound;

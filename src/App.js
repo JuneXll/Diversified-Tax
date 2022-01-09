@@ -17,7 +17,7 @@ import Contact from './components/pages/Contact-us';
 import Success from './components/pages/Success';
 import Calendar from './components/pages/Calendar';
 import Navigation from './components/Navigation';
-import Oops from './components/pages/Oops';
+import NotFound from './components/pages/NotFound';
 
 //Forms lazy-loading
 // const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
@@ -56,7 +56,7 @@ function App() {
                 <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
                 <Route exact path='/extra-forms' component={ExtraForms}/>
               </Container>
-              <Route component={Oops}/>
+              <Route path='*' component={NotFound}/>
           </Switch>
       </Router>
     </div>
