@@ -55,8 +55,8 @@ function App() {
                 <Route exact path='/new-business-clients' component={NewBusiness}/>
                 <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
                 <Route exact path='/extra-forms' component={ExtraForms}/>
+                <Route path='*' component={NotFound}/>
               </Container>
-              <Route path='*' component={NotFound}/>
           </Switch>
       </Router>
     </div>
