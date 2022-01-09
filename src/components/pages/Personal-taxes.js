@@ -115,14 +115,17 @@ const Personal = () => {
         <div style={paddingTop}>
             {/* Jumbotron Section */}
             <div className={"d-flex justify-content-center"}>
-                <div className="col-xl-10 col-md-12 col-sm-12 col-xs-12 mb-3" style={jumbotronCover}>
+                <div className="col-xl-11 col-md-12 col-sm-12 col-xs-12 mb-3" style={jumbotronCover}>
                     <Container className='flex-column p-5 text-white'>
                         <h1 className='display-4' id='p-cover-heading' style={coverHeading}>{t('p_page_cover')}</h1>
                         <br/>
                         <h5 style={coverP}>{t('p_first_header')}</h5>
                         <h5 style={coverP}>{t('p_second_header')}</h5>
+                        <Container className='d-flex justify-content-end'> 
+                            <Button href='#linksCard' style={yellowButton} className='my-3 mx-2' aria-label='File now section'>{t('p_cover_button_one')}</Button>
 
-                        <Button href='#linksCard' style={yellowButton} className='my-3 float-end' aria-label='File now section'>{t('p_cover_button')}</Button>
+                            <Button href='/calendar' style={yellowButton} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
+                        </Container>
                     </Container>
                 </div>
             </div>

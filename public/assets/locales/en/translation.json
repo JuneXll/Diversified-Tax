@@ -55,7 +55,8 @@
     "p_page_cover": "Personal Taxes",
     "p_first_header": "Safe and",
     "p_second_header": "Reliable Service",
-    "p_cover_button": "File Today",
+    "p_cover_button_one": "File Online",
+    "p_cover_button_two": "File In Person",
 
     "p_income": "Income from 1099/W-2/1098 etc.",
     "p_income_content": "Diversified Tax works with all the common tax forms: 1099s, W-2s, and any other income tax form you may have received this year. All these documents should be uploaded, as applicable, for us to accurately complete your tax return. Providing these documents is as simple as snapping a photo and uploading it to the link provided by your tax agent. We also accept PDFs and excel documents.",
