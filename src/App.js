@@ -3,66 +3,34 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
 // Form pages
-// const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
 import NewPersonal from './components/pages/NewPersonal';
-// const ReturningPersonal = React.lazy(() => import(/* webpackChunkName: "ReturningPersonal" */ './components/pages/ReturningPersonal'));
 import ReturningPersonal from './components/pages/ReturningPersonal';
-// const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/NewBusiness'));
 import NewBusiness from './components/pages/NewBusiness';
-// const ReturningBusiness = React.lazy(() => import(/* webpackChunkName: "ReturningBusiness" */ './components/pages/ReturningBusiness'));
 import ReturningBusiness from './components/pages/ReturningBusiness';
-// const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
 import ExtraForms from './components/pages/ExtraForms';
+//lazy-loading
+// const NewPersonal = React.lazy(() => import(/* webpackChunkName: "NewPersonal" */ './components/pages/NewPersonal'));
+// const ReturningPersonal = React.lazy(() => import(/* webpackChunkName: "ReturningPersonal" */ './components/pages/ReturningPersonal'));
+// const NewBusiness = React.lazy(() => import(/* webpackChunkName: "NewBusiness" */ './components/pages/NewBusiness'));
+// const ReturningBusiness = React.lazy(() => import(/* webpackChunkName: "ReturningBusiness" */ './components/pages/ReturningBusiness'));
+// const ExtraForms = React.lazy(() => import(/* webpackChunkName: "ExtraForms" */ './components/pages/ExtraForms'));
 
 // Main Pages
-// const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
 import Home from './components/pages/Home';
-// const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
 import Personal from './components/pages/Personal-taxes';
-// const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
 import Business from './components/pages/Business-taxes';
-// const Contact = React.lazy(() => import(/* webpackChunkName: "Contact" */ './components/pages/Contact-us'));
 import Contact from './components/pages/Contact-us';
-// const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
 import Success from './components/pages/Success';
-// const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
 import Calendar from './components/pages/Calendar';
-// const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
 import Navigation from './components/Navigation';
+// const Home = React.lazy(() => import(/* webpackChunkName: "Home" */ './components/pages/Home'));
+// const Personal = React.lazy(() => import(/* webpackChunkName: "Personal-taxes" */ './components/pages/Personal-taxes'));
+// const Business = React.lazy(() => import(/* webpackChunkName: "Business-taxes" */ './components/pages/Business-taxes'));
+// const Contact = React.lazy(() => import(/* webpackChunkName: "Contact" */ './components/pages/Contact-us'));
+// const Success = React.lazy(() => import(/* webpackChunkName: "Success" */ './components/pages/Success'));
+// const Calendar = React.lazy(() => import(/* webpackChunkName: "Calendar" */ './components/pages/Calendar'))
+// const Navigation = React.lazy(() => import(/* webpackChunkName: "Navigation" */ './components/Navigation'));
 
-// const ballStyle = {
-//   width: 10,
-//   height: 10,
-//   borderRadius: '50%',
-//   backgroundColor: "#003054",
-//   marginRight: 10,
-//   marginTop: '3em',
-//   animation: ".5 ease infinite alternate"
-// }
-
-// const text = {
-//   color: "#003054"
-// }
-
-//  //Loading screen markup and animation
-//  const loadingMarkup = (
-//   <div className="loading d-column w-100 text-center">
-//     <div className="balls d-flex justify-content-center">
-//       <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1000} animationOutDuration={1000} isVisible={true}>
-//         <div className="ball1 display-1" style={ballStyle}></div>
-//       </Animated>
-
-//       <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1400} animationOutDuration={1400} isVisible={true}>
-//         <div className="ball2 display-1" style={ballStyle}></div>
-//       </Animated>
-
-//       <Animated animationIn="bounce" animationOut="pulse" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
-//         <div className="ball3 display-1" style={ballStyle}></div>
-//       </Animated>
-//     </div>
-//     <span className="display-3" style={text}>Loading</span>
-//   </div>
-// )
 
 const yellowButton = {
   backgroundColor:'#e1ad00',
@@ -101,8 +69,9 @@ function App() {
                 <Route exact path='/new-business-clients' component={NewBusiness}/>
                 <Route exact path='/returning-business-clients' component={ReturningBusiness}/>
                 <Route exact path='/extra-forms' component={ExtraForms}/>
+
+                <Route render={()=> oops}/>
               </Container>
-              <Route render={()=> oops}/>
           </Switch>
       </Router>
     </div>
