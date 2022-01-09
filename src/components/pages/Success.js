@@ -28,7 +28,7 @@ const Success = () => {
                 Thank you for your submission. 
             </h1>
             <h2 className='display-4 pb-3' style={heading}>We will be in contact soon! </h2>
-            <Button href='/' style={yellowButton} aria-label='Got page to homepage'>Go Back Home</Button>
+            <Button href='https://diversified.tax/' style={yellowButton} aria-label='Got page to homepage'>Go Back Home</Button>
         </Container>
     )
 }

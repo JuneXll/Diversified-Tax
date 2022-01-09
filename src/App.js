@@ -87,7 +87,6 @@ function App() {
       <Navigation/>
         <Router>
           <Switch>
-            {/* <Suspense fallback={loadingMarkup}> */}
               <Container>
                 {/* Main Pages */}
                 <Route exact path='/' component={Home}/>
@@ -104,7 +103,6 @@ function App() {
                 <Route exact path='/extra-forms' component={ExtraForms}/>
               </Container>
               <Route render={()=> oops}/>
-            {/* </Suspense> */}
           </Switch>
       </Router>
     </div>
