@@ -136,8 +136,8 @@
 
     "contact_form_name": "Full Name",
     "contact_name_error": "Enter First and Last name. e.g. John Doe",
-    "contact_form_email": "Email e.g jdoe@gmail.com",
-    "contact_email_error": "Enter a valid email.",
+    "contact_form_email": "Email",
+    "contact_email_error": "Enter a valid email e.g jdoe@gmail.com",
     "contact_form_phone": "Phone Number",
     "contact_phone_error": "Enter a valid phone number.",
     "contact_form_message": "Message",
