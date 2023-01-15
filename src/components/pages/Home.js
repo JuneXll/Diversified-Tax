@@ -247,8 +247,8 @@ const Home = () => {
                             <p style={iconP}>{t('first_icon')}</p>
                             </Col>
                             <Col>
-                            <i className="fas fa-solid fa-sack-xmark fa-3x" style={iconsBlue}></i>
-                            <p style={iconP}>{t('second_icon')}</p>
+                            <i className="fa-solid fa-sack-xmark fa-3x" style={iconsBlue}></i>
+                            <p >{t('second_icon')}</p>
                             </Col>
                             <Col>
                             <i className="fas fa-globe fa-3x" style={iconsBlue}></i>
