@@ -247,22 +247,26 @@ const Home = () => {
                             <p style={iconP}>{t('first_icon')}</p>
                             </Col>
                             <Col>
-                            <i className="fas fa-globe fa-3x" style={iconsBlue}></i>
+                            <i className="fas fa-solid fa-sack-xmark fa-3x" style={iconsBlue}></i>
                             <p style={iconP}>{t('second_icon')}</p>
+                            </Col>
+                            <Col>
+                            <i className="fas fa-globe fa-3x" style={iconsBlue}></i>
+                            <p style={iconP}>{t('third_icon')}</p>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <i className="fas fa-concierge-bell fa-3x" style={iconsBlue}></i>
-                                <p style={iconP}>{t('third_icon')}</p>
-                            </Col>
-                            <Col>
-                                <i className="fas fa-user-clock fa-3x" style={iconsBlue}></i>
                                 <p style={iconP}>{t('fourth_icon')}</p>
                             </Col>
                             <Col>
-                                <i className="fas fa-file-alt fa-3x" style={iconsBlue}></i>
+                                <i className="fas fa-user-clock fa-3x" style={iconsBlue}></i>
                                 <p style={iconP}>{t('fifth_icon')}</p>
+                            </Col>
+                            <Col>
+                                <i className="fas fa-file-alt fa-3x" style={iconsBlue}></i>
+                                <p style={iconP}>{t('sixth_icon')}</p>
                             </Col>
                         </Row>
                         <Button href='/new-personal-clients' className='my-5' style={blueButton}>{t('choose_button')}</Button>

@@ -39,7 +39,7 @@ const AlertSubmit = () => {
             <Alert show={show} variant="warning" style={alertStyles}>
                 <Alert.Heading><strong>{t('alert_heading')}</strong></Alert.Heading>
                 <p>
-                    <strong>{t('alert_click')}<Alert.Link href={taxCheck} target='_blank'> {t('alert_here')}</Alert.Link> {t('alert_download_cl')}</strong>
+                    <strong>{t('alert_click')} <Alert.Link href={taxCheck} target='_blank'>{t('alert_here')}</Alert.Link> {t('alert_download_cl')}</strong>
                 </p>
                 <hr />
                 <div className="d-flex justify-content-end">
