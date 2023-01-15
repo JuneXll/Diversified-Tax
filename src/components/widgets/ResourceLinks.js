@@ -111,7 +111,7 @@ const ResourceLinks = () => {
                                 {t('card_five_text')}
                                 </Card.Text>
                                 <Button 
-                                    href="https://connect.myflorida.com/" 
+                                    href="https://www.irs.gov/publications" 
                                     target='_blank' 
                                     rel="noreferrer"
                                     style={blueButton}
@@ -119,7 +119,7 @@ const ResourceLinks = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col className='p-1'>
+                    {/*<Col className='p-1'>
                         <Card style={{border:'none'}}>
                             <Card.Body>
                                 <Card.Title style={cardTitle}>{t('card_six_title')}</Card.Title>
@@ -134,7 +134,7 @@ const ResourceLinks = () => {
                                     >{t('card_six_button')}</Button>
                             </Card.Body>
                         </Card>
-                    </Col>
+                    </Col>*/}
                 </Row>
             </Container>
         </Container>

@@ -248,7 +248,7 @@ const Home = () => {
                             </Col>
                             <Col>
                             <i className="fa-solid fa-sack-xmark fa-3x" style={iconsBlue}></i>
-                            <p >{t('second_icon')}</p>
+                            <p style={iconP}>{t('second_icon')}</p>
                             </Col>
                             <Col>
                             <i className="fas fa-globe fa-3x" style={iconsBlue}></i>
