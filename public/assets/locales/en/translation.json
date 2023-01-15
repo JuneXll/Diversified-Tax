@@ -1,4 +1,11 @@
 {
+    "alert_heading": "Find out what you need!",
+    "alert_click": "Click",
+    "alert_here": "here",
+    "alert_download_cl": "to download our Tax Checklist","alert_all_done": "All done",
+    "alert_not_sure": "Not sure what you need to file your taxes?",
+
+    
     "nav_personal": "Personal Taxes",
     "nav_business": "Business Taxes",
     "nav_contact_us": "Contact Us",

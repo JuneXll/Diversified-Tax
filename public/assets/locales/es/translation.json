@@ -1,4 +1,12 @@
 {
+    "alert_heading": "Descubre lo que necesitas!",
+    "alert_click": "Hacer clic",
+    "alert_here": "aquí",
+    "alert_download_cl": "para descargar nuestra lista de verificación de impuestos",
+    "alert_all_done": "Todo listo",
+    "alert_not_sure": "No estás seguro de lo que necesitas para presentar tus impuestos?",
+
+
     "nav_personal": "Impuestos Personales",
     "nav_business": "Impuestos de Negocio",
     "nav_contact_us": "Contactanos",
