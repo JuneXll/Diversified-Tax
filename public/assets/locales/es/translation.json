@@ -52,10 +52,11 @@
 
     "when_you_choose_dt" : "Cuando elige Diversified Tax, elige",
     "first_icon": "Profesionales de Impuestos Confiables",
-    "second_icon" : "Empleados Multilingües",
-    "third_icon" : "Atención al Cliente Personalizada",
-    "fourth_icon" : "Respuestas Rápidas",
-    "fifth_icon" : "Presentador Autorizado del IRS e-file",
+    "second_icon" : "",
+    "third_icon" : "Empleados Multilingües",
+    "fourth_icon" : "Atención al Cliente Personalizada",
+    "fifth_icon" : "Respuestas Rápidas",
+    "sixth_icon": "Presentador Autorizado del IRS e-file",
     "choose_button" : "Presentar Hoy",
 
     "What-customers-say" : "Lo que dicen nuestros clientes",

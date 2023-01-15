@@ -5,7 +5,7 @@
     "alert_download_cl": "to download our Tax Checklist","alert_all_done": "All done",
     "alert_not_sure": "Not sure what you need to file your taxes?",
 
-    
+
     "nav_personal": "Personal Taxes",
     "nav_business": "Business Taxes",
     "nav_contact_us": "Contact Us",
@@ -50,10 +50,11 @@
 
     "when_you_choose_dt" : "When you choose DT, you choose",
     "first_icon": "Reliable Tax Professionals",
-    "second_icon" : "Multilingual Employees",
-    "third_icon" : "Personalized Customer Service",
-    "fourth_icon" : "Quick Responses",
-    "fifth_icon" : "IRS e-file Authorized Filer",
+    "second_icon" : "No Upfront Fees",
+    "third_icon" : "Multilingual Employees",
+    "fourth_icon" : "Personalized Customer Service",
+    "fifth_icon" : "Quick Responses",
+    "sixth_icon": "IRS e-file Authorized Filer",
     "choose_button" : "File Today",
 
     "What-customers-say" : "What our customers say",
