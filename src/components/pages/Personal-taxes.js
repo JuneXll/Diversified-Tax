@@ -4,18 +4,20 @@ import { Container, Button, Image } from 'react-bootstrap';
 //Imports media hoook
 import useMediaQuery from '../../hooks/useMediaQuery';
 //Imported widgets
-import LinkCard from '../widgets/LinkCard';
+//import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
 import ResourceLinks from '../widgets/ResourceLinks'
 //Imported Images
 const personalHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-header.png?updatedAt=1640391118577';
 const formImg = 'https://ik.imagekit.io/diversifiedtax/images/forms.png?updatedAt=1640390870193';
 const howDoImg = 'https://ik.imagekit.io/diversifiedtax/images/how-do-i-know.png?updatedAt=1640391103537';
-const personalNewImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-new-client.png?updatedAt=1640385388965';
-const personalReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
+//const personalNewImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-new-client.png?updatedAt=1640385388965';
+//const personalReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/personal-returning.png?updatedAt=1640385327773';
 const checklist1 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist1.png?updatedAt=1640385426982';
 const checklist2 = 'https://ik.imagekit.io/diversifiedtax/images/Checklist2.png?updatedAt=1640385418168';
 
+//Tax portal
+const taxPortal = 'https://filemytaxes.taxdome.com/'
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -122,7 +124,7 @@ const Personal = () => {
                         <h5 style={coverP}>{t('p_first_header')}</h5>
                         <h5 style={coverP}>{t('p_second_header')}</h5>
                         <Container className='d-flex justify-content-end'> 
-                            <Button href='#linksCard' style={yellowButton} className='my-3 mx-2' aria-label='File now section'>{t('p_cover_button_one')}</Button>
+                            <Button href={taxPortal} target='_blank' style={yellowButton} className='my-3 mx-2' aria-label='Tax portal'>{t('p_cover_button_one')}</Button>
 
                             <Button href='/calendar' style={yellowButton} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
                         </Container>
@@ -188,14 +190,22 @@ const Personal = () => {
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>{t('p_get_started')}</h1>
-                    <LinkCard 
+                    {/* No longer using formsite tiles
+                        <LinkCard 
                         firstLink={t('link_card_new_clients')} 
                         firstHref='/new-personal-clients'
                         firstSrc={personalNewImg}
                         secondLink={t('link_card_returning_clients')} 
                         secondHref='/returning-personal-clients'
                         secondSrc={personalReturningImg}
-                        />
+                        />*/}
+                        <Container className='d-flex justify-content-center'> 
+                            <Button href={taxPortal} target='_blank' style={{backgroundColor:'#e1ad00',
+                        fontFamily: 'Bebas Neue, tahoma',letterSpacing: '4px',border: 'none',textAlign: 'align-right',boxShadow: '5px 5px 5px #ccc'}} className='my-3 mx-2' aria-label='Tax portal'>{t('p_cover_button_one')}</Button>
+
+                            <Button href='/calendar' style={{backgroundColor:'#e1ad00',
+                        fontFamily: 'Bebas Neue, tahoma',letterSpacing: '4px',border: 'none',textAlign: 'align-right',boxShadow: '5px 5px 5px #ccc'}} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
+                        </Container>
             </Container>
 
             {/*Resource Section */}

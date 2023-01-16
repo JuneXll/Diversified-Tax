@@ -1,17 +1,19 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Image, Row, Col } from 'react-bootstrap';
+import { Container, Image, Row, Col, Button } from 'react-bootstrap';
 //Imports media hoook
 import useMediaQuery from '../../hooks/useMediaQuery';
 //Imported widgets
-import LinkCard from '../widgets/LinkCard';
+//import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
 //Imported Images
 const businessHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/business-header.png?updatedAt=1640385360004';
 const outsideServicesImg = 'https://ik.imagekit.io/diversifiedtax/images/outside-services.png?updatedAt=1640385340053';
-const businessNewImg = 'https://ik.imagekit.io/diversifiedtax/images/business-new-client.png?updatedAt=1640385381552';
-const businessReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/business-returning.png?updatedAt=1640385349651';
+//const businessNewImg = 'https://ik.imagekit.io/diversifiedtax/images/business-new-client.png?updatedAt=1640385381552';
+//const businessReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/business-returning.png?updatedAt=1640385349651';
 
+//Tax portal
+const taxPortal = 'https://filemytaxes.taxdome.com/'
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -84,6 +86,13 @@ const rightColumn = {
     boxShadow: '5px 5px 5px #ccc'
 }
 
+const blueButton = {
+    backgroundColor:'#003054',
+    fontFamily: 'Bebas Neue, tahoma',
+    letterSpacing: '4px',
+    border: 'none',
+    boxShadow: '5px 5px 5px #ccc'
+}
 
 const Business = () => {
     
@@ -140,13 +149,18 @@ const Business = () => {
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>{t('b_get_started')}</h1>
-                    <LinkCard 
+                    {/*<LinkCard 
                         firstLink={t('link_card_new_clients')} 
                         firstHref='/new-business-clients'
                         firstSrc={businessNewImg}
                         secondLink={t('link_card_returning_clients')} 
                         secondHref='/returning-business-clients'
-                        secondSrc={businessReturningImg}/>
+                        secondSrc={businessReturningImg}/>*/}
+                         <Container className='d-flex justify-content-center'> 
+                            <Button href={taxPortal} target='_blank' style={blueButton} className='my-3 mx-2' aria-label='Tax portal'>{t('p_cover_button_one')}</Button>
+
+                            <Button href='/calendar' style={blueButton} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
+                        </Container>
             </Container>
 
             {/* Faq */}

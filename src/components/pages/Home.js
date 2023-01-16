@@ -13,6 +13,8 @@ const fingertipsImg = 'https://ik.imagekit.io/diversifiedtax/images/fingertips.p
 const personalCardImg = 'https://ik.imagekit.io/diversifiedtax/images/personalCard.png?updatedAt=1640390885673';
 const businessCardImg = 'https://ik.imagekit.io/diversifiedtax/images/businessCard.png?updatedAt=1640390876577';
 
+//Tax portal
+const taxPortal = 'https://filemytaxes.taxdome.com/'
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -129,10 +131,12 @@ const Home = () => {
                         <h2 style={coverText}>{t('third_jumbo_list')}</h2>
                         <Container fluid className='p-0'>
                             <Button 
+                                href={taxPortal}
+                                target='_blank' 
                                 className='my-3' 
-                                style={yellowButton}
-                                onClick={()=>setOpenModal(true)}
-                                >{t('jumbo_button_one')}</Button>
+                                style={yellowButton}>
+                                {/*onClick={()=>setOpenModal(true)}*/}
+                                {t('jumbo_button_one')}</Button>
                             <Button 
                                 href='/calendar' 
                                 className='my-3 mx-2' 
@@ -269,7 +273,7 @@ const Home = () => {
                                 <p style={iconP}>{t('sixth_icon')}</p>
                             </Col>
                         </Row>
-                        <Button href='/new-personal-clients' className='my-5' style={blueButton}>{t('choose_button')}</Button>
+                        <Button href={taxPortal} target='_blank' className='my-5' style={blueButton}>{t('choose_button')}</Button>
                     </Container>
                 </Container>
             </Container>
