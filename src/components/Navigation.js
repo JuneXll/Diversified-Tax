@@ -8,6 +8,9 @@ import '../styles/Navigation.css'
 //Importing logo from imagekit
 const logo = 'https://ik.imagekit.io/diversifiedtax/images/logo.png?updatedAt=1640385434649';
 
+//Tax portal
+const taxPortal = 'https://filemytaxes.taxdome.com/'
+
 const logoStyle = {
     width: 80,
     height: 65,
@@ -81,6 +84,13 @@ const Navigation = () => {
                                 style={dropdownLinks}
                                 >
                                 {t('nav_appointment')}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                href={taxPortal}
+                                style={dropdownLinks}
+                                target='_blank'
+                                >
+                                {t('nav_portal')}
                             </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title={worldIcon} style={{color:"#003054"}}>
