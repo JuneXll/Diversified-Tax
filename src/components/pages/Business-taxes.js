@@ -1,10 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, Image, Row, Col, Button } from 'react-bootstrap';
-//Imports media hoook
-import useMediaQuery from '../../hooks/useMediaQuery';
 //Imported widgets
-//import LinkCard from '../widgets/LinkCard';
 import Faq from '../widgets/Faq';
 //Imported Images
 const businessHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/business-header.png?updatedAt=1640385360004';
@@ -64,30 +61,11 @@ const serviceText = {
 const paragraphs = {
     lineHeight: '1.5',
     letterSpacing: '2px',
-    fontFamily: 'Open Sans, sans-serif',
-    textIndent: '20px'
-}
-//Styles for pic/ text yellow dic]v
-const leftColumn = {
-    padding: '0',
-    boxShadow: '5px 5px 5px #ccc'
+    fontFamily: 'Open Sans, sans-serif'
 }
 
-const leftColumnPic = {
-    borderTopLeftRadius: '5px',
-    borderBottomLeftRadius: '5px'
-}
-
-const rightColumn = {
-    padding: '3em 2em',
-    borderTopRightRadius: '5px',
-    borderBottomRightRadius: '5px',
-    backgroundColor: '#e1ad00',
-    boxShadow: '5px 5px 5px #ccc'
-}
-
-const blueButton = {
-    backgroundColor:'#003054',
+const yellowButton = {
+    backgroundColor:'#e1ad00',
     fontFamily: 'Bebas Neue, tahoma',
     letterSpacing: '4px',
     border: 'none',
@@ -95,9 +73,6 @@ const blueButton = {
 }
 
 const Business = () => {
-    
-    // //Sets media for smaller devices
-    const matches = useMediaQuery("(min-width:580px)");
 
     //Sets translations for the page
     const { t } = useTranslation();
@@ -122,16 +97,17 @@ const Business = () => {
             </Container>
 
             {/* Outside Services Section */}
-            <Container>
-                <Row>
-                    {matches && (
-                    <Col className='col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12 mx-auto' style={leftColumn}>
-                        <Image fluid className='position-relative' src={outsideServicesImg} style={leftColumnPic} alt='Pens on top of a calculator'/>
-                    </Col>
-                    )}
-                    <Col className='col-xl-6 col-lg-8 col-md-12 col-sm-12 col-xs-12 mx-auto' style={rightColumn}>
-                        <h2 className='text-white' style={serviceText}>{t('outside_services')}</h2>
-                        <p className='text-white' style={paragraphs}>{t('outside_content')}</p>
+            <div style={{backgroundColor:'#003054', borderRadius: '5px', boxShadow: '5px 5px 5px #ccc', padding:'6em 3em', marginTop:'25vh'}}>
+                <div className='position-relative'>
+                    <div className='position-absolute top-0 start-50 translate-middle'style={picDiv}>
+                        <Image fluid src={outsideServicesImg} style={img} alt='Coffee shop business owners working and smiling'/>
+                    </div>
+                </div>
+                <div style={{paddingTop:'30vh'}}>
+                    <h2 className='text-white text-center mb-3' style={serviceText}>{t('outside_services')}</h2>
+                    <p className='text-white m-4' style={paragraphs}>{t('outside_content')}</p>
+                    <Row>
+                        <Col>
                             <ul style={paragraphs} className='text-white'>
                                 <li>{t('outside_first_li')}</li>
                                 <li>{t('outside_second_li')}</li>
@@ -139,28 +115,40 @@ const Business = () => {
                                 <li>{t('outside_fourth_li')}</li>
                                 <li>{t('outside_fifth_li')}</li>
                                 <li>{t('outside_sixth_li')}</li>
+                            </ul>
+                        </Col>
+                        <Col>
+                            <ul style={paragraphs} className='text-white'>
                                 <li>{t('outside_seventh_li')}</li>
                                 <li>{t('outside_eighth_li')}</li>
+                                <li>{t('outside_ninth_li')}</li>
+                                <li>{t('outside_tenth_li')}</li>
+                                <li>{t('outside_eleventh_li')}</li>
+                                <li>{t('outside_twelfth_li')}</li>
                             </ul>
-                    </Col>
-                </Row>
-            </Container>
+                        </Col>
+                        <Col>
+                            <ul style={paragraphs} className='text-white'>
+                                <li>{t('outside_thirteenth_li')}</li>
+                                <li>{t('outside_fourteenth_li')}</li>
+                                <li>{t('outside_fifteenth_li')}</li>
+                                <li>{t('outside_sixteenth_li')}</li>
+                                <li>{t('outside_seventeenth_li')}</li>
+                            </ul>
+                        </Col>
+                    </Row>
+        
+                    </div>
+                </div>
 
             {/* Links for getting started */}
             <Container className='my-5'>
                 <h1 className='display-3 text-center' style={headings}>{t('b_get_started')}</h1>
-                    {/*<LinkCard 
-                        firstLink={t('link_card_new_clients')} 
-                        firstHref='/new-business-clients'
-                        firstSrc={businessNewImg}
-                        secondLink={t('link_card_returning_clients')} 
-                        secondHref='/returning-business-clients'
-                        secondSrc={businessReturningImg}/>*/}
-                         <Container className='d-flex justify-content-center'> 
-                            <Button href={taxPortal} target='_blank' style={blueButton} className='my-3 mx-2' aria-label='Tax portal'>{t('p_cover_button_one')}</Button>
+                   <Container className='d-flex justify-content-center'> 
+                        <Button href={taxPortal} target='_blank' style={yellowButton} className='my-3 mx-2' aria-label='Tax portal'>{t('p_cover_button_one')}</Button>
 
-                            <Button href='/calendar' style={blueButton} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
-                        </Container>
+                        <Button href='/calendar' style={yellowButton} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
+                    </Container>
             </Container>
 
             {/* Faq */}
