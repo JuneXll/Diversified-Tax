@@ -76,6 +76,7 @@
 
     "not_sure": "No estás seguro de si estás listo para presentar?",
     "tax_checklist": "Lista de Verificación de Impuestos",
+    "p_get_started": "Empiece hoy!",
 
     "resource_header": "Recursos Extra",
     "card_one_title": "Donde esta mi reembolso?",
@@ -122,6 +123,8 @@
     "outside_fifteenth_li":"Planificación de jubilación",
     "outside_sixteenth_li":"Servicios de impuestos sobre las ventas",
     "outside_seventeenth_li":"Preparación y planificación de impuestos",
+
+    "b_get_started": "Empiece hoy!",
 
     "client_portal_header" : "Portal del cliente",
     "client_portal_content": "El portal de impuestos para clientes de Diversified Tax es donde puede acceder a su información fiscal y administrar sus cuentas de impuestos con facilidad. Nuestra plataforma fácil de usar le permite ver sus declaraciones de impuestos, realizar pagos y mantenerse actualizado sobre importantes fechas límite de impuestos. Ya sea que sea un individuo o una empresa, nuestro portal ofrece acceso seguro las 24 horas, los 7 días de la semana a su información fiscal. Con actualizaciones en tiempo real y datos precisos, puede tener la tranquilidad de saber que sus asuntos fiscales están en buenas manos. Comience a explorar nuestro portal hoy y experimente la conveniencia de administrar sus impuestos en línea.",
