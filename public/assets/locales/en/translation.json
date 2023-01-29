@@ -2,9 +2,9 @@
     "alert_heading": "Find out what you need!",
     "alert_click": "Click",
     "alert_here": "here",
-    "alert_download_cl": "to download our Tax Checklist","alert_all_done": "All done",
+    "alert_download_cl": "to download our Tax Checklist",
+    "alert_all_done": "All done",
     "alert_not_sure": "Not sure what you need to file your taxes?",
-
 
     "nav_personal": "Personal Taxes",
     "nav_business": "Business Taxes",
@@ -12,7 +12,6 @@
     "nav_send_message": "Send us a message",
     "nav_appointment": "Make an appointment",
     "nav_portal": "Client Portal",
-
 
     "main_jumbo_title": "Diversified Tax",
     "fist_jumbo_list": "Expert Attention",
@@ -22,13 +21,13 @@
     "jumbo_button_two": "File In Person",
 
     "about_header": "About Us",
-    "about_content": "Diversified Tax is a full-service professional tax preparation company dedicated to help with all your personal and business needs. We provide consultations, bookkeeping, LLC, partnerships and Corporation (S and C) openings, accurate tax filings and more. We are backed by years of tax knowledge and we take pride in helping hundreds of people and businesses each year. When it comes to helping our clients, we hold ourselves to the highest standard. Diversified Tax works to build a culture of industry-leading tax preparers.",
+    "about_content": "Diversified Tax is a leading tax preparation company that provides a full range of services to meet the needs of both individuals and businesses. We specialize in tax consultations, bookkeeping, LLC, partnerships and corporation formations, accurate tax filings and much more. Our team is composed of experienced professionals who are knowledgeable in the latest tax laws and regulations and are dedicated to providing personalized solutions that minimize liability and maximize savings for our clients. We understand that every client has unique needs and we work closely with each individual and business to understand their specific situations and provide personalized solutions. With our years of experience and commitment to excellence, you can trust Diversified Tax to handle all of your tax preparation needs with the highest level of professionalism and expertise. Our goal is to build a culture of industry-leading tax preparers, and we take pride in helping hundred of people and businesses each year.",
     
     "what_does_dt_header": "What does Diversified Tax do?",
-    "what_does_dt_content": "Diversified Tax makes filing your taxes easier than ever before. What’s easier than having a professional file your taxes for you? Nothing, so you don’t have to worry about anything. We have customized the customer benefits of the on-demand economy with convenience, security and cost savings and applied it to our tax business. We take all the hassle out of doing taxes to ensure you receive the personalized experience you desire.",
+    "what_does_dt_content": "At Diversified Tax, we understand that filing taxes can be complicated and overwhelming. That's why we are committed to making the process as easy and stress-free as possible. We have tailored our services to provide the convenience, the security, and cost savings of the on-demand economy, so you can have peace of mind knowing that your taxes are in good hands. We take pride in providing a personalized experience for each of our clients, ensuring that their unique needs are met and their taxes are filed accurately and efficiently. Trust Diversified Tax to make filing your taxes a seamless and hassle-free experience.",
 
     "fingertips_header": "We're always at your fingertips",
-    "fingertips_content": "We are available 24/7 to pick up any requests submitted. We are always available through phone or email and respond to all inquiries that require a follow-up in a timely manner. We make every effort to reply as soon as we can, however, please note that DT is located within the eastern time zone, therefore response times may lag during late evenings and early morning hours.",
+    "fingertips_content": "We are available 24/7 to pick up any requests submitted. We are always available through phone or email and respond to all inquiries that require a follow-up in a timely manner. We make every effort to reply as soon as we can, however, please note that Diversified Tax is located within the eastern time zone, therefore response times may lag during late evenings and early morning hours.",
 
     "personal_header": "Personal Taxes",
     "p_preparation_title": "Preparation Services",
@@ -68,14 +67,13 @@
     "p_cover_button_two": "File In Person",
 
     "p_income": "Income from 1099/W-2/1098 etc.",
-    "p_income_content": "Diversified Tax works with all the common tax forms: 1099s, W-2s, and any other income tax form you may have received this year. All these documents should be uploaded, as applicable, for us to accurately complete your tax return. Providing these documents is as simple as snapping a photo and uploading it to the link provided by your tax agent. We also accept PDFs and excel documents.",
+    "p_income_content": "At Diversified Tax, we handle all types of tax forms including 1099s, W-2s and any other income tax forms you may receive. To ensure accurate completion of your tax return, please upload all relevant documents through our client portal. This process is easy and can be done by simply taking a photo of your documents and uploading them to our secure platform. We also accept PDFs and excel documents. Providing these documents is crucial for accurate tax return preparation.",
 
     "how_do_i_know": "How do you know what I need?",
-    "how_do_content": "We ask that you provide us with a copy of your prior year tax return so that we may have a baseline to work with. Through discussion, you should make us aware of any new activity that needs to be modified in the current year. We may also discuss items that may have accidentally been missed in prior years as well as options to remedy the problem. Once you've used DT, relevant information will be saved within your profile.",
+    "how_do_content": "We strive to provide accurate and efficient tax preparation for our clients. To ensure that we have a complete understanding of your tax situation, we kindly request that you provide us with a copy of your prior year's tax return. During our consultation, please inform us of any changes or new developments in your current year to ensure that we address any potential issues. Our team of experts will also review your past returns to identify any missed opportunities or discrepancies, and work with you to find solutions. Our client's information is saved within our system, making it easy to file your taxes with us in the future.",
 
     "not_sure": "Not sure if you are ready to file?",
     "tax_checklist": "Tax Checklist",
-    "p_get_started": "Get started today!",
 
     "resource_header": "Extra Resources",
     "card_one_title": "Where's my Refund?",
@@ -101,10 +99,10 @@
     "b_page_header": "Your Business is safe with us",
 
     "b_tax_plan": "Tax Planning",
-    "b_tax_plan_content": "Tax planning is critical to self-employed and small business taxpayers. It is the first step to ensuring you are paying the lowest amount of legal tax. There are many ways to structure a business to lower the overall tax rates. Entity choice, accounting method, financing structure, benefit plans are all looked at from a tax optimization perspective. The plan we create is reviewed against your actual results going forward and adjustments are suggested as they become necessary.",
+    "b_tax_plan_content": "Effective tax planning is essential for self-employed individuals and small business owners. By taking proactive steps to minimize your tax liability, you can ensure that you are paying the lowest legal amount of taxes. At Diversified Tax, we specialize in identifying tax-savings strategies, such as selecting the right entity type, implementing an optimal accounting method, and designing a benefit plans on your overall tax liability. Our team of experts will work with you to create a customized tax plan that is tailored to your specific business needs, We will also review your plan regularly and make adjustments as necessary to ensure that you continue to pay the lowest legal taxes.",
 
     "outside_services": "Can I request services outside of income taxes?",
-    "outside_content": "Currently, the only services that can be provided by DT are identified below. However, if you have an open job, you can reach out to us with any requests and we'll see what we can do to help you out. We are able to help you with the following services or even some that may not be listed here:",
+    "outside_content": "We offer a wide range of services to meet the needs of our clients. Diversified Tax services we currently provide are listed below, however, if you have a specific need or request that is not listed, please do not hesitate to reach out to us. We are always willing to explore new opportunities and see how we can assist you. Our team is dedicated to providing personalized solutions and going above and beyond to meet the unique needs of each of our clients. We strive to be a one-stop-shop for all your tax-related needs and we are always happy to help.",
     "outside_first_li": "Accounting Software Selection & Implementation",
     "outside_second_li": "Audits, Reviews & Compilations",
     "outside_third_li": "Bookkeeping/Write-Up",
@@ -123,7 +121,8 @@
     "outside_sixteenth_li":"Sales Tax Services",
     "outside_seventeenth_li":"Tax Preparation & Planning",
 
-    "b_get_started": "Get started today!",
+    "client_portal_header" : "Client Portal",
+    "client_portal_content": "Diversified Tax's client tax portal is where you can access your tax information and manage your tax accounts with ease. Our user-friendly platform allows you to view your tax returns, make payments, and stay up to date on important tax deadlines. Whether you are an individual or a business, our portal offers secure, 24/7 access to your tax information. With real-time updates and accurate data, you can have peace of mind knowing your tax affairs are in good hands. Start exploring our portal today and experience the convenience of managing your taxes online.",
 
 
     "contact_us_header": "Contact Us",

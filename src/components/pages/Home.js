@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 // Bootstrap Components
 import { Container, Button, Image, Row, Col, Card } from 'react-bootstrap';
-import FileModal from '../widgets/FileModal';
+//import FileModal from '../widgets/FileModal';
 import AlertSubmit from '../widgets/AlertSubmit';
 
 // Imported images-imagekit.io as webp cdn
@@ -110,13 +110,9 @@ const showGoogle = () => {
     }
 }
 
-
 const Home = () => {
     //set translation for page
     const { t } = useTranslation();
-
-    //set modal state
-    const [openModal, setOpenModal] = useState(false);
 
     return (
         <div style={paddingTop}>
@@ -135,7 +131,6 @@ const Home = () => {
                                 target='_blank' 
                                 className='my-3' 
                                 style={yellowButton}>
-                                {/*onClick={()=>setOpenModal(true)}*/}
                                 {t('jumbo_button_one')}</Button>
                             <Button 
                                 href='/calendar' 
@@ -148,9 +143,6 @@ const Home = () => {
                 </div>
             </div>
             
-            {/* If openModal is true then modal will show, using props to pass state to modal component */}
-            {openModal && <FileModal closeModal={setOpenModal}/>}
-
             {/* About Section */}
             <Container className='row p-5 my-5'>
 

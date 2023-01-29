@@ -119,22 +119,6 @@ const ResourceLinks = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    {/*<Col className='p-1'>
-                        <Card style={{border:'none'}}>
-                            <Card.Body>
-                                <Card.Title style={cardTitle}>{t('card_six_title')}</Card.Title>
-                                <Card.Text style={cardText}>
-                                {t('card_six_text')}
-                                </Card.Text>
-                                <Button 
-                                    href="https://www.irs.gov/coronavirus/get-my-payment" 
-                                    target='_blank' 
-                                    rel="noreferrer"
-                                    style={blueButton}
-                                    >{t('card_six_button')}</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>*/}
                 </Row>
             </Container>
         </Container>

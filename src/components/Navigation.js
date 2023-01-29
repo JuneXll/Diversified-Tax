@@ -72,6 +72,9 @@ const Navigation = () => {
                     <Nav.Link href="/business-tax" style={links} aria-labelledby='Business Taxes'>
                         {t('nav_business')}
                     </Nav.Link>
+                    <Nav.Link href={taxPortal} style={links} target='_blank' aria-labelledby='Client Portal'>
+                        {t('nav_portal')}
+                    </Nav.Link>
                     <NavDropdown title={t('nav_contact_us')} style={links}>
                             <NavDropdown.Item
                                 href='/contact-us'
@@ -84,13 +87,6 @@ const Navigation = () => {
                                 style={dropdownLinks}
                                 >
                                 {t('nav_appointment')}
-                            </NavDropdown.Item>
-                            <NavDropdown.Item
-                                href={taxPortal}
-                                style={dropdownLinks}
-                                target='_blank'
-                                >
-                                {t('nav_portal')}
                             </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title={worldIcon} style={{color:"#003054"}}>

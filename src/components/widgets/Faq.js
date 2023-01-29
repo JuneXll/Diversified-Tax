@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 //Import questions 
 import { personalFaq } from '../../questionData/personalFaq';
 import { businessFaq } from '../../questionData/businessFaq';

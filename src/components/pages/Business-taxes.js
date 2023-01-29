@@ -1,16 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Image, Row, Col, Button } from 'react-bootstrap';
+import { Container, Image, Row, Col} from 'react-bootstrap';
 //Imported widgets
 import Faq from '../widgets/Faq';
+import ClientPortal from '../widgets/ClientPortal';
+
 //Imported Images
 const businessHeaderImg = 'https://ik.imagekit.io/diversifiedtax/images/business-header.png?updatedAt=1640385360004';
 const outsideServicesImg = 'https://ik.imagekit.io/diversifiedtax/images/outside-services.png?updatedAt=1640385340053';
 //const businessNewImg = 'https://ik.imagekit.io/diversifiedtax/images/business-new-client.png?updatedAt=1640385381552';
 //const businessReturningImg = 'https://ik.imagekit.io/diversifiedtax/images/business-returning.png?updatedAt=1640385349651';
-
-//Tax portal
-const taxPortal = 'https://filemytaxes.taxdome.com/'
 
 // Styles for page
 //Set padding for to make space for navbar
@@ -61,16 +60,16 @@ const serviceText = {
 const paragraphs = {
     lineHeight: '1.5',
     letterSpacing: '2px',
+    fontFamily: 'Open Sans, sans-serif',
+    textIndent: '20px'
+}
+
+const lists = {
+    lineHeight: '1.5',
+    letterSpacing: '2px',
     fontFamily: 'Open Sans, sans-serif'
 }
 
-const yellowButton = {
-    backgroundColor:'#e1ad00',
-    fontFamily: 'Bebas Neue, tahoma',
-    letterSpacing: '4px',
-    border: 'none',
-    boxShadow: '5px 5px 5px #ccc'
-}
 
 const Business = () => {
 
@@ -108,7 +107,7 @@ const Business = () => {
                     <p className='text-white m-4' style={paragraphs}>{t('outside_content')}</p>
                     <Row>
                         <Col>
-                            <ul style={paragraphs} className='text-white'>
+                            <ul style={lists} className='text-white'>
                                 <li>{t('outside_first_li')}</li>
                                 <li>{t('outside_second_li')}</li>
                                 <li>{t('outside_third_li')}</li>
@@ -118,7 +117,7 @@ const Business = () => {
                             </ul>
                         </Col>
                         <Col>
-                            <ul style={paragraphs} className='text-white'>
+                            <ul style={lists} className='text-white'>
                                 <li>{t('outside_seventh_li')}</li>
                                 <li>{t('outside_eighth_li')}</li>
                                 <li>{t('outside_ninth_li')}</li>
@@ -128,7 +127,7 @@ const Business = () => {
                             </ul>
                         </Col>
                         <Col>
-                            <ul style={paragraphs} className='text-white'>
+                            <ul style={lists} className='text-white'>
                                 <li>{t('outside_thirteenth_li')}</li>
                                 <li>{t('outside_fourteenth_li')}</li>
                                 <li>{t('outside_fifteenth_li')}</li>
@@ -141,14 +140,9 @@ const Business = () => {
                     </div>
                 </div>
 
-            {/* Links for getting started */}
-            <Container className='my-5'>
-                <h1 className='display-3 text-center' style={headings}>{t('b_get_started')}</h1>
-                   <Container className='d-flex justify-content-center'> 
-                        <Button href={taxPortal} target='_blank' style={yellowButton} className='my-3 mx-2' aria-label='Tax portal'>{t('p_cover_button_one')}</Button>
-
-                        <Button href='/calendar' style={yellowButton} className='my-3' aria-label='File now section'>{t('p_cover_button_two')}</Button>
-                    </Container>
+            {/* Client Portal*/}
+            <Container style={{marginTop:'15vh'}}>
+                <ClientPortal client='business'/>
             </Container>
 
             {/* Faq */}
