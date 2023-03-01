@@ -1,10 +1,10 @@
 {
-    "alert_heading": "Descubre lo que necesitas!",
+    "alert_heading": "Haga clic en el enlace a continuación para realizar un seguimiento de su reembolso.",
     "alert_click": "Hacer clic",
-    "alert_here": "aquí",
+    "alert_here": "Rastrear reembolso",
     "alert_download_cl": "para descargar nuestra lista de verificación de impuestos",
     "alert_all_done": "Todo listo",
-    "alert_not_sure": "No estás seguro de lo que necesitas para presentar tus impuestos?",
+    "alert_alert_track": "SEGUIMIENTO DE MI REEMBOLSO",
 
 
     "nav_personal": "Impuestos Personales",
