@@ -1,10 +1,10 @@
 {
-    "alert_heading": "Click the link below to track your refund!",
+    "alert_heading": "Find out what you need!",
     "alert_click": "Click",
-    "alert_here": "Track Refund",
+    "alert_here": "here",
     "alert_download_cl": "to download our Tax Checklist",
     "alert_all_done": "All done",
-    "alert_track": "TRACK MY REFUND",
+    "alert_not_sure": "Not sure what you need to file your taxes?",
 
     "nav_personal": "Personal Taxes",
     "nav_business": "Business Taxes",
@@ -74,6 +74,7 @@
 
     "not_sure": "Not sure if you are ready to file?",
     "tax_checklist": "Tax Checklist",
+    "p_get_started": "Get started today!",
 
     "resource_header": "Extra Resources",
     "card_one_title": "Where's my Refund?",
