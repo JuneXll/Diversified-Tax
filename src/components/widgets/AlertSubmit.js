@@ -26,7 +26,9 @@ const alertStyles = {
     boxShadow: '5px 5px 5px #ccc'
 }
 
-const taxCheck = "https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view"
+// const taxCheck = "https://drive.google.com/file/d/1jT7Yf0uZjlgECPA82-9UUjUlZxYxi7Sn/view"
+// const refund = "https://www.irs.gov/refunds"
+
 
 const AlertSubmit = () => {
     const [show, setShow] = useState(false);
@@ -39,8 +41,11 @@ const AlertSubmit = () => {
             <Alert show={show} variant="warning" style={alertStyles}>
                 <Alert.Heading><strong>{t('alert_heading')}</strong></Alert.Heading>
                 <p>
-                    <strong>{t('alert_click')} <Alert.Link href={taxCheck} target='_blank'>{t('alert_here')}</Alert.Link> {t('alert_download_cl')}</strong>
+                    <strong>{t('alert_click')} <Alert.Link href={"https://www.irs.gov/refunds"}>{t('alert_here')}</Alert.Link> {t('alert_download_cl')}</strong>
                 </p>
+                {/* <p>
+                    <Alert.Link href={refund} target='_blank'>{t('alert_here')}</Alert.Link>
+                </p> */}
                 <hr />
                 <div className="d-flex justify-content-end">
                     <Button style={allDone} onClick={() => setShow(false)} >
